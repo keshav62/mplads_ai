@@ -35,17 +35,23 @@ def load_csv_if_exists(path, dataset_name):
 
     if not os.path.exists(path):
 
-        print(f"WARNING: File not found: {path}")
+        print(
+            f"WARNING: File not found: {path}"
+        )
 
         return None
 
     df = pd.read_csv(path)
 
-    print(f"Total projects: {len(df)}")
+    print(
+        f"Total projects: {len(df)}"
+    )
 
-    print(f"Columns available:")
+    print("Columns available:")
 
-    print(df.columns.tolist())
+    print(
+        df.columns.tolist()
+    )
 
     return df
 
@@ -54,23 +60,34 @@ def load_csv_if_exists(path, dataset_name):
 # FIND FIRST AVAILABLE FILE
 # ============================================================
 
-def load_first_available(paths, dataset_name):
+def load_first_available(
+    paths,
+    dataset_name
+):
 
-    print(f"\nLoading {dataset_name}...")
+    print(
+        f"\nLoading {dataset_name}..."
+    )
 
     for path in paths:
 
         if os.path.exists(path):
 
-            print(f"Using file: {path}")
+            print(
+                f"Using file: {path}"
+            )
 
             df = pd.read_csv(path)
 
-            print(f"Total projects: {len(df)}")
+            print(
+                f"Total projects: {len(df)}"
+            )
 
             return df
 
-    print(f"WARNING: No valid file found for {dataset_name}")
+    print(
+        f"WARNING: No valid file found for {dataset_name}"
+    )
 
     return None
 
@@ -79,23 +96,35 @@ def load_first_available(paths, dataset_name):
 # SAFE NUMERIC CONVERSION
 # ============================================================
 
-def safe_numeric(df, column):
+def safe_numeric(
+    df,
+    column
+):
 
     if column not in df.columns:
 
-        df[column] = 0
+        df[column] = np.nan
+
+        return df
+
 
     df[column] = pd.to_numeric(
         df[column],
         errors="coerce"
     )
 
+
     df[column] = df[column].replace(
         [np.inf, -np.inf],
         np.nan
     )
 
-    df[column] = df[column].fillna(0)
+
+    # IMPORTANT:
+    # Do NOT fill missing engine scores with zero.
+    #
+    # NaN means the engine did not have a result
+    # for that project.
 
     return df
 
@@ -109,36 +138,54 @@ def normalize_score(series):
     series = pd.to_numeric(
         series,
         errors="coerce"
-    ).fillna(0)
+    )
 
-    max_value = series.max()
+    valid_values = series.dropna()
+
+
+    if len(valid_values) == 0:
+
+        return pd.Series(
+            np.nan,
+            index=series.index
+        )
+
+
+    max_value = valid_values.max()
+
 
     if max_value <= 0:
 
         return pd.Series(
-            np.zeros(len(series)),
+            0.0,
             index=series.index
         )
+
 
     normalized = (
         series / max_value
     ) * 100
 
-    return normalized.clip(0, 100)
+
+    return normalized.clip(
+        0,
+        100
+    )
 
 
 # ============================================================
 # RISK LEVEL TO NUMERIC SCORE
-# FALLBACK WHEN SCORE COLUMN IS NOT AVAILABLE
 # ============================================================
 
 def risk_level_to_score(level):
 
     if pd.isna(level):
 
-        return 0
+        return np.nan
+
 
     level = str(level).upper()
+
 
     mapping = {
 
@@ -152,14 +199,25 @@ def risk_level_to_score(level):
 
     }
 
-    return mapping.get(level, 0)
+
+    return mapping.get(
+        level,
+        np.nan
+    )
 
 
 # ============================================================
-# GET RISK LEVEL
+# GET FINAL RISK LEVEL
 # ============================================================
 
-def get_final_risk_level(score):
+def get_final_risk_level(
+    score
+):
+
+    if pd.isna(score):
+
+        return "INSUFFICIENT_DATA"
+
 
     if score >= 75:
 
@@ -182,7 +240,9 @@ def get_final_risk_level(score):
 # GET CONFIDENCE
 # ============================================================
 
-def get_risk_confidence(active_engines):
+def get_risk_confidence(
+    active_engines
+):
 
     if active_engines >= 4:
 
@@ -209,7 +269,9 @@ def get_risk_confidence(active_engines):
 # CONSENSUS BONUS
 # ============================================================
 
-def get_consensus_bonus(active_engines):
+def get_consensus_bonus(
+    active_engines
+):
 
     if active_engines >= 4:
 
@@ -234,43 +296,72 @@ def get_consensus_bonus(active_engines):
 
 def get_primary_risk_source(row):
 
-    scores = {
-
-        "ML Anomaly Engine":
-            row["ml_normalized_score"],
-
-        "Rule-Based Risk Engine":
-            row["rule_normalized_score"],
-
-        "Financial Risk Engine":
-            row["financial_normalized_score"],
-
-        "Statistical Anomaly Engine":
-            row["statistical_normalized_score"]
-
-    }
-
-    max_source = max(
-        scores,
-        key=scores.get
+    active_engines = int(
+        row.get("active_risk_engines", 0)
     )
 
-    max_score = scores[max_source]
+    # --------------------------------------------------------
+    # No engine detected risk
+    # --------------------------------------------------------
 
-    if max_score <= 0:
+    if active_engines == 0:
 
         return "No Significant Risk"
 
-    return max_source
+
+    # --------------------------------------------------------
+    # Multiple independent engines agree
+    # --------------------------------------------------------
+    #
+    # If 2 or more engines independently detect risk,
+    # classify the source as Multi-Engine Consensus.
+    #
+    # This is stronger than simply selecting the engine
+    # with the highest numerical score.
+    #
+
+    if active_engines >= 2:
+
+        return "Multi-Engine Consensus"
+
+
+    # --------------------------------------------------------
+    # Only one engine detected risk
+    # --------------------------------------------------------
+
+    if row.get("ml_detected", 0) == 1:
+
+        return "ML Anomaly Engine"
+
+
+    if row.get("rule_detected", 0) == 1:
+
+        return "Rule-Based Risk Engine"
+
+
+    if row.get("financial_detected", 0) == 1:
+
+        return "Financial Risk Engine"
+
+
+    if row.get("statistical_detected", 0) == 1:
+
+        return "Statistical Anomaly Engine"
+
+
+    return "No Significant Risk"
 
 
 # ============================================================
 # COMBINE RISK FACTORS
 # ============================================================
 
-def combine_risk_factors(row):
+def combine_risk_factors(
+    row
+):
 
     factors = []
+
 
     factor_columns = [
 
@@ -282,35 +373,53 @@ def combine_risk_factors(row):
 
     ]
 
+
     for column in factor_columns:
 
         if column not in row.index:
 
             continue
 
+
         value = row[column]
+
 
         if pd.isna(value):
 
             continue
 
+
         value = str(value)
 
-        if value in ["[]", "", "nan", "None"]:
+
+        if value in [
+            "[]",
+            "",
+            "nan",
+            "None"
+        ]:
 
             continue
 
-        factors.append(value)
 
-    # Remove duplicates while preserving order
+        factors.append(
+            value
+        )
+
+
+    # Remove duplicates while preserving order.
 
     unique_factors = []
+
 
     for factor in factors:
 
         if factor not in unique_factors:
 
-            unique_factors.append(factor)
+            unique_factors.append(
+                factor
+            )
+
 
     return unique_factors
 
@@ -321,11 +430,17 @@ def combine_risk_factors(row):
 
 def build_unified_risk_engine():
 
-    print("\n" + "=" * 60)
+    print(
+        "\n" + "=" * 60
+    )
 
-    print("UNIFIED RISK INTELLIGENCE ENGINE V2")
+    print(
+        "UNIFIED RISK INTELLIGENCE ENGINE V2"
+    )
 
-    print("=" * 60)
+    print(
+        "=" * 60
+    )
 
 
     # ========================================================
@@ -340,12 +455,12 @@ def build_unified_risk_engine():
 
     )
 
+
     if master_df is None:
 
         raise FileNotFoundError(
-
-            f"Master dataset not found: {MASTER_DATASET_PATH}"
-
+            f"Master dataset not found: "
+            f"{MASTER_DATASET_PATH}"
         )
 
 
@@ -356,9 +471,14 @@ def build_unified_risk_engine():
     if "work_id" not in master_df.columns:
 
         raise ValueError(
-
             "Master dataset must contain 'work_id'"
+        )
 
+
+    if not master_df["work_id"].is_unique:
+
+        raise ValueError(
+            "Master dataset contains duplicate work_id values."
         )
 
 
@@ -370,7 +490,7 @@ def build_unified_risk_engine():
 
         [
 
-            "data/processed/ensemble_anomalies.csv",
+            ML_DATASET_PATH,
 
             "data/processed/ensemble_anomaly_analysis.csv",
 
@@ -391,7 +511,7 @@ def build_unified_risk_engine():
 
         [
 
-            "data/processed/rule_based_risk_analysis.csv",
+            RULE_DATASET_PATH,
 
             "data/processed/risk_scored_projects.csv",
 
@@ -412,7 +532,7 @@ def build_unified_risk_engine():
 
         [
 
-            "data/processed/financial_risk_analysis.csv",
+            FINANCIAL_DATASET_PATH,
 
             "data/processed/financial_anomalies.csv"
 
@@ -431,7 +551,7 @@ def build_unified_risk_engine():
 
         [
 
-            "data/processed/statistical_financial_anomaly_analysis.csv",
+            STATISTICAL_DATASET_PATH,
 
             "data/processed/statistical_anomaly_analysis.csv"
 
@@ -449,113 +569,335 @@ def build_unified_risk_engine():
     df = master_df.copy()
 
 
-    print("\n" + "=" * 60)
+    print(
+        "\n" + "=" * 60
+    )
 
-    print("MERGING RISK ENGINES")
+    print(
+        "MERGING RISK ENGINES"
+    )
 
-    print("=" * 60)
+    print(
+        "=" * 60
+    )
 
 
     # ========================================================
     # ML ENGINE
     # ========================================================
 
-    if ml_df is not None and "work_id" in ml_df.columns:
+    if (
+        ml_df is not None
+        and
+        "work_id" in ml_df.columns
+    ):
+
+        print(
+            "\nUsing finalized ML ensemble output"
+        )
 
 
-        ml_score_column = None
+        if not ml_df["work_id"].is_unique:
+
+            raise ValueError(
+                "ML ensemble contains duplicate work_id values."
+            )
 
 
-        possible_ml_scores = [
+        # ----------------------------------------------------
+        # SELECT FINAL ML SCORE
+        # ----------------------------------------------------
 
-            "combined_anomaly_score",
+        if (
+            "ml_final_risk_score_100"
+            in ml_df.columns
+        ):
 
-            "anomaly_score",
+            ml_score_column = (
+                "ml_final_risk_score_100"
+            )
 
-            "if_risk_score",
+        elif (
+            "ml_final_risk_score"
+            in ml_df.columns
+        ):
 
-            "lof_risk_score"
+            ml_score_column = (
+                "ml_final_risk_score"
+            )
+
+        elif (
+            "combined_anomaly_score"
+            in ml_df.columns
+        ):
+
+            ml_score_column = (
+                "combined_anomaly_score"
+            )
+
+        else:
+
+            raise ValueError(
+                "Final ML risk score not found "
+                "in ensemble dataset."
+            )
+
+
+        print(
+            "ML risk score column:",
+            ml_score_column
+        )
+
+
+        # ----------------------------------------------------
+        # SELECT ML COLUMNS
+        # ----------------------------------------------------
+
+        ml_columns = [
+
+            "work_id",
+
+            ml_score_column
 
         ]
 
 
-        for column in possible_ml_scores:
+        if (
+            "ensemble_is_anomaly"
+            in ml_df.columns
+        ):
 
-            if column in ml_df.columns:
-
-                ml_score_column = column
-
-                break
-
-
-        if ml_score_column is not None:
-
-            print(
-
-                f"\nML score column detected: "
-
-                f"{ml_score_column}"
-
+            ml_columns.append(
+                "ensemble_is_anomaly"
             )
 
 
-            ml_merge = ml_df[
+        if (
+            "both_models_anomaly"
+            in ml_df.columns
+        ):
 
-                ["work_id", ml_score_column]
+            ml_columns.append(
+                "both_models_anomaly"
+            )
 
-            ].copy()
+
+        if (
+            "model_agreement"
+            in ml_df.columns
+        ):
+
+            ml_columns.append(
+                "model_agreement"
+            )
 
 
-            ml_merge = ml_merge.rename(
+        if (
+            "primary_ml_source"
+            in ml_df.columns
+        ):
 
-                columns={
+            ml_columns.append(
+                "primary_ml_source"
+            )
 
-                    ml_score_column:
+
+        if (
+            "ensemble_risk_level"
+            in ml_df.columns
+        ):
+
+            ml_columns.append(
+                "ensemble_risk_level"
+            )
+
+
+        ml_merge = ml_df[
+            ml_columns
+        ].copy()
+
+
+        # ----------------------------------------------------
+        # RENAME ML SCORE
+        # ----------------------------------------------------
+
+        ml_merge = ml_merge.rename(
+
+            columns={
+
+                ml_score_column:
+                    "ml_anomaly_score"
+
+            }
+
+        )
+
+
+        # ----------------------------------------------------
+        # CONVERT ML SCORE TO 0-100
+        # ----------------------------------------------------
+
+        if (
+            ml_score_column
+            ==
+            "ml_final_risk_score"
+        ):
+
+            ml_merge[
+                "ml_anomaly_score"
+            ] = (
+
+                pd.to_numeric(
+
+                    ml_merge[
                         "ml_anomaly_score"
+                    ],
 
-                }
+                    errors="coerce"
+
+                )
+
+                * 100
 
             )
 
 
-            df = df.merge(
+        elif (
+            ml_score_column
+            ==
+            "combined_anomaly_score"
+        ):
 
-                ml_merge,
+            ml_merge[
+                "ml_anomaly_score"
+            ] = (
 
-                on="work_id",
+                pd.to_numeric(
 
-                how="left"
+                    ml_merge[
+                        "ml_anomaly_score"
+                    ],
+
+                    errors="coerce"
+
+                )
+
+                * 100
 
             )
 
 
         else:
 
-            print(
+            ml_merge[
+                "ml_anomaly_score"
+            ] = pd.to_numeric(
 
-                "\nWARNING: No ML score column found"
+                ml_merge[
+                    "ml_anomaly_score"
+                ],
+
+                errors="coerce"
 
             )
 
-            df["ml_anomaly_score"] = 0
+
+        # ----------------------------------------------------
+        # MERGE ML
+        # ----------------------------------------------------
+
+        df = df.merge(
+
+            ml_merge,
+
+            on="work_id",
+
+            how="left",
+
+            validate="one_to_one"
+
+        )
+
+
+        # ----------------------------------------------------
+        # ML AVAILABILITY
+        # ----------------------------------------------------
+
+        df["ml_available"] = (
+
+            df["ml_anomaly_score"]
+            .notna()
+            .astype(int)
+
+        )
+
+
+        # ----------------------------------------------------
+        # ACTUAL ML ENSEMBLE FLAG
+        # ----------------------------------------------------
+
+        if (
+            "ensemble_is_anomaly"
+            in df.columns
+        ):
+
+            df["ml_detected"] = (
+
+                pd.to_numeric(
+
+                    df[
+                        "ensemble_is_anomaly"
+                    ],
+
+                    errors="coerce"
+
+                )
+
+                .fillna(0)
+
+                .astype(int)
+
+            )
+
+        else:
+
+            df["ml_detected"] = (
+
+                df["ml_anomaly_score"]
+                .fillna(0)
+                >= 95
+
+            ).astype(int)
 
 
     else:
 
         print(
-
             "\nWARNING: ML dataset unavailable"
-
         )
 
-        df["ml_anomaly_score"] = 0
+        df["ml_anomaly_score"] = np.nan
+
+        df["ml_available"] = 0
+
+        df["ml_detected"] = 0
 
 
     # ========================================================
     # RULE-BASED ENGINE
     # ========================================================
 
-    if rule_df is not None and "work_id" in rule_df.columns:
+    if (
+        rule_df is not None
+        and
+        "work_id" in rule_df.columns
+    ):
+
+        if not rule_df["work_id"].is_unique:
+
+            raise ValueError(
+                "Rule-based dataset contains duplicate work_id values."
+            )
 
 
         rule_score_column = None
@@ -582,11 +924,8 @@ def build_unified_risk_engine():
         if rule_score_column is not None:
 
             print(
-
-                f"\nRule score column detected: "
-
-                f"{rule_score_column}"
-
+                "\nRule score column detected:",
+                rule_score_column
             )
 
 
@@ -599,7 +938,10 @@ def build_unified_risk_engine():
             ]
 
 
-            if "risk_factors" in rule_df.columns:
+            if (
+                "risk_factors"
+                in rule_df.columns
+            ):
 
                 columns_to_keep.append(
                     "risk_factors"
@@ -611,23 +953,27 @@ def build_unified_risk_engine():
             ].copy()
 
 
-            rename_columns = {
+            rule_merge = rule_merge.rename(
 
-                rule_score_column:
-                    "rule_risk_score"
+                columns={
 
-            }
+                    rule_score_column:
+                        "rule_risk_score"
+
+                }
+
+            )
 
 
             df = df.merge(
 
-                rule_merge.rename(
-                    columns=rename_columns
-                ),
+                rule_merge,
 
                 on="work_id",
 
-                how="left"
+                how="left",
+
+                validate="one_to_one"
 
             )
 
@@ -635,23 +981,19 @@ def build_unified_risk_engine():
         else:
 
             print(
-
                 "\nWARNING: No rule-based score column found"
-
             )
 
-            df["rule_risk_score"] = 0
+            df["rule_risk_score"] = np.nan
 
 
     else:
 
         print(
-
             "\nWARNING: Rule-based dataset unavailable"
-
         )
 
-        df["rule_risk_score"] = 0
+        df["rule_risk_score"] = np.nan
 
 
     # ========================================================
@@ -668,6 +1010,14 @@ def build_unified_risk_engine():
 
     ):
 
+        if not financial_df[
+            "work_id"
+        ].is_unique:
+
+            raise ValueError(
+                "Financial dataset contains duplicate work_id values."
+            )
+
 
         financial_columns = [
 
@@ -679,11 +1029,8 @@ def build_unified_risk_engine():
 
 
         if (
-
             "financial_risk_level"
-
             in financial_df.columns
-
         ):
 
             financial_columns.append(
@@ -692,11 +1039,8 @@ def build_unified_risk_engine():
 
 
         if (
-
             "financial_risk_factors"
-
             in financial_df.columns
-
         ):
 
             financial_columns.append(
@@ -715,7 +1059,9 @@ def build_unified_risk_engine():
 
             on="work_id",
 
-            how="left"
+            how="left",
+
+            validate="one_to_one"
 
         )
 
@@ -723,12 +1069,10 @@ def build_unified_risk_engine():
     else:
 
         print(
-
             "\nWARNING: Financial dataset unavailable"
-
         )
 
-        df["financial_risk_score"] = 0
+        df["financial_risk_score"] = np.nan
 
 
     # ========================================================
@@ -745,6 +1089,14 @@ def build_unified_risk_engine():
 
     ):
 
+        if not statistical_df[
+            "work_id"
+        ].is_unique:
+
+            raise ValueError(
+                "Statistical dataset contains duplicate work_id values."
+            )
+
 
         statistical_columns = [
 
@@ -756,11 +1108,8 @@ def build_unified_risk_engine():
 
 
         if (
-
             "statistical_anomaly_level"
-
             in statistical_df.columns
-
         ):
 
             statistical_columns.append(
@@ -769,11 +1118,8 @@ def build_unified_risk_engine():
 
 
         if (
-
             "statistical_anomaly_factors"
-
             in statistical_df.columns
-
         ):
 
             statistical_columns.append(
@@ -792,7 +1138,9 @@ def build_unified_risk_engine():
 
             on="work_id",
 
-            how="left"
+            how="left",
+
+            validate="one_to_one"
 
         )
 
@@ -800,16 +1148,16 @@ def build_unified_risk_engine():
     else:
 
         print(
-
             "\nWARNING: Statistical dataset unavailable"
-
         )
 
-        df["statistical_anomaly_score"] = 0
+        df[
+            "statistical_anomaly_score"
+        ] = np.nan
 
 
     # ========================================================
-    # ENSURE ALL SCORE COLUMNS EXIST
+    # ENSURE SCORE COLUMNS EXIST
     # ========================================================
 
     score_columns = [
@@ -834,59 +1182,84 @@ def build_unified_risk_engine():
 
 
     # ========================================================
-    # REMOVE DUPLICATE WORK IDS
+    # ENGINE AVAILABILITY
     # ========================================================
 
-    df = df.drop_duplicates(
-        subset=["work_id"]
+    df["ml_available"] = (
+        df["ml_anomaly_score"]
+        .notna()
+        .astype(int)
     )
 
+
+    df["rule_available"] = (
+        df["rule_risk_score"]
+        .notna()
+        .astype(int)
+    )
+
+
+    df["financial_available"] = (
+        df["financial_risk_score"]
+        .notna()
+        .astype(int)
+    )
+
+
+    df["statistical_available"] = (
+        df["statistical_anomaly_score"]
+        .notna()
+        .astype(int)
+    )
+
+
+    # ========================================================
+    # NORMALIZE ENGINE SCORES
+    # ========================================================
 
     print(
+        "\n" + "=" * 60
+    )
 
-        f"\nTotal projects after merge: "
+    print(
+        "PREPARING ENGINE RISK SCORES"
+    )
 
-        f"{len(df)}"
-
+    print(
+        "=" * 60
     )
 
 
-    # ========================================================
-    # NORMALIZE SCORES
-    # ========================================================
+    # ML ensemble already produces 0-100.
 
-    print("\n" + "=" * 60)
-
-    print("NORMALIZING RISK SCORES")
-
-    print("=" * 60)
-
-
-    df["ml_normalized_score"] = normalize_score(
+    df["ml_normalized_score"] = (
 
         df["ml_anomaly_score"]
+        .clip(0, 100)
 
     )
 
 
-    df["rule_normalized_score"] = normalize_score(
+    # Other engines are normalized independently.
 
-        df["rule_risk_score"]
-
+    df["rule_normalized_score"] = (
+        normalize_score(
+            df["rule_risk_score"]
+        )
     )
 
 
-    df["financial_normalized_score"] = normalize_score(
-
-        df["financial_risk_score"]
-
+    df["financial_normalized_score"] = (
+        normalize_score(
+            df["financial_risk_score"]
+        )
     )
 
 
-    df["statistical_normalized_score"] = normalize_score(
-
-        df["statistical_anomaly_score"]
-
+    df["statistical_normalized_score"] = (
+        normalize_score(
+            df["statistical_anomaly_score"]
+        )
     )
 
 
@@ -903,22 +1276,28 @@ def build_unified_risk_engine():
     STATISTICAL_WEIGHT = 0.20
 
 
-    print("\nRISK WEIGHTS")
+    print(
+        "\nRISK WEIGHTS"
+    )
+
 
     print(
         f"ML Anomaly Score:         "
         f"{ML_WEIGHT * 100:.0f}%"
     )
 
+
     print(
         f"Rule-Based Risk Score:    "
         f"{RULE_WEIGHT * 100:.0f}%"
     )
 
+
     print(
         f"Financial Risk Score:     "
         f"{FINANCIAL_WEIGHT * 100:.0f}%"
     )
+
 
     print(
         f"Statistical Anomaly:      "
@@ -927,37 +1306,8 @@ def build_unified_risk_engine():
 
 
     # ========================================================
-    # BASE RISK SCORE
-    # ========================================================
-
-    df["base_risk_score"] = (
-
-        df["ml_normalized_score"]
-        * ML_WEIGHT
-
-        +
-
-        df["rule_normalized_score"]
-        * RULE_WEIGHT
-
-        +
-
-        df["financial_normalized_score"]
-        * FINANCIAL_WEIGHT
-
-        +
-
-        df["statistical_normalized_score"]
-        * STATISTICAL_WEIGHT
-
-    )
-
-
-    # ========================================================
     # ENGINE DETECTION FLAGS
     # ========================================================
-
-    ML_THRESHOLD = 30
 
     RULE_THRESHOLD = 25
 
@@ -966,36 +1316,118 @@ def build_unified_risk_engine():
     STATISTICAL_THRESHOLD = 25
 
 
-    df["ml_detected"] = (
+    # --------------------------------------------------------
+    # ML
+    # --------------------------------------------------------
+    #
+    # ML detection comes directly from the finalized
+    # ensemble_is_anomaly flag.
+    #
 
-        df["ml_normalized_score"]
-        >= ML_THRESHOLD
+    if (
+        "ensemble_is_anomaly"
+        in df.columns
+    ):
 
-    ).astype(int)
+        df["ml_detected"] = (
+
+            pd.to_numeric(
+
+                df[
+                    "ensemble_is_anomaly"
+                ],
+
+                errors="coerce"
+
+            )
+
+            .fillna(0)
+
+            .astype(int)
+
+        )
 
 
-    df["rule_detected"] = (
+    # --------------------------------------------------------
+    # RULE
+    # --------------------------------------------------------
 
-        df["rule_normalized_score"]
-        >= RULE_THRESHOLD
+    df["rule_detected"] = np.where(
 
-    ).astype(int)
+        (
+            df["rule_available"] == 1
+        )
+
+        &
+
+        (
+            df[
+                "rule_normalized_score"
+            ]
+            >= RULE_THRESHOLD
+        ),
+
+        1,
+
+        0
+
+    )
 
 
-    df["financial_detected"] = (
+    # --------------------------------------------------------
+    # FINANCIAL
+    # --------------------------------------------------------
 
-        df["financial_normalized_score"]
-        >= FINANCIAL_THRESHOLD
+    df["financial_detected"] = np.where(
 
-    ).astype(int)
+        (
+            df[
+                "financial_available"
+            ] == 1
+        )
+
+        &
+
+        (
+            df[
+                "financial_normalized_score"
+            ]
+            >= FINANCIAL_THRESHOLD
+        ),
+
+        1,
+
+        0
+
+    )
 
 
-    df["statistical_detected"] = (
+    # --------------------------------------------------------
+    # STATISTICAL
+    # --------------------------------------------------------
 
-        df["statistical_normalized_score"]
-        >= STATISTICAL_THRESHOLD
+    df["statistical_detected"] = np.where(
 
-    ).astype(int)
+        (
+            df[
+                "statistical_available"
+            ] == 1
+        )
+
+        &
+
+        (
+            df[
+                "statistical_normalized_score"
+            ]
+            >= STATISTICAL_THRESHOLD
+        ),
+
+        1,
+
+        0
+
+    )
 
 
     # ========================================================
@@ -1022,13 +1454,124 @@ def build_unified_risk_engine():
 
 
     # ========================================================
+    # AVAILABLE ENGINE COUNT
+    # ========================================================
+
+    df["available_risk_engines"] = (
+
+        df["ml_available"]
+
+        +
+
+        df["rule_available"]
+
+        +
+
+        df["financial_available"]
+
+        +
+
+        df["statistical_available"]
+
+    )
+
+
+    # ========================================================
+    # WEIGHTED AVAILABLE RISK
+    # ========================================================
+
+    weighted_score = (
+
+        df[
+            "ml_normalized_score"
+        ].fillna(0)
+        *
+        ML_WEIGHT
+
+        +
+
+        df[
+            "rule_normalized_score"
+        ].fillna(0)
+        *
+        RULE_WEIGHT
+
+        +
+
+        df[
+            "financial_normalized_score"
+        ].fillna(0)
+        *
+        FINANCIAL_WEIGHT
+
+        +
+
+        df[
+            "statistical_normalized_score"
+        ].fillna(0)
+        *
+        STATISTICAL_WEIGHT
+
+    )
+
+
+    available_weight = (
+
+        df["ml_available"]
+        *
+        ML_WEIGHT
+
+        +
+
+        df["rule_available"]
+        *
+        RULE_WEIGHT
+
+        +
+
+        df["financial_available"]
+        *
+        FINANCIAL_WEIGHT
+
+        +
+
+        df["statistical_available"]
+        *
+        STATISTICAL_WEIGHT
+
+    )
+
+
+    # Redistribute weights among engines that
+    # actually have data.
+
+    df["base_risk_score"] = np.where(
+
+        available_weight > 0,
+
+        weighted_score /
+        available_weight,
+
+        np.nan
+
+    )
+
+
+    df["base_risk_score"] = (
+
+        df["base_risk_score"]
+        .clip(0, 100)
+
+    )
+
+
+    # ========================================================
     # CONSENSUS BONUS
     # ========================================================
 
     df["consensus_bonus"] = (
 
         df["active_risk_engines"]
-
         .apply(
             get_consensus_bonus
         )
@@ -1063,7 +1606,9 @@ def build_unified_risk_engine():
 
     df["final_ai_risk_level"] = (
 
-        df["final_ai_risk_score"]
+        df[
+            "final_ai_risk_score"
+        ]
 
         .apply(
             get_final_risk_level
@@ -1123,7 +1668,9 @@ def build_unified_risk_engine():
 
     df["combined_risk_factor_count"] = (
 
-        df["combined_risk_factors"]
+        df[
+            "combined_risk_factors"
+        ]
 
         .apply(len)
 
@@ -1131,7 +1678,7 @@ def build_unified_risk_engine():
 
 
     # ========================================================
-    # ADD ENGINE SUMMARY
+    # ENGINE SUMMARY
     # ========================================================
 
     def get_engine_summary(row):
@@ -1169,10 +1716,15 @@ def build_unified_risk_engine():
 
         if len(engines) == 0:
 
-            return "No risk engine detected significant anomaly"
+            return (
+                "No risk engine detected "
+                "significant anomaly"
+            )
 
 
-        return ", ".join(engines)
+        return ", ".join(
+            engines
+        )
 
 
     df["detecting_engines"] = (
@@ -1189,25 +1741,60 @@ def build_unified_risk_engine():
 
 
     # ========================================================
+    # FINAL DATA QUALITY
+    # ========================================================
+
+    if len(df) != len(master_df):
+
+        raise ValueError(
+
+            "Unified engine changed "
+            "the master row count."
+
+        )
+
+
+    if df["work_id"].nunique() != len(master_df):
+
+        raise ValueError(
+
+            "Duplicate work IDs detected "
+            "in unified risk output."
+
+        )
+
+
+    # ========================================================
     # RESULTS
     # ========================================================
 
-    print("\n" + "=" * 60)
+    print(
+        "\n" + "=" * 60
+    )
 
-    print("FINAL UNIFIED AI RISK ANALYSIS V2 COMPLETE")
+    print(
+        "FINAL UNIFIED AI RISK ANALYSIS V2 COMPLETE"
+    )
 
-    print("=" * 60)
+    print(
+        "=" * 60
+    )
 
 
     # ========================================================
     # FINAL DISTRIBUTION
     # ========================================================
 
-    print("\nFINAL RISK DISTRIBUTION\n")
+    print(
+        "\nFINAL RISK DISTRIBUTION\n"
+    )
+
 
     print(
 
-        df["final_ai_risk_level"]
+        df[
+            "final_ai_risk_level"
+        ]
 
         .value_counts()
 
@@ -1218,11 +1805,16 @@ def build_unified_risk_engine():
     # SCORE STATISTICS
     # ========================================================
 
-    print("\nFINAL AI RISK SCORE STATISTICS\n")
+    print(
+        "\nFINAL AI RISK SCORE STATISTICS\n"
+    )
+
 
     print(
 
-        df["final_ai_risk_score"]
+        df[
+            "final_ai_risk_score"
+        ]
 
         .describe()
 
@@ -1233,11 +1825,16 @@ def build_unified_risk_engine():
     # CONFIDENCE DISTRIBUTION
     # ========================================================
 
-    print("\nRISK DETECTION CONFIDENCE\n")
+    print(
+        "\nRISK DETECTION CONFIDENCE\n"
+    )
+
 
     print(
 
-        df["risk_detection_confidence"]
+        df[
+            "risk_detection_confidence"
+        ]
 
         .value_counts()
 
@@ -1248,11 +1845,38 @@ def build_unified_risk_engine():
     # ACTIVE ENGINE DISTRIBUTION
     # ========================================================
 
-    print("\nMULTI-ENGINE DETECTION DISTRIBUTION\n")
+    print(
+        "\nMULTI-ENGINE DETECTION DISTRIBUTION\n"
+    )
+
 
     print(
 
-        df["active_risk_engines"]
+        df[
+            "active_risk_engines"
+        ]
+
+        .value_counts()
+
+        .sort_index()
+
+    )
+
+
+    # ========================================================
+    # AVAILABLE ENGINE DISTRIBUTION
+    # ========================================================
+
+    print(
+        "\nAVAILABLE ENGINE DISTRIBUTION\n"
+    )
+
+
+    print(
+
+        df[
+            "available_risk_engines"
+        ]
 
         .value_counts()
 
@@ -1265,11 +1889,16 @@ def build_unified_risk_engine():
     # CONSENSUS BONUS DISTRIBUTION
     # ========================================================
 
-    print("\nCONSENSUS BONUS DISTRIBUTION\n")
+    print(
+        "\nCONSENSUS BONUS DISTRIBUTION\n"
+    )
+
 
     print(
 
-        df["consensus_bonus"]
+        df[
+            "consensus_bonus"
+        ]
 
         .value_counts()
 
@@ -1282,11 +1911,16 @@ def build_unified_risk_engine():
     # PRIMARY RISK SOURCE
     # ========================================================
 
-    print("\nPRIMARY RISK SOURCE DISTRIBUTION\n")
+    print(
+        "\nPRIMARY RISK SOURCE DISTRIBUTION\n"
+    )
+
 
     print(
 
-        df["primary_risk_source"]
+        df[
+            "primary_risk_source"
+        ]
 
         .value_counts()
 
@@ -1297,7 +1931,9 @@ def build_unified_risk_engine():
     # TOP RISK PROJECTS
     # ========================================================
 
-    print("\nTOP UNIFIED AI RISK PROJECTS\n")
+    print(
+        "\nTOP UNIFIED AI RISK PROJECTS\n"
+    )
 
 
     display_columns = [
@@ -1313,11 +1949,19 @@ def build_unified_risk_engine():
 
         "ml_anomaly_score",
 
+        "ml_detected",
+
         "rule_risk_score",
+
+        "rule_detected",
 
         "financial_risk_score",
 
+        "financial_detected",
+
         "statistical_anomaly_score",
+
+        "statistical_detected",
 
         "final_ai_risk_score",
 
@@ -1325,11 +1969,15 @@ def build_unified_risk_engine():
 
         "active_risk_engines",
 
+        "available_risk_engines",
+
         "consensus_bonus",
 
         "risk_detection_confidence",
 
-        "primary_risk_source"
+        "primary_risk_source",
+
+        "detecting_engines"
 
     ]
 
@@ -1355,7 +2003,11 @@ def build_unified_risk_engine():
 
         )
 
-        [display_columns]
+        [
+
+            display_columns
+
+        ]
 
         .head(30)
 
@@ -1368,15 +2020,21 @@ def build_unified_risk_engine():
 
     high_risk_projects = df[
 
-        df["final_ai_risk_level"]
+        df[
+            "final_ai_risk_level"
+        ]
 
-        .isin([
+        .isin(
 
-            "HIGH",
+            [
 
-            "CRITICAL"
+                "HIGH",
 
-        ])
+                "CRITICAL"
+
+            ]
+
+        )
 
     ]
 
@@ -1416,9 +2074,82 @@ def build_unified_risk_engine():
     )
 
 
-    print("\nResults saved successfully!")
+    print(
+        "\nResults saved successfully!"
+    )
 
-    print(OUTPUT_PATH)
+    print(
+        OUTPUT_PATH
+    )
+
+
+    # ========================================================
+    # FINAL VALIDATION
+    # ========================================================
+
+    print(
+        "\nFINAL VALIDATION"
+    )
+
+
+    print(
+        "Master projects:",
+        len(master_df)
+    )
+
+
+    print(
+        "Unified projects:",
+        len(df)
+    )
+
+
+    print(
+        "Unique work IDs:",
+        df["work_id"].nunique()
+    )
+
+
+    if len(df) == len(master_df):
+
+        print(
+            "✓ PASS: All master projects preserved"
+        )
+
+    else:
+
+        print(
+            "✗ FAIL: Master projects not preserved"
+        )
+
+
+    if (
+        df["work_id"].nunique()
+        == len(master_df)
+    ):
+
+        print(
+            "✓ PASS: All work IDs are unique"
+        )
+
+    else:
+
+        print(
+            "✗ FAIL: Duplicate work IDs detected"
+        )
+
+
+    print(
+        "\n" + "=" * 60
+    )
+
+    print(
+        "UNIFIED RISK ENGINE COMPLETE"
+    )
+
+    print(
+        "=" * 60
+    )
 
 
     return df
@@ -1430,4 +2161,6 @@ def build_unified_risk_engine():
 
 if __name__ == "__main__":
 
-    unified_df = build_unified_risk_engine()
+    unified_df = (
+        build_unified_risk_engine()
+    )
