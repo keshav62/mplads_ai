@@ -1,0 +1,685 @@
+work_id,final_ai_risk_score,final_ai_risk_level,risk_detection_confidence,primary_risk_source,llm_explanation
+WS/MP459/2025-2026/149089,93.95,CRITICAL,VERY HIGH,ML Anomaly Engine,"**EXECUTIVE SUMMARY**  
+The project was flagged because it exhibits several high‑risk indicators: an unusually large expenditure relative to comparable projects, a very concentrated payment pattern to a single vendor, and a strong signal from the machine‑learning anomaly engine. These factors together raise a critical risk level that warrants detailed verification.
+
+---
+
+**KEY RISK INDICATORS**  
+- Project expenditure among the highest 0.5 % of similar works.  
+- Extremely high number of payment transactions for a single‑vendor contract.  
+- Primary risk source identified by the ML anomaly engine.
+
+---
+
+**WHY THE PROJECT WAS FLAGGED**  
+The AI risk system combined three strands of evidence. First, the financial data show that the total spend (₹10.48 M) is in the top 0.5 % of comparable projects, which is a statistical anomaly. Second, all payments (three in total) were made to one vendor, creating an unusually high concentration of payments per vendor. Third, the machine‑learning engine, which integrates multiple risk signals, assigned a very high confidence score (93.95) and flagged the project as critical. The convergence of these signals triggered the alert.
+
+---
+
+**FINANCIAL OBSERVATIONS**  
+- Recommended and sanctioned amounts are identical (₹12 M), yet actual expenditure is ₹10.48 M, indicating a 12 % cost underrun.  
+- Only one vendor supplied the entire project, and all three payments were directed to that vendor.  
+- The expenditure level places the project in the top 1 % of financial risk, suggesting it is an outlier in terms of cost.
+
+---
+
+**STATISTICAL OBSERVATIONS**  
+- Expenditure percentile: 0.5 % (highest).  
+- Payment count: 3, which is high relative to typical single‑vendor projects of this size.  
+- Payment concentration: 100 % of payments to one vendor.  
+- Multiple independent statistical anomalies were detected, reinforcing the unusual nature of the payment pattern.
+
+---
+
+**ML OBSERVATIONS**  
+- The primary risk source is the ML anomaly engine, which evaluated the combined financial and statistical inputs and produced a critical risk score.  
+- No ensemble risk level or combined anomaly score is available, but the engine’s high confidence indicates a strong deviation from learned normal patterns.
+
+---
+
+**RECOMMENDED INVESTIGATION**  
+1. **Vendor Verification** – Confirm the vendor’s credentials, past performance, and any related parties.  
+2. **Payment Audit** – Review the three payment transactions for compliance with contract terms, approval workflows, and documentation.  
+3. **Benchmarking** – Compare the project’s cost and payment structure against similar “Normal/Others” projects in Tamil Nadu to assess whether the expenditure and payment concentration are justified.  
+4. **Contractual Review** – Examine the contract for clauses that may explain the high number of payments (e.g., milestone payments) and ensure they align with standard practice.  
+5. **Risk Confirmation** – Cross‑check the ML anomaly findings with manual risk assessment to confirm whether the flagged patterns persist.
+
+---
+
+**FINAL ASSESSMENT**  
+The project presents a neutral but noteworthy risk profile: while the total expenditure is within the sanctioned amount, its relative cost and payment concentration are statistically anomalous, and the machine‑learning engine has identified a critical risk signal. A focused audit, as outlined above, will help determine whether these indicators reflect legitimate project requirements or warrant corrective action."
+WS/MP18065/2026-2027/152353,89.72,CRITICAL,VERY HIGH,Financial Risk Engine,"**EXECUTIVE SUMMARY**  
+The AI risk system flagged the construction of the new charitable dispensary in Rohtak as critical due to a combination of high financial activity and unusual payment concentration. The project shows a large number of transactions and a small vendor pool, which together raise potential risk indicators that warrant further scrutiny.
+
+**KEY RISK INDICATORS**  
+- Extremely high number of payment transactions (10 payments).  
+- High payment concentration among a very small number of vendors (2 vendors, 5 payments each).  
+- Project expenditure is unusually high relative to the recommended amount (1,697,302 ₹ spent vs. 2,100,000 ₹ recommended).
+
+**WHY THE PROJECT WAS FLAGGED**  
+The AI system identified a high financial risk score (55/100) and a high statistical anomaly score (50/100). Both engines noted that the total expenditure is statistically high and that the payment pattern is highly concentrated among a few vendors. The convergence of these signals—high spending, many transactions, and limited vendor diversity—constitutes a potential anomaly that requires verification.
+
+**FINANCIAL OBSERVATIONS**  
+- Total expenditure (1,697,302 ₹) is close to the recommended amount (2,100,000 ₹), indicating that the project is spending a large portion of its budget.  
+- Payments are evenly split between only two vendors, each receiving five payments, suggesting a high concentration of funds.  
+- The absence of a recorded sanction amount creates a gap in the financial trail that may need clarification.
+
+**STATISTICAL OBSERVATIONS**  
+- The project’s expenditure is statistically high compared to typical projects in the same category.  
+- The number of payment transactions (10) is unusually high for a project with only two vendors.  
+- The concentration of payments per vendor (5 each) is an outlier relative to standard distribution patterns.
+
+**ML OBSERVATIONS**  
+No machine‑learning anomaly data were available for this project; therefore, no ML‑based signals can be reported.
+
+**RECOMMENDED INVESTIGATION**  
+- Verify the sanction status and confirm that the project has an official approval document.  
+- Obtain detailed payment records for each vendor to confirm the amounts, dates, and purposes of the ten transactions.  
+- Cross‑check the project’s expenditure against similar “Normal/Others” category projects in Haryana to assess whether the spending level is justified.
+
+**FINAL ASSESSMENT**  
+The project exhibits several indicators of potential risk, primarily due to high spending and concentrated vendor payments. While the data do not prove misconduct, they do signal a need for additional verification to ensure compliance with procurement and financial regulations."
+WS/MP18109/2024-2025/150121,88.44,CRITICAL,VERY HIGH,Financial Risk Engine,"**EXECUTIVE SUMMARY**  
+The AI risk system flagged this project as critical because the financial activity shows a very high concentration of payments to a single vendor, coupled with an unusually large number of transactions relative to the project’s total expenditure. These patterns trigger multiple independent financial and statistical risk indicators, resulting in a high overall risk score.
+
+**KEY RISK INDICATORS**  
+- Extremely high number of payment transactions (12) for a single vendor.  
+- Payment concentration: 100 % of payments made to one vendor.  
+- Project expenditure is statistically high compared with similar projects.
+
+**WHY THE PROJECT WAS FLAGGED**  
+The system identified a combination of signals:  
+1. **Financial Risk Engine** flagged the project because the total expenditure (₹999,900) is close to the recommended and sanctioned amount (₹1,000,000) while all 12 payments were made to a single vendor, indicating a high payment concentration.  
+2. **Statistical Anomaly Engine** noted that the number of transactions and the concentration per vendor are higher than typical for projects of this size and category.  
+3. The overlap of these independent indicators across both engines produced a very high confidence score, leading the AI to classify the project as critical.
+
+**FINANCIAL OBSERVATIONS**  
+- The project’s total expenditure is almost equal to the sanctioned amount, leaving a very small margin for error.  
+- All 12 payments were directed to one vendor, suggesting a lack of competitive bidding or diversification of suppliers.  
+- The payment count is unusually high for a single‑vendor arrangement, raising concerns about potential over‑billing or duplicate payments.
+
+**STATISTICAL OBSERVATIONS**  
+- The statistical anomaly score (50) indicates that the payment pattern deviates from the norm for similar projects in Madhya Pradesh.  
+- The high number of transactions and concentration per vendor are statistically significant anomalies, suggesting that the payment distribution is not typical for a “Normal/Others” category project.
+
+**ML OBSERVATIONS**  
+- No machine‑learning anomaly data is available for this project; the ensemble risk level and combined anomaly score are not provided.
+
+**RECOMMENDED INVESTIGATION**  
+- Verify the vendor’s legitimacy and confirm that the work was performed as described in the project description.  
+- Review the payment schedule and invoices to ensure that each of the 12 payments corresponds to distinct, approved milestones or deliverables.  
+- Compare the payment pattern with a database of similar projects to assess whether the concentration and transaction volume are indeed outliers.
+
+**FINAL ASSESSMENT**  
+The project exhibits clear financial and statistical risk indicators that warrant further scrutiny. While the data do not prove wrongdoing, the concentration of payments and high transaction count relative to the project size suggest a potential risk that should be investigated to ensure compliance with procurement and financial management standards."
+WS/MP643/2024-2025/146592,87.22,CRITICAL,VERY HIGH,ML Anomaly Engine,"**EXECUTIVE SUMMARY**  
+The AI risk system flagged this project as *CRITICAL* because it exhibits a combination of financial, statistical, and machine‑learning indicators that suggest a potential anomaly. The high number of payment transactions, concentration of payments per vendor, and expenditure patterns deviate from typical benchmarks for similar projects.
+
+**KEY RISK INDICATORS**  
+- Extremely high number of payment transactions (31) for a single project.  
+- High payment concentration per vendor (average 2.21 payments per vendor).  
+- Project expenditure statistically higher than the recommended amount.
+
+**WHY THE PROJECT WAS FLAGGED**  
+The AI risk engine identified a *machine‑learning anomaly* based on the unusual transaction volume and vendor concentration. These signals were reinforced by *financial risk* factors (expenditure unusually high) and *statistical anomalies* (multiple independent deviations from expected patterns). The convergence of these three risk categories raised the overall AI risk score to 87.22, classified as *CRITICAL*.
+
+**FINANCIAL OBSERVATIONS**  
+- The total expenditure (₹1,104,530) is 73 % of the recommended amount, yet the number of payments (31) is high relative to the project size.  
+- With 14 unique vendors, the average payments per vendor (≈2.2) suggest a concentrated payment pattern that may warrant verification.  
+- The financial risk score of 22 indicates a *MEDIUM* risk level, primarily driven by the high transaction count.
+
+**STATISTICAL OBSERVATIONS**  
+- The statistical anomaly score of 50 (*HIGH*) reflects that the project’s expenditure and transaction volume are statistically higher than typical benchmarks.  
+- The concentration of payments per vendor is unusually high, contributing to the anomaly.  
+- Multiple independent statistical anomalies were detected, reinforcing the need for further scrutiny.
+
+**ML OBSERVATIONS**  
+- The primary risk source is the *ML Anomaly Engine*, which flagged the project due to the combination of high transaction volume and vendor concentration.  
+- No ensemble or combined anomaly score is available, but the engine’s confidence is *VERY HIGH*, indicating a strong signal from the machine‑learning model.
+
+**RECOMMENDED INVESTIGATION**  
+1. **Verify Payment Distribution** – Obtain detailed payment records to confirm the number of transactions per vendor and ensure they align with contractual obligations.  
+2. **Compare with Benchmark Data** – Review similar projects in Madhya Pradesh to establish typical payment counts and expenditure patterns, identifying any deviations.  
+3. **Audit Vendor Contracts** – Examine the terms of contracts with the 14 vendors to confirm that the payment frequency and amounts are justified and compliant with procurement guidelines.
+
+**FINAL ASSESSMENT**  
+The project presents a *CRITICAL* AI risk classification due to converging financial, statistical, and machine‑learning signals. While the expenditure remains below the recommended amount, the unusually high transaction volume and vendor concentration warrant a focused audit to verify compliance and rule out potential irregularities."
+WS/MP18152/2024-2025/141888,84.95,CRITICAL,VERY HIGH,ML Anomaly Engine,"**EXECUTIVE SUMMARY**  
+The AI risk system flagged this community‑center construction project as critical because it shows a combination of unusually high expenditure, a very large number of payment transactions, and a concentrated payment pattern among a small vendor pool. These signals together raise a potential risk indicator that warrants further verification.
+
+**KEY RISK INDICATORS**  
+- Extremely high number of payment transactions (12 payments).  
+- High payment concentration among a small number of vendors (3 vendors, 4 payments each).  
+- Project expenditure is statistically and financially higher than typical for a “Normal/Others” category.
+
+**WHY THE PROJECT WAS FLAGGED**  
+The project was flagged due to a convergence of risk signals:  
+1. **Financial risk** – The expenditure of ₹1,437,441 (≈ 72 % of the sanctioned amount) is unusually high for a project of this size and category, and the number of payments is high relative to the total amount.  
+2. **Statistical anomaly** – The statistical anomaly score (50) indicates that the expenditure and payment pattern deviate significantly from historical norms for similar projects.  
+3. **Machine‑learning anomaly** – The primary risk source is the ML Anomaly Engine, which detected a pattern that does not align with typical project profiles, giving the system a very high confidence in the risk assessment.
+
+**FINANCIAL OBSERVATIONS**  
+- The total expenditure is 1,437,441 ₹, which is 72 % of the sanctioned amount, a level flagged as unusually high.  
+- Payments are evenly distributed across three vendors (four payments each), suggesting a concentrated vendor base.  
+- The high number of transactions relative to the total amount may indicate fragmented payment practices or potential over‑billing.
+
+**STATISTICAL OBSERVATIONS**  
+- The statistical anomaly score of 50 classifies the project as high risk.  
+- The analysis highlights that both the total expenditure and the payment concentration per vendor are statistically higher than the average for comparable projects.  
+- Multiple independent statistical anomalies were detected, reinforcing the need for verification.
+
+**ML OBSERVATIONS**  
+- The ML Anomaly Engine identified a pattern that deviates from learned norms for similar projects, leading to a critical risk level.  
+- No ensemble risk level or combined anomaly score is available, but the engine’s confidence is very high, indicating a strong signal from the machine‑learning model.
+
+**RECOMMENDED INVESTIGATION**  
+- **Verify vendor contracts and payment schedules** to confirm that the number of transactions and vendor concentration are justified by project scope and procurement policy.  
+- **Cross‑check expenditure against project milestones** and cost breakdowns to ensure that the spending aligns with the planned work and timelines.  
+- **Review audit trails and financial controls** for the project to detect any irregularities in invoicing, approvals, or fund disbursements.
+
+**FINAL ASSESSMENT**  
+The project exhibits several potential anomaly indicators across financial, statistical, and machine‑learning analyses. While the data do not prove misconduct, the convergence of high expenditure, concentrated vendor payments, and a critical ML risk score suggests that the project requires a detailed audit to confirm compliance with procurement and financial regulations."
+WS/MP18309/2024-2025/155212,84.54,CRITICAL,VERY HIGH,Statistical Anomaly Engine,"**EXECUTIVE SUMMARY**  
+The AI risk system flagged this water pipeline project as critical due to a combination of unusually high expenditure, a very high concentration of payments to a single vendor, and multiple statistical outliers. The financial risk score is medium, but the statistical anomaly score is critical, indicating that the project deviates markedly from typical patterns for similar works.
+
+**KEY RISK INDICATORS**  
+- Project expenditure in the top 0.5 % of comparable projects.  
+- Extremely high number of payment transactions (3 payments for a single vendor).  
+- Extremely high payment concentration per vendor (100 % of total spend to one vendor).
+
+**WHY THE PROJECT WAS FLAGGED**  
+The AI system identified several risk signals:  
+1. **Statistical Anomaly Engine** flagged the project as having the highest expenditure among the top 0.5 % of projects, which is a strong statistical outlier.  
+2. The payment pattern shows a single vendor receiving all three payments, creating a high concentration risk.  
+3. The combination of a high total expenditure and a very small number of payment transactions is unusual for a project that supplies water infrastructure to 50 villages, suggesting a potential anomaly in the procurement or payment process.
+
+**FINANCIAL OBSERVATIONS**  
+- The recommended and actual expenditure is ₹10,000,000, a figure that places the project in the highest 1 % of expenditures for similar work categories.  
+- Only one vendor is involved, and all payments (3) are directed to that vendor, which is an unusual financial pattern for a multi‑site infrastructure project.  
+- The financial risk score of 20 (medium) reflects the high expenditure but does not capture the concentration of payments.
+
+**STATISTICAL OBSERVATIONS**  
+- The statistical anomaly score of 65 (critical) is driven by the project’s position in the top 0.5 % of expenditures and the extremely high payment concentration.  
+- Multiple independent statistical anomalies were detected, reinforcing the need for verification of the procurement and payment records.
+
+**ML OBSERVATIONS**  
+- No machine‑learning anomaly data is available for this project; the ensemble risk level and combined anomaly score are not provided.
+
+**RECOMMENDED INVESTIGATION**  
+1. **Verify procurement documentation** – confirm that the single vendor was selected through a competitive bidding process and that the contract terms are consistent with standard procurement guidelines.  
+2. **Audit payment records** – examine the three payment transactions for proper authorization, matching of invoices, and compliance with payment schedules.  
+3. **Cross‑check project scope and cost** – compare the cost per village and per kilometer of pipeline with historical data for similar projects to assess whether the expenditure is justified.
+
+**FINAL ASSESSMENT**  
+The project exhibits a critical statistical anomaly due to its exceptionally high expenditure and payment concentration, while the financial risk remains medium. These indicators suggest a potential risk that warrants further verification of procurement and payment processes to ensure compliance and transparency."
+WS/MP18309/2024-2025/155216,84.54,CRITICAL,VERY HIGH,Statistical Anomaly Engine,"**EXECUTIVE SUMMARY**  
+The AI risk system flagged this water pipeline project as critical due to a combination of unusually high expenditure, a very high number of payments, and a single vendor receiving all payments. These signals point to potential financial concentration and statistical irregularities that warrant further scrutiny.
+
+**KEY RISK INDICATORS**  
+- Project expenditure ranks in the top 0.5 % of all projects.  
+- Extremely high number of payment transactions (3 payments for a single project).  
+- All payments concentrated with one vendor (100 % of payments to a single vendor).
+
+**WHY THE PROJECT WAS FLAGGED**  
+The system identified multiple risk signals:  
+1. **Statistical anomaly** – The expenditure is among the highest 0.5 % and the payment pattern shows an unusually high transaction count and concentration.  
+2. **Financial risk** – The project’s cost places it in the top 1 % of expenditures, indicating a medium financial risk level.  
+3. **Machine‑learning anomaly** – No ensemble risk score is available, but the high statistical anomaly score (65) and the concentration of payments suggest a possible risk indicator that the ML engine could flag if data were complete.
+
+**FINANCIAL OBSERVATIONS**  
+- The recommended and actual expenditure is ₹10,000,000, which is among the highest 1 % of projects.  
+- The financial risk score is 20 (medium level), reflecting the high cost but no direct evidence of misappropriation.  
+- Only one vendor supplied all goods and services, which is unusual for a project involving 50 villages.
+
+**STATISTICAL OBSERVATIONS**  
+- Statistical anomaly score of 65 (critical level).  
+- Factors include:  
+  - Expenditure in the top 0.5 % of projects.  
+  - Extremely high number of payment transactions (3).  
+  - Extremely high payment concentration per vendor (100 %).  
+  - Multiple independent statistical anomalies detected.
+
+**ML OBSERVATIONS**  
+- No ensemble risk level or combined anomaly score is available; therefore, machine‑learning signals cannot be assessed at this time.
+
+**RECOMMENDED INVESTIGATION**  
+- Verify the vendor’s credentials, ownership, and relationship to the project to confirm legitimacy.  
+- Review the payment schedule and supporting documentation for each of the three transactions to ensure they align with project milestones and deliverables.  
+- Compare this project’s cost and payment structure with similar water pipeline projects in the region to assess whether the high concentration and transaction count are justified.
+
+**FINAL ASSESSMENT**  
+The project exhibits a critical statistical anomaly and a medium financial risk due to its high cost and payment concentration. While no direct evidence of wrongdoing is present, the flagged indicators suggest that further verification is prudent to ensure compliance with procurement and financial management standards."
+WS/MP391/2025-2026/146422,84.53,CRITICAL,VERY HIGH,ML Anomaly Engine,"**EXECUTIVE SUMMARY**  
+The AI risk system flagged this boxing academy construction project as *CRITICAL* due to a combination of high expenditure concentration, unusually high payment concentration to a single vendor, and a strong machine‑learning anomaly signal. These factors together suggest a potential risk that warrants further verification.
+
+**KEY RISK INDICATORS**  
+- Project expenditure ranks in the highest 1 % of all projects.  
+- Extremely high payment concentration per vendor (all payments to one vendor).  
+- Machine‑learning anomaly engine identified a significant deviation from normal patterns.
+
+**WHY THE PROJECT WAS FLAGGED**  
+The project was flagged because the AI system detected a convergence of risk signals: a very high overall expenditure, a payment pattern that concentrates all funds to a single vendor, and a strong anomaly score from the ML engine. Together, these indicators point to a potential anomaly that could affect project integrity and financial management.
+
+**FINANCIAL OBSERVATIONS**  
+- The recommended and sanctioned amounts are identical (₹10,000,000), yet the total expenditure is slightly lower (₹9,749,010).  
+- Only two payments were made, both to the same vendor, indicating a concentrated payment structure.  
+- The financial risk score of 20 (medium level) reflects the project’s position in the top 1 % of expenditures, which is an unusual financial pattern for a normal/others category.
+
+**STATISTICAL OBSERVATIONS**  
+- The statistical anomaly score of 40 (high level) is driven by two factors: the project’s expenditure is among the highest 0.5 % of all projects, and there is an extremely high payment concentration per vendor.  
+- These statistics suggest that the project’s financial behavior deviates markedly from typical projects in the same category and region.
+
+**ML OBSERVATIONS**  
+- The primary risk source is the ML anomaly engine, which assigned a very high confidence score to the overall risk.  
+- No ensemble risk level or combined anomaly score is available, but the presence of a strong ML signal alone is sufficient to elevate the risk classification to *CRITICAL*.
+
+**RECOMMENDED INVESTIGATION**  
+- Verify the legitimacy and qualifications of the sole vendor, including past performance and compliance records.  
+- Review the payment schedule and contractual terms to confirm that the two payments align with project milestones and deliverables.  
+- Conduct a comparative analysis of similar projects in Tamil Nadu to assess whether the expenditure and payment concentration are indeed outliers.
+
+**FINAL ASSESSMENT**  
+The project exhibits a combination of high expenditure, concentrated vendor payments, and a strong machine‑learning anomaly signal. While the financial risk level is medium, the overall AI risk assessment is critical, indicating that the project requires thorough verification to ensure compliance and mitigate potential risks."
+WS/MP243/2025-2026/141110,83.83,CRITICAL,VERY HIGH,ML Anomaly Engine,"**EXECUTIVE SUMMARY**  
+The AI risk system flagged this skill‑development centre project as critical because it exhibits a high overall risk score driven by a combination of financial, statistical, and machine‑learning anomaly signals. The project’s expenditure is among the top 0.5 % of all projects, and all payments are concentrated with a single vendor, raising potential risk indicators that warrant verification.
+
+**KEY RISK INDICATORS**  
+- Project expenditure in the top 0.5 % of all projects.  
+- Extremely high payment concentration: 100 % of payments to one vendor.  
+- Machine‑learning anomaly engine identified the project as a potential risk.
+
+**WHY THE PROJECT WAS FLAGGED**  
+The AI system integrated signals from three risk domains.  
+1. **Financial risk**: The expenditure is in the highest 1 % of projects, indicating an unusually large outlay.  
+2. **Statistical anomaly**: The project sits in the top 0.5 % for expenditure and shows an extreme concentration of payments to a single vendor, which is statistically uncommon.  
+3. **Machine‑learning anomaly**: The ML anomaly engine, with very high confidence, flagged the project as a critical risk, likely due to the combination of high cost and payment concentration patterns that deviate from typical project profiles.
+
+**FINANCIAL OBSERVATIONS**  
+- The recommended, sanctioned, and total expenditure are all equal at ₹9,522,744, suggesting a tightly controlled budget.  
+- Only one vendor supplied all goods/services, and two payments were made, indicating a high payment concentration that could be a potential risk indicator.  
+- The financial risk score of 20 (medium level) reflects the high expenditure relative to the overall project pool.
+
+**STATISTICAL OBSERVATIONS**  
+- The statistical anomaly score of 40 (high level) is driven by two factors: the project’s expenditure ranking in the top 0.5 % and the extreme payment concentration.  
+- These statistics suggest that the project’s financial profile is atypical compared to the broader dataset of similar projects.
+
+**ML OBSERVATIONS**  
+- The primary risk source is the ML anomaly engine, which assigned a very high confidence to the critical risk level.  
+- No ensemble risk level or combined anomaly score is available, but the ML engine’s assessment alone is sufficient to trigger the critical flag.
+
+**RECOMMENDED INVESTIGATION**  
+- Verify the necessity and justification for the single‑vendor arrangement and the two payment schedule.  
+- Cross‑check the project cost against comparable skill‑development centre projects in West Bengal to confirm whether the expenditure is indeed unusually high.  
+- Review procurement documentation and contract terms to ensure compliance with procurement policies and to rule out any procedural anomalies.
+
+**FINAL ASSESSMENT**  
+The project presents a combination of high expenditure, concentrated payments, and machine‑learning flagged anomalies that collectively elevate its risk profile. While the financial figures are internally consistent, the unusual patterns warrant a focused audit to confirm that all procurement and expenditure practices align with statutory requirements."
+WS/MP18009/2024-2025/154261,83.6,CRITICAL,VERY HIGH,Statistical Anomaly Engine,"**EXECUTIVE SUMMARY:**  
+The project was flagged because its total expenditure is unusually high for a normal community‑hall construction, and all payments were made to a single vendor through an unusually large number of transactions. These patterns triggered a high statistical anomaly score, leading the AI risk system to classify the project as critical.
+
+**KEY RISK INDICATORS:**  
+- Expenditure in the top 0.5 % of similar projects.  
+- Extremely high number of payment transactions (3).  
+- All payments concentrated with one vendor.
+
+**WHY THE PROJECT WAS FLAGGED:**  
+The AI risk system combined several signals:  
+1. **Financial risk** – the project’s cost places it in the top 1 % of expenditures for its category, indicating a medium‑level financial risk.  
+2. **Statistical anomaly** – the expenditure is in the top 0.5 % and the payment pattern (multiple transactions to a single vendor) is statistically unusual, producing a critical anomaly score.  
+3. **Machine‑learning anomaly** – no ensemble or combined anomaly score is available, but the statistical engine alone was sufficient to raise the overall risk level to critical.
+
+**FINANCIAL OBSERVATIONS:**  
+- The recommended and actual expenditure are identical (₹7,963,254), suggesting no budget overruns.  
+- The project is among the highest 1 % of expenditures for normal community‑hall works, which is a medium‑level financial risk indicator.  
+- Only one vendor supplied all goods/services, which is uncommon for projects of this size.
+
+**STATISTICAL OBSERVATIONS:**  
+- Three payment transactions were recorded, which is higher than typical for a single‑vendor project of this type.  
+- All payments were made to the same vendor, creating a high concentration of payments.  
+- Multiple independent statistical anomalies were detected, reinforcing the critical anomaly score.
+
+**ML OBSERVATIONS:**  
+- No ensemble risk level or combined anomaly score is available; therefore, machine‑learning signals are not present in this assessment.
+
+**RECOMMENDED INVESTIGATION:**  
+- Verify the vendor’s credentials, ownership, and past performance on similar projects.  
+- Review each of the three payment records for justification, supporting documentation, and compliance with procurement rules.  
+- Compare the project’s cost and payment structure with other community‑hall projects in Andhra Pradesh to confirm whether the expenditure and payment pattern are truly out of the ordinary.
+
+**FINAL ASSESSMENT:**  
+The project exhibits a statistically critical risk profile due to unusually high expenditure and payment concentration, though the financial risk level remains medium. Further verification of vendor details and payment documentation is advised to confirm compliance and rule out potential irregularities."
+WS/MP18355/2025-2026/158359,80.15,CRITICAL,VERY HIGH,Statistical Anomaly Engine,"**EXECUTIVE SUMMARY**  
+The AI risk system flagged the Yoga Center construction project as critical due to a combination of high expenditure relative to typical projects, an unusually concentrated payment pattern to a single vendor, and multiple statistical outliers. These signals suggest a potential anomaly that warrants further verification.  
+
+**KEY RISK INDICATORS**  
+- Project expenditure in the top 0.5 % of all projects.  
+- Extremely high number of payment transactions (4) for a single vendor.  
+- Multiple independent statistical anomalies detected.  
+
+**WHY THE PROJECT WAS FLAGGED**  
+The AI risk engine identified the project as a statistical anomaly because its total expenditure (₹2,999,973) is among the highest 0.5 % of all projects, and the payment structure shows an unusually high concentration: all four payments were made to one vendor. The combination of a high financial outlier and a concentrated payment pattern triggered the statistical anomaly engine, resulting in a critical risk score of 65 and an overall critical risk level.  
+
+**FINANCIAL OBSERVATIONS**  
+- The recommended amount (₹3,000,000) and actual expenditure (₹2,999,973) are almost identical, indicating a tight budget.  
+- The project is classified as a medium‑level financial risk because it falls within the top 1 % of expenditures, but no sanction amount is available for comparison.  
+- The single vendor received all four payments, which is atypical for projects of this size.  
+
+**STATISTICAL OBSERVATIONS**  
+- The expenditure is in the top 0.5 % of all projects, a strong statistical outlier.  
+- The number of payment transactions (4) is unusually high for a single‑vendor arrangement.  
+- The concentration of payments to one vendor is an extreme statistical anomaly.  
+
+**ML OBSERVATIONS**  
+No machine‑learning anomaly data is available for this project; the ensemble risk level and combined anomaly score are not reported.  
+
+**RECOMMENDED INVESTIGATION**  
+- Verify the legitimacy and qualifications of the sole vendor, including past performance and compliance records.  
+- Review the payment schedule and contractual terms to confirm that the number and amount of transactions align with project milestones.  
+- Compare this project’s financial and payment patterns with similar infrastructure projects in Karnataka to assess whether the observed anomalies are truly out of norm.  
+
+**FINAL ASSESSMENT**  
+The project exhibits several statistical outliers and a concentrated payment pattern that collectively raise a critical risk flag. While the financial risk level is medium, the statistical anomalies warrant a focused audit to confirm that the expenditure and vendor engagement are appropriate and compliant with procurement guidelines."
+WS/MP18248/2024-2025/150128,80.05,CRITICAL,VERY HIGH,Statistical Anomaly Engine,"**EXECUTIVE SUMMARY:**  
+The AI risk system flagged this meeting‑hall construction project as *CRITICAL* mainly because of several statistical outliers in its payment pattern and overall expenditure. While the financial risk score is moderate, the statistical anomaly engine identified multiple red‑flags that warrant a detailed audit.
+
+**KEY RISK INDICATORS:**  
+- Project expenditure ranks in the top 0.5 % of similar projects.  
+- Extremely high number of payment transactions (3 payments for a single vendor).  
+- Extremely high payment concentration per vendor (100 % of payments to one vendor).  
+
+**WHY THE PROJECT WAS FLAGGED:**  
+The primary risk source is the *Statistical Anomaly Engine*, which detected that the project’s total spend is unusually high compared to peers and that all payments were made to a single vendor in a very small number of transactions. These patterns are uncommon for a normal “meeting hall cum training center” project and suggest a potential anomaly that requires verification.
+
+**FINANCIAL OBSERVATIONS:**  
+- Recommended and sanctioned amounts are identical (₹3,000,000), indicating no apparent over‑budgeting at the approval stage.  
+- Actual expenditure (₹2,444,263) is still within the sanctioned amount but is among the highest 1 % for projects of this type, raising a medium‑level financial risk.  
+- Only one vendor supplied all goods/services, which is unusual for a project of this size.
+
+**STATISTICAL OBSERVATIONS:**  
+- The expenditure falls in the top 0.5 % of comparable projects, a strong statistical anomaly.  
+- The payment count (3) is high relative to the number of vendors (1), indicating a concentrated payment pattern.  
+- Multiple independent statistical anomalies were detected, reinforcing the critical risk level.
+
+**ML OBSERVATIONS:**  
+No machine‑learning anomaly data is available for this project; the ensemble risk level is not provided.
+
+**RECOMMENDED INVESTIGATION:**  
+- Verify the vendor’s credentials, contract terms, and delivery schedule against the project timeline.  
+- Cross‑check the three payments against the invoice trail to ensure each payment corresponds to distinct, legitimate work milestones.  
+- Compare the project’s cost structure and payment pattern with similar meeting‑hall projects in West Bengal to confirm whether the high expenditure and concentration are justified.
+
+**FINAL ASSESSMENT:**  
+The project exhibits a statistically significant outlier in expenditure and payment concentration, warranting a focused audit. While the financial risk is moderate, the statistical anomalies elevate the overall risk to a critical level. A thorough verification of vendor activity and payment justification is recommended to confirm compliance with procurement norms."
+WS/MP18277/2025-2026/149810,78.95,CRITICAL,VERY HIGH,ML Anomaly Engine,"EXECUTIVE SUMMARY:  
+The AI risk system flagged this community hall project as **CRITICAL** because it exhibits a combination of high financial and statistical outliers, coupled with a strong machine‑learning anomaly signal. The project’s expenditure is in the top 1 % of all projects, and the statistical anomaly score indicates it is among the highest 0.5 % of expenditures, raising a potential risk indicator that warrants verification.
+
+KEY RISK INDICATORS:  
+- Project expenditure is among the highest 1 % of all projects.  
+- Project expenditure is among the highest 0.5 % of all projects.  
+- Machine‑learning anomaly engine identified a high‑risk pattern.
+
+WHY THE PROJECT WAS FLAGGED:  
+The AI risk score of 78.95 is driven primarily by the ML anomaly engine, which detected a pattern that deviates from typical spending behavior for projects of this type and size. The financial risk score of 20 (medium) and the statistical anomaly score of 25 (medium) both point to unusually high spending relative to comparable projects. Together, these signals suggest a potential anomaly that requires further verification.
+
+FINANCIAL OBSERVATIONS:  
+- The recommended and sanctioned amount is ₹10,000,000, but the total expenditure to date is ₹5,758,516, which is a significant portion of the budget.  
+- Only one payment has been made, and it was processed through a single vendor.  
+- The concentration of spending in a single vendor and a single payment may indicate a potential risk indicator that should be verified against procurement norms.
+
+STATISTICAL OBSERVATIONS:  
+- The project’s expenditure places it in the top 0.5 % of all projects, indicating an unusual financial pattern.  
+- This statistical outlier status aligns with the medium-level statistical anomaly score, reinforcing the need for verification.
+
+ML OBSERVATIONS:  
+- The primary risk source is the ML anomaly engine, which flagged the project as critical.  
+- No ensemble risk level or combined anomaly score is available, but the high ML anomaly score alone is sufficient to trigger a critical flag.
+
+RECOMMENDED INVESTIGATION:  
+- Verify the procurement process for the single vendor: confirm that the vendor is registered, has a valid license, and that the contract terms match standard procurement guidelines.  
+- Review the payment schedule and audit the single payment to ensure it aligns with project milestones and budget allocations.  
+- Compare the project’s cost structure with similar community hall projects in West Bengal to assess whether the expenditure is justified or represents an unusual financial pattern.
+
+FINAL ASSESSMENT:  
+The project exhibits a combination of high financial and statistical outliers, along with a strong machine‑learning anomaly signal, which collectively raise a potential risk indicator. While the financial risk level is medium, the overall AI risk assessment is critical, indicating that verification and further audit are warranted to confirm compliance with standard procurement and budgeting practices."
+WS/MP484/2024-2025/150090,78.78,CRITICAL,VERY HIGH,ML Anomaly Engine,"**EXECUTIVE SUMMARY:**  
+The AI risk system flagged this project as critical because it exhibits a high overall risk score driven primarily by a machine‑learning anomaly detection signal. The project’s expenditure is in the top percentile of similar projects, which contributes to both financial and statistical anomaly indicators.
+
+**KEY RISK INDICATORS:**  
+- Project expenditure is among the highest 1 % of comparable projects.  
+- Project expenditure is among the highest 0.5 % of comparable projects.  
+- Machine‑learning anomaly engine identified a potential risk pattern.
+
+**WHY THE PROJECT WAS FLAGGED:**  
+The AI risk score of 78.78 is classified as critical, with a very high confidence level. The primary source of this score is the ML anomaly engine, which detected a pattern that deviates from typical project profiles. Additionally, the financial risk score (20) and statistical anomaly score (25) are both in the medium range, reflecting that the project’s cost is unusually high relative to its peers. The combination of a high expenditure, medium‑level financial and statistical anomalies, and a strong ML anomaly signal collectively raised the overall risk assessment.
+
+**FINANCIAL OBSERVATIONS:**  
+- The recommended, sanctioned, and total expenditure are all equal at ₹10,000,000, indicating a single‑payment structure.  
+- Only one vendor is involved, with one payment made, which is a simple transaction but the amount is in the top 1 % for similar projects.  
+- The financial risk level is medium, suggesting that while the cost is high, it is not yet flagged as extreme by the financial risk engine alone.
+
+**STATISTICAL OBSERVATIONS:**  
+- The statistical anomaly score of 25 (medium level) reflects that the project’s expenditure ranks in the top 0.5 % among comparable projects.  
+- No other statistical factors were reported, indicating that the anomaly is primarily cost‑based.
+
+**ML OBSERVATIONS:**  
+- The ML anomaly engine is the sole active risk engine contributing to the critical risk level.  
+- No ensemble or combined anomaly scores are available, but the presence of a machine‑learning flag indicates that the model detected a pattern that does not align with typical project profiles.
+
+**RECOMMENDED INVESTIGATION:**  
+- Verify the cost justification and compare it with similar educational building projects in West Bengal to confirm whether the expenditure is proportionate to scope and location.  
+- Review the vendor selection process and contract terms to ensure that the single vendor arrangement is appropriate and competitive.  
+- Examine the payment schedule and any subsequent financial transactions to confirm that the single payment aligns with project milestones and does not conceal additional undisclosed costs.
+
+**FINAL ASSESSMENT:**  
+The project presents a moderate financial and statistical anomaly due to its high expenditure relative to peers, and a machine‑learning anomaly signal that elevates its overall risk to a critical level. While the financial figures are internally consistent, the unusual cost profile warrants a focused audit to confirm compliance with procurement and budgeting standards."
+WS/MP18249/2025-2026/153603,74.78,HIGH,VERY HIGH,ML Anomaly Engine,"**EXECUTIVE SUMMARY**  
+The AI risk system flagged the Bhatpara State General Hospital project as high risk because it shows a combination of unusually high expenditure, extreme payment concentration to a single vendor, and a strong machine‑learning anomaly signal. These indicators suggest that the project may warrant closer scrutiny to ensure compliance with procurement and financial controls.
+
+**KEY RISK INDICATORS**  
+- Project expenditure among the highest 0.5 % of comparable projects.  
+- Extremely high payment concentration: 100 % of payments to one vendor.  
+- Machine‑learning anomaly engine identified the project as a potential risk.
+
+**WHY THE PROJECT WAS FLAGGED**  
+The AI system integrated three layers of evidence. First, the financial risk score (medium) flagged the project for being in the top 1 % of expenditures. Second, the statistical anomaly score (high) highlighted that the project’s spending is in the top 0.5 % and that all payments are concentrated with a single vendor, which is uncommon for projects of this size. Finally, the machine‑learning anomaly engine, which processes patterns across many projects, assigned a high overall risk score of 74.78 with very high confidence, indicating that the combination of these factors deviates from the norm.
+
+**FINANCIAL OBSERVATIONS**  
+- The recommended budget is ₹20 million, yet the project has already spent ₹15 million, a substantial portion of the allocated amount.  
+- Only two payments have been made, both to the same vendor, suggesting a highly concentrated payment schedule.  
+- The absence of a recorded sanction amount raises a potential documentation gap that may affect audit trails.
+
+**STATISTICAL OBSERVATIONS**  
+- The expenditure places the project in the top 0.5 % of all similar projects, which is statistically unusual.  
+- Payment concentration is extreme: 100 % of the total payments are directed to a single vendor, whereas typical projects distribute payments across multiple vendors.  
+- These patterns are flagged as high‑level statistical anomalies requiring verification.
+
+**ML OBSERVATIONS**  
+- The primary risk source is the ML anomaly engine, which has identified this project as a high‑risk anomaly.  
+- Although ensemble and combined anomaly scores are not available, the high overall AI risk score and very high confidence level indicate that the machine‑learning model detected a significant deviation from learned patterns of normal project behavior.
+
+**RECOMMENDED INVESTIGATION**  
+- **Verify Vendor Credentials**: Confirm the vendor’s registration, past performance, and compliance with procurement regulations.  
+- **Audit Payment Records**: Examine the two payments in detail, including invoices, delivery receipts, and approval documentation, to ensure they align with the project scope and budget.  
+- **Compare with Peer Projects**: Benchmark the project’s expenditure and payment structure against similar hospital development projects in West Bengal to assess whether the high spending and concentration are justified.
+
+**FINAL ASSESSMENT**  
+The project exhibits a combination of financial, statistical, and machine‑learning signals that collectively raise a high‑risk flag. While the data do not indicate wrongdoing, the patterns warrant a thorough audit to confirm that all procurement and financial procedures have been properly followed and that the expenditure aligns with the project’s objectives."
+WS/MP18272/2024-2025/136068,74.41,HIGH,VERY HIGH,ML Anomaly Engine,"**EXECUTIVE SUMMARY**  
+The project was flagged because its total expenditure is in the top 0.5 % of similar projects, all payments are concentrated with a single vendor, and the AI risk engine identified a high anomaly score. These signals together indicate a potential risk that requires verification.
+
+**KEY RISK INDICATORS**  
+- Project expenditure among the highest 0.5 % of comparable works.  
+- Extremely high payment concentration: 100 % of payments to one vendor.  
+- High AI risk score (74.41) with very high confidence, driven by the ML anomaly engine.
+
+**WHY THE PROJECT WAS FLAGGED**  
+The AI system combined several risk signals:  
+1. **Financial risk** – the expenditure is in the top 1 % of projects, suggesting an unusually large budget.  
+2. **Statistical anomaly** – the project’s cost ranks in the top 0.5 % and all payments are made to a single vendor, a pattern that deviates from typical distribution across multiple suppliers.  
+3. **Machine‑learning anomaly** – the ML anomaly engine flagged the case as a high‑risk anomaly, reinforcing the statistical findings.  
+These overlapping indicators raise a possible risk that the procurement and payment process may not follow standard practices.
+
+**FINANCIAL OBSERVATIONS**  
+- The recommended, sanctioned, and spent amounts are identical, indicating no cost overruns.  
+- Only one vendor supplied the entire project, with two payments covering the full amount.  
+- The single‑vendor concentration is an unusual financial pattern for a normal/others category project of this size.
+
+**STATISTICAL OBSERVATIONS**  
+- The project’s cost places it in the top 0.5 % of similar projects, a high statistical anomaly.  
+- Payment concentration is extreme: 100 % of payments to one vendor, which is atypical for projects of this scale.
+
+**ML OBSERVATIONS**  
+- The ML anomaly engine produced a high anomaly score (74.41) with very high confidence, indicating that the model detected patterns inconsistent with the training data for similar projects.  
+- No ensemble risk level or combined anomaly score is available, but the primary engine’s signal is sufficient to trigger the flag.
+
+**RECOMMENDED INVESTIGATION**  
+- Verify the vendor’s credentials, past performance, and any prior contracts with the state.  
+- Review the procurement process documents to confirm that competitive bidding or alternative sourcing was considered.  
+- Cross‑check the project cost against comparable hostel construction projects in West Bengal to confirm the cost‑to‑benefit ratio.
+
+**FINAL ASSESSMENT**  
+The project exhibits a high AI risk score driven by statistical and machine‑learning anomalies, coupled with a medium financial risk due to its large expenditure. While the financial data show no overruns, the concentration of payments to a single vendor and the unusually high cost warrant a detailed audit to ensure compliance with procurement norms."
+WS/MP743/2025-2026/142092,72.17,HIGH,VERY HIGH,ML Anomaly Engine,"**EXECUTIVE SUMMARY**  
+The project was flagged because it shows a combination of high statistical anomaly and machine‑learning‑detected risk signals, despite a moderate financial risk score. The concentration of all payments to a single vendor and the unusually large expenditure relative to other projects in the region raise potential anomaly concerns that warrant verification.
+
+**KEY RISK INDICATORS**  
+- Expenditure in the top 0.5 % of all projects.  
+- Extremely high payment concentration: 100 % of payments to one vendor.  
+- Machine‑learning anomaly engine identified the project as a high‑risk case.
+
+**WHY THE PROJECT WAS FLAGGED**  
+The AI risk system flagged the project because:  
+1. **Statistical anomaly** – The expenditure is among the highest 0.5 % of all projects, and all payments are concentrated with a single vendor, which is an unusual pattern.  
+2. **Machine‑learning anomaly** – The ML engine, which analyzes patterns across many projects, identified this case as a high‑risk anomaly, giving the project a high overall risk score.  
+3. **Financial risk** – Although the financial risk score is medium, the fact that the project expenditure is in the top 1 % adds to the overall risk profile.
+
+**FINANCIAL OBSERVATIONS**  
+- The recommended, sanctioned, and total expenditure are all equal at ₹3,993,140, indicating no cost overruns.  
+- Two payments were made to a single vendor, which is a potential anomaly because payment concentration can signal limited competition or vendor favoritism.  
+- The financial risk level is medium, driven mainly by the high expenditure relative to other projects.
+
+**STATISTICAL OBSERVATIONS**  
+- The project’s cost places it in the top 0.5 % of all projects, a statistically significant outlier.  
+- Payment concentration is extremely high: 100 % of payments went to one vendor, which is uncommon in typical procurement patterns.  
+- These factors contribute to a high statistical anomaly score of 40.
+
+**ML OBSERVATIONS**  
+- The primary risk source is the ML anomaly engine, which flagged the project as high risk.  
+- No ensemble or combined anomaly scores are available, but the ML engine’s confidence is very high, indicating a strong signal from the model.
+
+**RECOMMENDED INVESTIGATION**  
+- Verify the vendor’s credentials, ownership structure, and any prior relationships with the contracting authority.  
+- Review the procurement documentation to confirm that the vendor selection followed standard competitive bidding procedures.  
+- Compare the project’s cost and payment schedule with similar community‑hall projects in Tamil Nadu to assess whether the expenditure is justified.
+
+**FINAL ASSESSMENT**  
+The project exhibits a statistically significant outlier in cost and a concentrated payment pattern, which together with a high machine‑learning anomaly score suggest a potential risk indicator. While the financial risk is moderate, the combination of signals warrants a focused verification of procurement and cost justification to ensure compliance with public‑sector procurement norms."
+WS/MP352/2025-2026/135862,71.43,HIGH,VERY HIGH,ML Anomaly Engine,"**EXECUTIVE SUMMARY:**  
+The project received a high AI risk score (71.43) due to a combination of financial, statistical, and machine‑learning signals. Key red flags include the project’s expenditure ranking in the top 1 % and a higher-than‑expected number of payment transactions, which together triggered the ML anomaly engine.
+
+---
+
+**KEY RISK INDICATORS:**  
+- Project expenditure among the highest 1 % of similar projects.  
+- Unusually high number of payment transactions relative to the project size.  
+- ML anomaly engine flagged the project as a potential risk.
+
+---
+
+**WHY THE PROJECT WAS FLAGGED:**  
+The AI risk system integrated several data points. The financial risk score (26/100) highlighted that the total expenditure is in the top 1 % and that the payment count (5) is higher than typical for a project of this size. The statistical anomaly score (33/100) echoed these findings, noting the same two factors. Because the primary risk source is the ML anomaly engine, the system identified a pattern that deviates from the norm for similar “Normal/Others” category projects in Kerala. The high confidence level (VERY HIGH) and the activation of all four risk engines reinforce that the flagged signals are not random noise.
+
+---
+
+**FINANCIAL OBSERVATIONS:**  
+- **Total Expenditure:** ₹2,362,903, which places the project in the top 1 % of expenditures for comparable projects.  
+- **Payment Count:** 5 payments, which is higher than the average for projects of this category.  
+- **Vendor Distribution:** 4 unique vendors with an average of 1.25 payments per vendor, indicating a relatively concentrated payment pattern.  
+These patterns suggest a concentration of funds that may warrant closer scrutiny.
+
+---
+
+**STATISTICAL OBSERVATIONS:**  
+- The statistical anomaly score (33) is driven by the same two factors as the financial risk: high expenditure and high payment count.  
+- No other statistical outliers (e.g., payment amounts, timing) are reported, but the combination of the two factors is enough to raise a moderate anomaly flag.
+
+---
+
+**ML OBSERVATIONS:**  
+- The ML anomaly engine identified the project as a potential risk, contributing to the overall high AI risk score.  
+- Ensemble risk level and combined anomaly score are not available, but the presence of the ML flag indicates that the model detected a pattern inconsistent with the training data for similar projects.
+
+---
+
+**RECOMMENDED INVESTIGATION:**  
+1. **Verify Payment Distribution:** Cross‑check each of the five payments against the approved budget and the project timeline to ensure they align with planned milestones.  
+2. **Vendor Audit:** Review the selection process and contract terms for the four vendors to confirm compliance with procurement guidelines and to rule out any undue concentration of work.  
+3. **Benchmark Comparison:** Compare the project’s expenditure and payment frequency with a sample of similar “Normal/Others” projects in Kerala to quantify how much higher the figures are and to identify any systemic differences.
+
+---
+
+**FINAL ASSESSMENT:**  
+The project exhibits a moderate financial risk and a medium statistical anomaly, both of which are amplified by a high AI risk score driven by the ML anomaly engine. While the data do not indicate wrongdoing, the combination of high expenditure and a higher-than‑expected number of payments warrants a focused audit to confirm that all financial and procurement procedures were followed correctly."
+WS/MP18019/2026-2027/139500,71.35,HIGH,VERY HIGH,ML Anomaly Engine,"**EXECUTIVE SUMMARY**  
+The AI risk system flagged this community‑building project as high risk because the overall expenditure is unusually high compared with similar projects, and the machine‑learning engine identified a strong anomaly signal. The financial and statistical indicators both point to the project being in the top percentile of spending, which warrants further scrutiny.
+
+**KEY RISK INDICATORS**  
+- Project expenditure among the highest 1 % of comparable works.  
+- Project expenditure among the highest 0.5 % of comparable works.  
+- Machine‑learning anomaly engine identified a high‑risk signal (score 71.35).
+
+**WHY THE PROJECT WAS FLAGGED**  
+The combination of a high overall cost (Rs 1.00 Cr) relative to the recommended and sanctioned amounts, coupled with the fact that the expenditure ranks in the top 1 % financially and top 0.5 % statistically, triggered the ML anomaly engine. The engine’s high confidence (very high) and the presence of four active risk engines reinforce the flag, even though the financial and statistical risk scores are only medium.
+
+**FINANCIAL OBSERVATIONS**  
+- The total expenditure (Rs 4,998,740) is almost identical to the recommended and sanctioned amounts, indicating a near‑complete utilization of the budget.  
+- Only two vendors were involved, each receiving a single payment, which is typical for a small‑scale project but still requires verification that the vendor selection process was competitive.  
+- The financial risk score of 20 (medium) reflects the high expenditure relative to peers, suggesting an unusual financial pattern that merits review.
+
+**STATISTICAL OBSERVATIONS**  
+- The statistical anomaly score of 25 (medium) indicates that the project’s cost is in the top 0.5 % of similar projects, a clear statistical outlier.  
+- No other statistical factors were reported, so the anomaly appears driven solely by the high expenditure figure.
+
+**ML OBSERVATIONS**  
+- The primary risk source is the ML anomaly engine, which assigned a high risk score (71.35) with very high confidence.  
+- Ensemble risk level and combined anomaly score are not available, but the high individual engine score alone is sufficient to flag the project.  
+- This suggests that the machine‑learning model detected patterns (e.g., cost distribution, vendor count) that deviate from the norm for projects of this type.
+
+**RECOMMENDED INVESTIGATION**  
+- **Verify vendor selection and contract terms** to ensure that the two vendors were chosen through a competitive process and that their pricing aligns with market rates.  
+- **Compare cost breakdowns** with similar community‑building projects in Assam and neighboring states to confirm that the expenditure is justified.  
+- **Audit payment schedule and documentation** for the two installments to confirm that funds were disbursed appropriately and that no irregularities exist in the payment process.
+
+**FINAL ASSESSMENT**  
+The project exhibits a high AI risk score driven by unusually high expenditure relative to comparable works, as confirmed by both financial and statistical indicators. While the financial and statistical risk levels are medium, the machine‑learning engine’s high confidence warrants a focused audit to verify that the project’s cost and vendor arrangements are legitimate and compliant with procurement norms."
+WS/MP643/2025-2026/146319,71.17,HIGH,VERY HIGH,ML Anomaly Engine,"**EXECUTIVE SUMMARY**  
+The AI risk system flagged this tin shed construction project as high risk because it shows a combination of unusually high payment activity and concentrated vendor involvement. The financial and statistical indicators point to a potential anomaly that warrants further verification.
+
+**KEY RISK INDICATORS**  
+- Extremely high number of payment transactions (18 payments for a single project).  
+- High payment concentration among a small group of vendors (5 vendors, 3.6 payments each).  
+- Machine‑learning anomaly engine identified the pattern as a possible risk indicator.
+
+**WHY THE PROJECT WAS FLAGGED**  
+The project’s payment pattern deviates from typical norms: a relatively modest total expenditure of ₹604,900 is spread across 18 transactions, which is unusually granular for a ₹700,000 project. The concentration of payments among only five vendors, each receiving multiple payments, further amplifies the anomaly. The ML anomaly engine, which analyzes historical transaction data, flagged this combination as a high‑risk signal, leading to the overall high AI risk score.
+
+**FINANCIAL OBSERVATIONS**  
+- The recommended and sanctioned amounts are identical (₹700,000), yet the actual expenditure is lower (₹604,900), suggesting that the remaining balance has not yet been disbursed.  
+- The average payment per vendor (≈₹120,000) is high relative to the total project cost, indicating that each vendor is receiving a significant portion of the budget.  
+- The high number of payments relative to the project size may reflect a fragmented payment schedule that is uncommon for similar “Normal/Others” category works.
+
+**STATISTICAL OBSERVATIONS**  
+- The statistical anomaly score of 30 (medium level) is driven by the same factors that influence the financial risk: a high number of transactions and a high concentration of payments per vendor.  
+- These statistical patterns are unusual when compared to baseline data for projects of similar size and category in Madhya Pradesh.
+
+**ML OBSERVATIONS**  
+- The primary risk source is the ML anomaly engine, which has identified the payment pattern as a potential risk indicator.  
+- No ensemble risk level or combined anomaly score is available, but the engine’s confidence is marked as “Very High,” indicating that the model strongly considers this pattern atypical.
+
+**RECOMMENDED INVESTIGATION**  
+- **Verify Vendor Credentials**: Obtain and review the registration, licensing, and past performance records of the five vendors to confirm legitimacy.  
+- **Examine Payment Schedule**: Cross‑check the 18 payment dates and amounts against the project’s work milestones to ensure each payment aligns with completed deliverables.  
+- **Benchmark Against Similar Projects**: Compare the payment frequency and vendor concentration with other tin shed construction projects in the region to assess whether this pattern is indeed anomalous.
+
+**FINAL ASSESSMENT**  
+The project exhibits a combination of financial and statistical signals that are atypical for its size and category, and the ML anomaly engine has flagged it as a high‑risk indicator. While no direct evidence of wrongdoing is present, the patterns warrant a focused audit to confirm that all payments are justified, authorized, and aligned with project milestones."

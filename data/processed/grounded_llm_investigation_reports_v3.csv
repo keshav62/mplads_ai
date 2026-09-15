@@ -1,0 +1,3256 @@
+﻿work_id,final_ai_risk_score,final_ai_risk_level,risk_detection_confidence,active_risk_engines,state,constituency,work_category,work_status,recommended_amount,sanction_amount,total_expenditure,payment_count,unique_vendors,payments_per_vendor,grounded_evidence,grounded_llm_report
+WS/MP459/2025-2026/149089,93.95,CRITICAL,VERY HIGH,4,Tamil Nadu,CHENNAI SOUTH,Normal/Others,Work Completed,12000000.0,12000000.0,10478968.0,3.0,1.0,3.0,"{
+  ""PROJECT_INFORMATION"": {
+    ""work_id"": ""WS/MP459/2025-2026/149089"",
+    ""state"": ""Tamil Nadu"",
+    ""ida"": ""CHENNAI(COMMISSIONER MUNCIPAL CORPORATION CHENNAI_IDA)"",
+    ""member_of_parliament"": ""T Sumathy (A) Thamizhachi Thangapandian"",
+    ""constituency"": ""CHENNAI SOUTH"",
+    ""work_category"": ""Normal/Others"",
+    ""work_description"": ""Construction of First Floor in UPHC, Radhakrishnan Salai. Zone - 10, Ward - 133"",
+    ""work_status"": ""Work Completed"",
+    ""financial_year"": ""2025-2026""
+  },
+  ""FINANCIAL_INFORMATION"": {
+    ""recommended_amount"": ""₹12,000,000.00"",
+    ""sanction_amount"": ""₹12,000,000.00"",
+    ""total_expenditure"": ""₹10,478,968.00"",
+    ""completed_amount_disbursed"": ""Not available"",
+    ""sanction_difference"": ""₹0.00"",
+    ""expenditure_difference"": ""₹-1,521,032.00"",
+    ""expenditure_ratio"": 0.8732,
+    ""sanction_ratio"": 1.0
+  },
+  ""PAYMENT_INFORMATION"": {
+    ""payment_count"": 3.0,
+    ""unique_vendors"": 1.0,
+    ""payments_per_vendor"": 3.0
+  },
+  ""UNIFIED_AI_RISK_ENGINE"": {
+    ""final_ai_risk_score"": 93.95,
+    ""final_ai_risk_level"": ""CRITICAL"",
+    ""risk_detection_confidence"": ""VERY HIGH"",
+    ""active_risk_engines"": 4,
+    ""primary_risk_source"": ""ML Anomaly Engine"",
+    ""consensus_bonus"": 20,
+    ""final_ai_risk_factors"": []
+  },
+  ""MACHINE_LEARNING_ENGINE"": {
+    ""combined_anomaly_score"": ""Not available"",
+    ""ensemble_risk_level"": ""Not available"",
+    ""ml_normalized_score"": 100.0
+  },
+  ""RULE_BASED_RISK_ENGINE"": {
+    ""rule_risk_score"": 20.0,
+    ""rule_risk_level"": ""Not available"",
+    ""risk_factors"": [
+      ""Very high combined anomaly score detected.""
+    ],
+    ""recommended_actions"": []
+  },
+  ""FINANCIAL_RISK_ENGINE"": {
+    ""financial_risk_score"": 20,
+    ""financial_risk_level"": ""MEDIUM"",
+    ""financial_risk_factors"": [
+      ""Project expenditure is among the highest 1%""
+    ]
+  },
+  ""STATISTICAL_ANOMALY_ENGINE"": {
+    ""statistical_anomaly_score"": 65,
+    ""statistical_anomaly_level"": ""CRITICAL"",
+    ""statistical_anomaly_factors"": [
+      ""Project expenditure is among the highest 0.5%"",
+      ""Extremely high number of payment transactions"",
+      ""Extremely high payment concentration per vendor"",
+      ""Multiple independent statistical anomalies detected""
+    ]
+  },
+  ""INVESTIGATION_ENGINE"": {
+    ""investigation_priority"": ""Not available"",
+    ""investigation_summary"": ""Not available"",
+    ""key_risk_indicators"": [],
+    ""recommended_actions"": [
+      ""Compare this project with similar projects in the same category and region."",
+      ""Prioritize this project for immediate investigation."",
+      ""Initiate immediate financial and administrative investigation."",
+      ""Verify all payments, vendors, approvals, and expenditure records.""
+    ],
+    ""risk_factors"": [
+      ""Very high combined anomaly score detected.""
+    ]
+  }
+}","# EXECUTIVE SUMMARY  
+The project **WS/MP459/2025-2026/149089** has been classified as **CRITICAL** by the Unified AI Risk Engine, with a final risk score of **93.95** and a **VERY HIGH** detection confidence. Multiple independent risk engines—ML anomaly, rule‑based, financial, and statistical anomaly—have all identified significant deviations from expected norms. These converging signals warrant immediate investigative attention to verify the underlying data and ensure compliance with statutory requirements.
+
+# PROJECT OVERVIEW  
+
+- **Work ID:** WS/MP459/2025-2026/149089  
+- **State:** Tamil Nadu  
+- **Constituency:** CHENNAI SOUTH  
+- **Work category:** Normal/Others  
+- **Work description:** Construction of First Floor in UPHC, Radhakrishnan Salai. Zone - 10, Ward - 133  
+- **Work status:** Work Completed  
+- **Financial year:** 2025-2026  
+
+# RISK CLASSIFICATION  
+
+- **Final AI risk level:** CRITICAL  
+- **Final AI risk score:** 93.95  
+- **Detection confidence:** VERY HIGH  
+- **Number of active risk engines:** 4  
+- **Primary risk source:** ML Anomaly Engine  
+- **Consensus information:** Consensus bonus of 20 (no consensus level reported)  
+
+# KEY VERIFIED RISK INDICATORS  
+
+| Engine | Key Indicator(s) |
+|--------|------------------|
+| **Unified AI Risk Engine** | Final AI risk score 93.95, level CRITICAL, detection confidence VERY HIGH, 4 active engines, primary source ML Anomaly Engine, consensus bonus 20 |
+| **Machine Learning Engine** | ML normalized score 100.0 |
+| **Rule‑Based Engine** | Rule risk score 20.0; risk factor: “Very high combined anomaly score detected.” |
+| **Financial Risk Engine** | Financial risk score 20, level MEDIUM; factor: “Project expenditure is among the highest 1 %.” |
+| **Statistical Anomaly Engine** | Statistical anomaly score 65, level CRITICAL; factors: “Project expenditure is among the highest 0.5 %,” “Extremely high number of payment transactions,” “Extremely high payment concentration per vendor,” “Multiple independent statistical anomalies detected.” |
+
+# FINANCIAL OBSERVATIONS  
+
+- **Recommended amount:** ₹12,000,000.00  
+- **Sanction amount:** ₹12,000,000.00  
+- **Total expenditure:** ₹10,478,968.00  
+- **Completed amount disbursed:** *Not available in the provided evidence.*  
+- **Sanction difference:** ₹0.00  
+- **Expenditure difference:** ₹-1,521,032.00 (expenditure below sanction)  
+- **Expenditure ratio:** 0.8732 (87.32 % of sanctioned amount)  
+- **Sanction ratio:** 1.0  
+
+The expenditure is lower than the sanctioned amount by approximately ₹1.52 million, yielding an expenditure ratio of 87.32 %. No inference of wrongdoing is made; the figures simply reflect the current financial status.
+
+# PAYMENT OBSERVATIONS  
+
+- **Payment count:** 3  
+- **Unique vendors:** 1  
+- **Payments per vendor:** 3  
+
+The evidence from the Statistical Anomaly Engine indicates an “Extremely high number of payment transactions” and “Extremely high payment concentration per vendor.” These observations align with the payment pattern shown here, suggesting an unusual concentration of payments to a single vendor.
+
+# STATISTICAL ANOMALY OBSERVATIONS  
+
+- **Statistical anomaly score:** 65  
+- **Statistical anomaly level:** CRITICAL  
+- **Verified statistical anomaly factors:**  
+  1. Project expenditure is among the highest 0.5 %  
+  2. Extremely high number of payment transactions  
+  3. Extremely high payment concentration per vendor  
+  4. Multiple independent statistical anomalies detected  
+
+# MACHINE LEARNING OBSERVATIONS  
+
+- **Ensemble risk level:** *Not available in the provided evidence.*  
+- **Combined anomaly score:** *Not available in the provided evidence.*  
+- **ML normalized score:** 100.0  
+
+# WHY THIS PROJECT WAS FLAGGED  
+
+The Unified AI Risk Engine aggregated inputs from four active engines. The ML Anomaly Engine produced a very high normalized score (100.0), which, combined with the rule‑based engine’s anomaly flag and the statistical anomaly engine’s critical score, elevated the overall risk to CRITICAL. The financial risk engine’s identification of the project’s expenditure as among the top 1 "
+WS/MP18065/2026-2027/152353,89.72,CRITICAL,VERY HIGH,4,Haryana,ROHTAK,Normal/Others,Not available,2100000.0,Not available,1697302.0,10.0,2.0,5.0,"{
+  ""PROJECT_INFORMATION"": {
+    ""work_id"": ""WS/MP18065/2026-2027/152353"",
+    ""state"": ""Haryana"",
+    ""ida"": ""ROHTAK(DEPUTY COMMISSIONER ROHTAK_IDA)"",
+    ""member_of_parliament"": ""DEEPENDER SINGH HOODA"",
+    ""constituency"": ""ROHTAK"",
+    ""work_category"": ""Normal/Others"",
+    ""work_description"": ""Const. of New Charitable Dispensary at Baba Balak Puri Charitable Trust Rohtak"",
+    ""work_status"": ""Not available"",
+    ""financial_year"": ""2026-2027""
+  },
+  ""FINANCIAL_INFORMATION"": {
+    ""recommended_amount"": ""₹2,100,000.00"",
+    ""sanction_amount"": ""Not available"",
+    ""total_expenditure"": ""₹1,697,302.00"",
+    ""completed_amount_disbursed"": ""Not available"",
+    ""sanction_difference"": ""Not available"",
+    ""expenditure_difference"": ""Not available"",
+    ""expenditure_ratio"": ""Not available"",
+    ""sanction_ratio"": ""Not available""
+  },
+  ""PAYMENT_INFORMATION"": {
+    ""payment_count"": 10.0,
+    ""unique_vendors"": 2.0,
+    ""payments_per_vendor"": 5.0
+  },
+  ""UNIFIED_AI_RISK_ENGINE"": {
+    ""final_ai_risk_score"": 89.72,
+    ""final_ai_risk_level"": ""CRITICAL"",
+    ""risk_detection_confidence"": ""VERY HIGH"",
+    ""active_risk_engines"": 4,
+    ""primary_risk_source"": ""Financial Risk Engine"",
+    ""consensus_bonus"": 20,
+    ""final_ai_risk_factors"": []
+  },
+  ""MACHINE_LEARNING_ENGINE"": {
+    ""combined_anomaly_score"": ""Not available"",
+    ""ensemble_risk_level"": ""Not available"",
+    ""ml_normalized_score"": 86.7061
+  },
+  ""RULE_BASED_RISK_ENGINE"": {
+    ""rule_risk_score"": 10.0,
+    ""rule_risk_level"": ""Not available"",
+    ""risk_factors"": [
+      ""Moderately unusual anomaly pattern detected.""
+    ],
+    ""recommended_actions"": []
+  },
+  ""FINANCIAL_RISK_ENGINE"": {
+    ""financial_risk_score"": 55,
+    ""financial_risk_level"": ""HIGH"",
+    ""financial_risk_factors"": [
+      ""Project expenditure is unusually high"",
+      ""Extremely high number of payment transactions"",
+      ""High payment concentration among vendors"",
+      ""Large number of payments concentrated among very few vendors"",
+      ""Multiple independent financial risk indicators detected""
+    ]
+  },
+  ""STATISTICAL_ANOMALY_ENGINE"": {
+    ""statistical_anomaly_score"": 50,
+    ""statistical_anomaly_level"": ""HIGH"",
+    ""statistical_anomaly_factors"": [
+      ""Project expenditure is statistically high"",
+      ""Extremely high number of payment transactions"",
+      ""Extremely high payment concentration per vendor"",
+      ""Multiple independent statistical anomalies detected""
+    ]
+  },
+  ""INVESTIGATION_ENGINE"": {
+    ""investigation_priority"": ""Not available"",
+    ""investigation_summary"": ""Not available"",
+    ""key_risk_indicators"": [],
+    ""recommended_actions"": [
+      ""Perform detailed financial verification of expenditure and payment records."",
+      ""Compare this project with similar projects in the same category and region."",
+      ""Prioritize this project for immediate investigation."",
+      ""Initiate immediate financial and administrative investigation."",
+      ""Verify all payments, vendors, approvals, and expenditure records.""
+    ],
+    ""risk_factors"": [
+      ""Moderately unusual anomaly pattern detected.""
+    ]
+  }
+}","# EXECUTIVE SUMMARY  
+The Unified AI Risk Engine classified the project **WS/MP18065/2026-2027/152353** as **CRITICAL** with a risk score of **89.72** and a **VERY HIGH** detection confidence. The high score is driven primarily by the **Financial Risk Engine**, which identified multiple financial red‑flags, and is corroborated by the Statistical Anomaly Engine and Rule‑Based Engine. The project therefore warrants immediate investigative attention to verify the underlying financial and administrative records.
+
+# PROJECT OVERVIEW  
+
+- **Work ID:** WS/MP18065/2026-2027/152353  
+- **State:** Haryana  
+- **Constituency:** Rohtak  
+- **Work category:** Normal/Others  
+- **Work description:** Construction of New Charitable Dispensary at Baba Balak Puri Charitable Trust Rohtak  
+- **Work status:** Not available in the provided evidence  
+- **Financial year:** 2026‑2027  
+
+# RISK CLASSIFICATION  
+
+- **Final AI risk level:** CRITICAL  
+- **Final AI risk score:** 89.72  
+- **Detection confidence:** VERY HIGH  
+- **Number of active risk engines:** 4  
+- **Primary risk source:** Financial Risk Engine  
+- **Consensus bonus:** 20 (no detailed risk factors listed)  
+
+# KEY VERIFIED RISK INDICATORS  
+
+| Engine | Key Indicator(s) | Evidence |
+|--------|------------------|----------|
+| Unified AI Risk Engine | CRITICAL risk level, score 89.72, VERY HIGH confidence, 4 active engines, primary source Financial Risk Engine, consensus bonus 20 | Provided |
+| Machine Learning Engine | ML‑normalized score 86.7061 | Provided |
+| Rule‑Based Engine | Rule risk score 10.0, “Moderately unusual anomaly pattern detected.” | Provided |
+| Financial Risk Engine | Financial risk score 55 (HIGH), factors: <br>• Project expenditure unusually high <br>• Extremely high number of payment transactions <br>• High payment concentration among vendors <br>• Large number of payments concentrated among very few vendors <br>• Multiple independent financial risk indicators detected | Provided |
+| Statistical Anomaly Engine | Statistical anomaly score 50 (HIGH), factors: <br>• Project expenditure statistically high <br>• Extremely high number of payment transactions <br>• Extremely high payment concentration per vendor <br>• Multiple independent statistical anomalies detected | Provided |
+
+# FINANCIAL OBSERVATIONS  
+
+- **Recommended amount:** ₹2,100,000.00  
+- **Sanction amount:** Not available in the provided evidence.  
+- **Total expenditure:** ₹1,697,302.00  
+- **Expenditure differences:** Not available in the provided evidence.  
+- **Relevant ratios (expenditure/sanction, etc.):** Not available in the provided evidence.  
+
+The available data show that the total expenditure is below the recommended amount, but the absence of sanction and ratio information limits a full financial assessment.
+
+# PAYMENT OBSERVATIONS  
+
+- **Payment count:** 10  
+- **Unique vendors:** 2  
+- **Payments per vendor:** 5  
+
+Risk‑engine evidence (Financial Risk Engine and Statistical Anomaly Engine) flagged an **extremely high number of payment transactions** and **high payment concentration among vendors**. The observed payment pattern aligns with these flagged indicators, suggesting an unusual concentration of payments.
+
+# STATISTICAL ANOMALY OBSERVATIONS  
+
+- **Statistical anomaly score:** 50  
+- **Statistical anomaly level:** HIGH  
+- **Verified statistical anomaly factors:**  
+  1. Project expenditure statistically high  
+  2. Extremely high number of payment transactions  
+  3. Extremely high payment concentration per vendor  
+  4. Multiple independent statistical anomalies detected  
+
+# MACHINE LEARNING OBSERVATIONS  
+
+- **Ensemble risk level:** Not available in the provided evidence.  
+- **Combined anomaly score:** Not available in the provided evidence.  
+- **ML‑normalized score:** 86.7061  
+
+The ML‑normalized score indicates a high likelihood of anomalous behavior, consistent with other engine outputs.
+
+# WHY THIS PROJECT WAS FLAGGED  
+
+The project was flagged because the **Financial Risk Engine** identified several high‑severity financial red‑flags (expenditure,"
+WS/MP18109/2024-2025/150121,88.44,CRITICAL,VERY HIGH,4,Madhya Pradesh,SIDHI,Normal/Others,Vendor Identification,1000000.0,1000000.0,999900.0,12.0,1.0,12.0,"{
+  ""PROJECT_INFORMATION"": {
+    ""work_id"": ""WS/MP18109/2024-2025/150121"",
+    ""state"": ""Madhya Pradesh"",
+    ""ida"": ""SIDHI(DISTRICT COLLECTOR SIDHI_IDA)"",
+    ""member_of_parliament"": ""DR. RAJESH MISHRA"",
+    ""constituency"": ""SIDHI"",
+    ""work_category"": ""Normal/Others"",
+    ""work_description"": ""GRAM PANCHAYAT KUSHIYARI ME NH39 SE EGS SHALA LAKHIYA TOLA KHUSHIYARI TAK WBM SADAK NIRMAN"",
+    ""work_status"": ""Vendor Identification"",
+    ""financial_year"": ""2024-2025""
+  },
+  ""FINANCIAL_INFORMATION"": {
+    ""recommended_amount"": ""₹1,000,000.00"",
+    ""sanction_amount"": ""₹1,000,000.00"",
+    ""total_expenditure"": ""₹999,900.00"",
+    ""completed_amount_disbursed"": ""Not available"",
+    ""sanction_difference"": ""₹0.00"",
+    ""expenditure_difference"": ""₹-100.00"",
+    ""expenditure_ratio"": 0.9999,
+    ""sanction_ratio"": 1.0
+  },
+  ""PAYMENT_INFORMATION"": {
+    ""payment_count"": 12.0,
+    ""unique_vendors"": 1.0,
+    ""payments_per_vendor"": 12.0
+  },
+  ""UNIFIED_AI_RISK_ENGINE"": {
+    ""final_ai_risk_score"": 88.44,
+    ""final_ai_risk_level"": ""CRITICAL"",
+    ""risk_detection_confidence"": ""VERY HIGH"",
+    ""active_risk_engines"": 4,
+    ""primary_risk_source"": ""Financial Risk Engine"",
+    ""consensus_bonus"": 20,
+    ""final_ai_risk_factors"": []
+  },
+  ""MACHINE_LEARNING_ENGINE"": {
+    ""combined_anomaly_score"": ""Not available"",
+    ""ensemble_risk_level"": ""Not available"",
+    ""ml_normalized_score"": 76.5989
+  },
+  ""RULE_BASED_RISK_ENGINE"": {
+    ""rule_risk_score"": 10.0,
+    ""rule_risk_level"": ""Not available"",
+    ""risk_factors"": [
+      ""Moderately unusual anomaly pattern detected.""
+    ],
+    ""recommended_actions"": []
+  },
+  ""FINANCIAL_RISK_ENGINE"": {
+    ""financial_risk_score"": 62,
+    ""financial_risk_level"": ""CRITICAL"",
+    ""financial_risk_factors"": [
+      ""Project expenditure is unusually high"",
+      ""Extremely high number of payment transactions"",
+      ""Extremely high payment concentration among vendors"",
+      ""Large number of payments concentrated among very few vendors"",
+      ""Multiple independent financial risk indicators detected""
+    ]
+  },
+  ""STATISTICAL_ANOMALY_ENGINE"": {
+    ""statistical_anomaly_score"": 50,
+    ""statistical_anomaly_level"": ""HIGH"",
+    ""statistical_anomaly_factors"": [
+      ""Project expenditure is statistically high"",
+      ""Extremely high number of payment transactions"",
+      ""Extremely high payment concentration per vendor"",
+      ""Multiple independent statistical anomalies detected""
+    ]
+  },
+  ""INVESTIGATION_ENGINE"": {
+    ""investigation_priority"": ""Not available"",
+    ""investigation_summary"": ""Not available"",
+    ""key_risk_indicators"": [],
+    ""recommended_actions"": [
+      ""Perform detailed financial verification of expenditure and payment records."",
+      ""Compare this project with similar projects in the same category and region."",
+      ""Prioritize this project for immediate investigation."",
+      ""Initiate immediate financial and administrative investigation."",
+      ""Verify all payments, vendors, approvals, and expenditure records.""
+    ],
+    ""risk_factors"": [
+      ""Moderately unusual anomaly pattern detected.""
+    ]
+  }
+}","# EXECUTIVE SUMMARY  
+The Unified AI Risk Engine classifies the project as **CRITICAL** with a risk score of **88.44** and a **VERY HIGH** detection confidence. This classification is driven primarily by the **Financial Risk Engine** and corroborated by the **Statistical Anomaly Engine** and **Rule‑Based Engine**. The evidence indicates unusually high expenditure, a very high number of payment transactions, and extreme vendor concentration—all of which warrant immediate investigative attention.
+
+# PROJECT OVERVIEW  
+
+- **Work ID:** WS/MP18109/2024-2025/150121  
+- **State:** Madhya Pradesh  
+- **Constituency:** SIDHI  
+- **Work Category:** Normal/Others  
+- **Work Description:** GRAM PANCHAYAT KUSHIYARI ME NH39 SE EGS SHALA LAKHIYA TOLA KHUSHIYARI TAK WBM SADAK NIRMAN  
+- **Work Status:** Vendor Identification  
+- **Financial Year:** 2024‑2025  
+
+# RISK CLASSIFICATION  
+
+- **Final AI risk level:** CRITICAL  
+- **Final AI risk score:** 88.44  
+- **Detection confidence:** VERY HIGH  
+- **Number of active risk engines:** 4  
+- **Primary risk source:** Financial Risk Engine  
+- **Consensus bonus:** 20  
+
+# KEY VERIFIED RISK INDICATORS  
+
+| Engine | Indicator | Value |
+|--------|-----------|-------|
+| Unified AI Risk Engine | Final AI risk score | 88.44 |
+| Unified AI Risk Engine | Final AI risk level | CRITICAL |
+| Unified AI Risk Engine | Detection confidence | VERY HIGH |
+| Unified AI Risk Engine | Active risk engines | 4 |
+| Unified AI Risk Engine | Primary risk source | Financial Risk Engine |
+| Machine Learning Engine | ML normalized score | 76.5989 |
+| Rule‑Based Engine | Rule risk score | 10.0 |
+| Rule‑Based Engine | Risk factors | Moderately unusual anomaly pattern detected. |
+| Financial Risk Engine | Financial risk score | 62 |
+| Financial Risk Engine | Financial risk level | CRITICAL |
+| Financial Risk Engine | Financial risk factors | Project expenditure is unusually high; Extremely high number of payment transactions; Extremely high payment concentration among vendors; Large number of payments concentrated among very few vendors; Multiple independent financial risk indicators detected |
+| Statistical Anomaly Engine | Statistical anomaly score | 50 |
+| Statistical Anomaly Engine | Statistical anomaly level | HIGH |
+| Statistical Anomaly Engine | Statistical anomaly factors | Project expenditure is statistically high; Extremely high number of payment transactions; Extremely high payment concentration per vendor; Multiple independent statistical anomalies detected |
+
+# FINANCIAL OBSERVATIONS  
+
+- **Recommended amount:** ₹1,000,000.00  
+- **Sanction amount:** ₹1,000,000.00  
+- **Total expenditure:** ₹999,900.00  
+- **Expenditure difference:** ₹-100.00 (expenditure is ₹100 less than recommended/sanction)  
+- **Expenditure ratio:** 0.9999 (≈ 99.99 % of recommended amount)  
+- **Sanction ratio:** 1.0 (100 % of sanctioned amount)  
+
+The expenditure is slightly below the sanctioned amount, with a ratio close to 1, indicating near‑complete utilization of the allocated funds.
+
+# PAYMENT OBSERVATIONS  
+
+- **Payment count:** 12  
+- **Unique vendors:** 1  
+- **Payments per vendor:** 12  
+
+The evidence shows an unusually high number of payment transactions concentrated entirely on a single vendor. This pattern aligns with the financial risk engine’s indicators of “Extremely high number of"
+WS/MP643/2024-2025/146592,87.22,CRITICAL,VERY HIGH,4,Madhya Pradesh,KHANDWA,Normal/Others,Vendor Identification,1500000.0,1500000.0,1104530.0,31.0,14.0,2.2143,"{
+  ""PROJECT_INFORMATION"": {
+    ""work_id"": ""WS/MP643/2024-2025/146592"",
+    ""state"": ""Madhya Pradesh"",
+    ""ida"": ""Khandwa (East Nimar)(DISTRICT COLLECTOR EAST NIMAR_IDA)"",
+    ""member_of_parliament"": ""Gyaneshwar Patil"",
+    ""constituency"": ""KHANDWA"",
+    ""work_category"": ""Normal/Others"",
+    ""work_description"": ""near kunbhi samaj go shala singot bhavan nirman"",
+    ""work_status"": ""Vendor Identification"",
+    ""financial_year"": ""2024-2025""
+  },
+  ""FINANCIAL_INFORMATION"": {
+    ""recommended_amount"": ""₹1,500,000.00"",
+    ""sanction_amount"": ""₹1,500,000.00"",
+    ""total_expenditure"": ""₹1,104,530.00"",
+    ""completed_amount_disbursed"": ""Not available"",
+    ""sanction_difference"": ""₹0.00"",
+    ""expenditure_difference"": ""₹-395,470.00"",
+    ""expenditure_ratio"": 0.7364,
+    ""sanction_ratio"": 1.0
+  },
+  ""PAYMENT_INFORMATION"": {
+    ""payment_count"": 31.0,
+    ""unique_vendors"": 14.0,
+    ""payments_per_vendor"": 2.2143
+  },
+  ""UNIFIED_AI_RISK_ENGINE"": {
+    ""final_ai_risk_score"": 87.22,
+    ""final_ai_risk_level"": ""CRITICAL"",
+    ""risk_detection_confidence"": ""VERY HIGH"",
+    ""active_risk_engines"": 4,
+    ""primary_risk_source"": ""ML Anomaly Engine"",
+    ""consensus_bonus"": 20,
+    ""final_ai_risk_factors"": []
+  },
+  ""MACHINE_LEARNING_ENGINE"": {
+    ""combined_anomaly_score"": ""Not available"",
+    ""ensemble_risk_level"": ""Not available"",
+    ""ml_normalized_score"": 92.1035
+  },
+  ""RULE_BASED_RISK_ENGINE"": {
+    ""rule_risk_score"": 20.0,
+    ""rule_risk_level"": ""Not available"",
+    ""risk_factors"": [
+      ""Very high combined anomaly score detected.""
+    ],
+    ""recommended_actions"": []
+  },
+  ""FINANCIAL_RISK_ENGINE"": {
+    ""financial_risk_score"": 22,
+    ""financial_risk_level"": ""MEDIUM"",
+    ""financial_risk_factors"": [
+      ""Project expenditure is unusually high"",
+      ""Extremely high number of payment transactions""
+    ]
+  },
+  ""STATISTICAL_ANOMALY_ENGINE"": {
+    ""statistical_anomaly_score"": 50,
+    ""statistical_anomaly_level"": ""HIGH"",
+    ""statistical_anomaly_factors"": [
+      ""Project expenditure is statistically high"",
+      ""Extremely high number of payment transactions"",
+      ""Extremely high payment concentration per vendor"",
+      ""Multiple independent statistical anomalies detected""
+    ]
+  },
+  ""INVESTIGATION_ENGINE"": {
+    ""investigation_priority"": ""Not available"",
+    ""investigation_summary"": ""Not available"",
+    ""key_risk_indicators"": [],
+    ""recommended_actions"": [
+      ""Compare this project with similar projects in the same category and region."",
+      ""Prioritize this project for immediate investigation."",
+      ""Initiate immediate financial and administrative investigation."",
+      ""Verify all payments, vendors, approvals, and expenditure records.""
+    ],
+    ""risk_factors"": [
+      ""Very high combined anomaly score detected.""
+    ]
+  }
+}","# EXECUTIVE SUMMARY  
+The project **WS/MP643/2024-2025/146592** has been classified as **CRITICAL** by the Unified AI Risk Engine with a final risk score of **87.22**. Multiple risk engines—ML, rule‑based, financial, and statistical anomaly—have flagged high anomaly scores and unusual expenditure/payment patterns. These indicators warrant a focused investigation to verify compliance and financial integrity.
+
+# PROJECT OVERVIEW  
+
+- **Work ID:** WS/MP643/2024-2025/146592  
+- **State:** Madhya Pradesh  
+- **Constituency:** KHANDWA  
+- **Work category:** Normal/Others  
+- **Work description:** near kunbhi samaj go shala singot bhavan nirman  
+- **Work status:** Vendor Identification  
+- **Financial year:** 2024‑2025  
+
+# RISK CLASSIFICATION  
+
+- **Final AI risk level:** CRITICAL  
+- **Final AI risk score:** 87.22  
+- **Detection confidence:** VERY HIGH  
+- **Number of active risk engines:** 4  
+- **Primary risk source:** ML Anomaly Engine  
+- **Consensus information:** Consensus bonus 20 (no additional risk factors listed)  
+
+# KEY VERIFIED RISK INDICATORS  
+
+- **Unified AI risk engine:**  
+  - Final AI risk score 87.22, level CRITICAL, detection confidence VERY HIGH.  
+- **ML engine:**  
+  - ML normalized score 92.1035.  
+- **Rule‑based engine:**  
+  - Rule risk score 20.0.  
+  - Risk factor: “Very high combined anomaly score detected.”  
+- **Financial risk engine:**  
+  - Financial risk score 22, level MEDIUM.  
+  - Risk factors: “Project expenditure is unusually high,” “Extremely high number of payment transactions.”  
+- **Statistical anomaly engine:**  
+  - Statistical anomaly score 50, level HIGH.  
+  - Risk factors: “Project expenditure is statistically high,” “Extremely high number of payment transactions,” “Extremely high payment concentration per vendor,” “Multiple independent statistical anomalies detected.”  
+
+# FINANCIAL OBSERVATIONS  
+
+- **Recommended amount:** ₹1,500,000.00  
+- **Sanction amount:** ₹1,500,000.00  
+- **Total expenditure:** ₹1,104,530.00  
+- **Expenditure difference:** ₹-395,470.00 (expenditure lower than sanctioned)  
+- **Expenditure ratio:** 0.7364 (73.64 % of sanctioned amount)  
+- **Sanction ratio:** 1.0 (100 % of recommended amount)  
+
+The expenditure is below the sanctioned amount, but the high normalized ML score and rule‑based risk score suggest that the pattern of spending may be atypical relative to similar projects.
+
+# PAYMENT OBSERVATIONS  
+
+- **Payment count:** 31  
+- **Unique vendors:** 14  
+- **Payments per vendor:** 2.2143  
+
+Risk‑engine evidence indicates an **extremely high number of payment transactions** and **extremely high payment concentration per vendor**. The payment pattern is therefore flagged as unusual, consistent with the statistical anomaly engine’s findings.
+
+# STATISTICAL ANOMALY OBSERVATIONS  
+
+- **Statistical anomaly score:** 50  
+- **Statistical anomaly level:** HIGH  
+- **Verified statistical anomaly factors:**  
+  - Project expenditure is statistically high  
+  - Extremely high number of payment transactions  
+  - Extremely high payment concentration per vendor  
+  - Multiple independent statistical anomalies detected  
+
+# MACHINE LEARNING OBSERVATIONS  
+
+- **Ensemble risk level:** Not available  
+- **Combined anomaly score:** Not available  
+- **ML normalized score:** 92.1035  
+
+The high normalized score indicates that the ML engine detected significant deviations from expected patterns, contributing to the overall risk assessment.
+
+# WHY THIS PROJECT WAS FLAGGED  
+
+The final risk classification of **CRITICAL** results from the convergence of high scores across multiple engines:  
+- The Unified AI engine’s high risk score and very high confidence.  
+- The ML engine’s elevated normalized score (92.1035).  
+- The rule‑based engine’s high rule risk score and anomaly flag.  
+- The financial risk engine’s medium‑level score with factors highlighting unusually high expenditure and transaction volume.  
+- The statistical anomaly engine’s high score and multiple anomaly factors.  
+
+These engines collectively identified patterns that deviate from normative benchmarks, prompting the critical classification.
+
+# INVESTIGATION PRIORITIES  
+
+### HIGH PRIORITY  
+- **Prioritize this project for immediate investigation** (Investigation engine recommendation).  
+- **Initiate immediate financial and administrative investigation** (Investigation engine recommendation).  
+- **Verify all payments, vendors, approvals, and expenditure records** (Investigation engine recommendation).  
+- **Compare this project with similar projects in the same category and region** (Investigation engine recommendation).  
+
+### MEDIUM PRIORITY  
+- Verify financial records against the sanctioned amount.  
+- Review sanction documentation and approval chain.  
+- Audit payment records for consistency with vendor contracts.  
+- Validate supporting documentation for each payment transaction.  
+
+### LOW PRIORITY  
+- Monitor ongoing project expenditures for further anomalies.  
+- Contextual analysis of regional project benchmarks.  
+
+# RECOMMENDED NEXT STEPS  
+
+1. **Verify financial records** – cross‑check the ₹1,104,530.00 expenditure against invoices and receipts.  
+2. **Review sanction documentation** – confirm that the ₹1,500,000.00 sanction was properly authorized and documented.  
+3. **Audit payment records** – examine the 31 payments to 14 vendors for compliance with procurement rules.  
+4. **Compare with similar projects** – benchmark expenditure and payment patterns against other “Normal/Others” category projects in Madhya Pradesh.  
+5. **Validate supporting documentation** – ensure all vendor contracts, approvals, and audit trails are complete and accurate.  
+
+# FINAL ASSESSMENT  
+
+The project exhibits a **CRITICAL** AI risk classification driven by high anomaly scores across multiple engines. The detected anomalies are risk indicators requiring verification and do not independently establish wrongdoing. Further investigation is essential to confirm compliance and financial integrity."
+WS/MP18152/2024-2025/141888,84.95,CRITICAL,VERY HIGH,4,Punjab,FARIDKOT(SC),Normal/Others,Vendor Identification,2000000.0,2000000.0,1437441.0,12.0,3.0,4.0,"{
+  ""PROJECT_INFORMATION"": {
+    ""work_id"": ""WS/MP18152/2024-2025/141888"",
+    ""state"": ""Punjab"",
+    ""ida"": ""MOGA(Deputy Commissioner Moga)"",
+    ""member_of_parliament"": ""SARABJEET SINGH KHALSA"",
+    ""constituency"": ""FARIDKOT(SC)"",
+    ""work_category"": ""Normal/Others"",
+    ""work_description"": ""Construction of community centers and community halls"",
+    ""work_status"": ""Vendor Identification"",
+    ""financial_year"": ""2024-2025""
+  },
+  ""FINANCIAL_INFORMATION"": {
+    ""recommended_amount"": ""₹2,000,000.00"",
+    ""sanction_amount"": ""₹2,000,000.00"",
+    ""total_expenditure"": ""₹1,437,441.00"",
+    ""completed_amount_disbursed"": ""Not available"",
+    ""sanction_difference"": ""₹0.00"",
+    ""expenditure_difference"": ""₹-562,559.00"",
+    ""expenditure_ratio"": 0.7187,
+    ""sanction_ratio"": 1.0
+  },
+  ""PAYMENT_INFORMATION"": {
+    ""payment_count"": 12.0,
+    ""unique_vendors"": 3.0,
+    ""payments_per_vendor"": 4.0
+  },
+  ""UNIFIED_AI_RISK_ENGINE"": {
+    ""final_ai_risk_score"": 84.95,
+    ""final_ai_risk_level"": ""CRITICAL"",
+    ""risk_detection_confidence"": ""VERY HIGH"",
+    ""active_risk_engines"": 4,
+    ""primary_risk_source"": ""ML Anomaly Engine"",
+    ""consensus_bonus"": 20,
+    ""final_ai_risk_factors"": []
+  },
+  ""MACHINE_LEARNING_ENGINE"": {
+    ""combined_anomaly_score"": ""Not available"",
+    ""ensemble_risk_level"": ""Not available"",
+    ""ml_normalized_score"": 86.8988
+  },
+  ""RULE_BASED_RISK_ENGINE"": {
+    ""rule_risk_score"": 10.0,
+    ""rule_risk_level"": ""Not available"",
+    ""risk_factors"": [
+      ""Moderately unusual anomaly pattern detected.""
+    ],
+    ""recommended_actions"": []
+  },
+  ""FINANCIAL_RISK_ENGINE"": {
+    ""financial_risk_score"": 40,
+    ""financial_risk_level"": ""HIGH"",
+    ""financial_risk_factors"": [
+      ""Project expenditure is unusually high"",
+      ""Extremely high number of payment transactions"",
+      ""High payment concentration among vendors"",
+      ""Multiple independent financial risk indicators detected""
+    ]
+  },
+  ""STATISTICAL_ANOMALY_ENGINE"": {
+    ""statistical_anomaly_score"": 50,
+    ""statistical_anomaly_level"": ""HIGH"",
+    ""statistical_anomaly_factors"": [
+      ""Project expenditure is statistically high"",
+      ""Extremely high number of payment transactions"",
+      ""Extremely high payment concentration per vendor"",
+      ""Multiple independent statistical anomalies detected""
+    ]
+  },
+  ""INVESTIGATION_ENGINE"": {
+    ""investigation_priority"": ""Not available"",
+    ""investigation_summary"": ""Not available"",
+    ""key_risk_indicators"": [],
+    ""recommended_actions"": [
+      ""Perform detailed financial verification of expenditure and payment records."",
+      ""Compare this project with similar projects in the same category and region."",
+      ""Prioritize this project for immediate investigation."",
+      ""Initiate immediate financial and administrative investigation."",
+      ""Verify all payments, vendors, approvals, and expenditure records.""
+    ],
+    ""risk_factors"": [
+      ""Moderately unusual anomaly pattern detected.""
+    ]
+  }
+}","# EXECUTIVE SUMMARY  
+The project “Construction of community centers and community halls” (Work ID: WS/MP18152/2024-2025/141888) has been classified as **CRITICAL** by the Unified AI Risk Engine with a risk score of **84.95** and a very high detection confidence. Multiple independent risk engines (ML, rule‑based, financial, and statistical anomaly) have flagged high‑level anomalies, indicating that the project warrants immediate and detailed investigation to verify financial and administrative compliance.
+
+# PROJECT OVERVIEW  
+
+- **Work ID:** WS/MP18152/2024-2025/141888  
+- **State:** Punjab  
+- **Constituency:** FARIDKOT(SC)  
+- **Work category:** Normal/Others  
+- **Work description:** Construction of community centers and community halls  
+- **Work status:** Vendor Identification  
+- **Financial year:** 2024-2025  
+
+# RISK CLASSIFICATION  
+
+- **Final AI risk level:** CRITICAL  
+- **Final AI risk score:** 84.95  
+- **Detection confidence:** VERY HIGH  
+- **Number of active risk engines:** 4  
+- **Primary risk source:** ML Anomaly Engine  
+- **Consensus information:** Consensus bonus 20 (no specific risk factors listed)  
+
+# KEY VERIFIED RISK INDICATORS  
+
+- **Unified AI risk engine**  
+  - Final AI risk score: 84.95  
+  - Final AI risk level: CRITICAL  
+  - Detection confidence: VERY HIGH  
+  - Active risk engines: 4  
+  - Primary risk source: ML Anomaly Engine  
+  - Consensus bonus: 20  
+
+- **ML engine**  
+  - ML normalized score: 86.8988  
+
+- **Rule‑based engine**  
+  - Rule risk score: 10.0  
+  - Risk factor: “Moderately unusual anomaly pattern detected.”  
+
+- **Financial risk engine**  
+  - Financial risk score: 40  
+  - Financial risk level: HIGH  
+  - Financial risk factors:  
+    - Project expenditure is unusually high  
+    - Extremely high number of payment transactions  
+    - High payment concentration among vendors  
+    - Multiple independent financial risk indicators detected  
+
+- **Statistical anomaly engine**  
+  - Statistical anomaly score: 50  
+  - Statistical anomaly level: HIGH  
+  - Statistical anomaly factors:  
+    - Project expenditure is statistically high  
+    - Extremely high number of payment transactions  
+    - Extremely high payment concentration per vendor  
+    - Multiple independent statistical anomalies detected  
+
+# FINANCIAL OBSERVATIONS  
+
+- **Recommended amount:** ₹2,000,000.00  
+- **Sanction amount:** ₹2,000,000.00  
+- **Total expenditure:** ₹1,437,441.00  
+- **Expenditure difference:** ₹-562,559.00 (expenditure is lower than sanctioned)  
+- **Expenditure ratio:** 0.7187 (71.87 % of sanctioned amount)  
+- **Sanction ratio:** 1.0 (100 % of recommended amount)  
+
+The expenditure is substantially below the sanctioned amount, yet the financial risk engine flags the expenditure as unusually high, suggesting that the absolute amount may be high relative to comparable projects in the same category and region.
+
+# PAYMENT OBSERVATIONS  
+
+- **Payment count:** 12  
+- **Unique vendors:** 3  
+- **Payments per vendor:** 4  
+
+The evidence indicates a high number of payment transactions and a concentration of payments among a small number of vendors. This pattern is corroborated by the financial risk engine and the statistical anomaly engine, both of which flagged high payment concentration as a risk factor.
+
+# STATISTICAL ANOMALY OBSERVATIONS  
+
+- **Statistical anomaly score:** 50  
+- **Statistical anomaly level:** HIGH  
+- **Verified statistical anomaly factors:**  
+  - Project expenditure is statistically high  
+  - Extremely high number of payment transactions  
+  - Extremely high payment concentration per vendor  
+  - Multiple independent statistical anomalies detected  
+
+# MACHINE LEARNING OBSERVATIONS  
+
+- **Ensemble risk level:** Not available in the provided evidence.  
+- **Combined anomaly score:** Not available in the provided evidence.  
+- **ML normalized score:** 86.8988  
+
+# WHY THIS PROJECT WAS FLAGGED  
+
+The final risk classification of CRITICAL was derived from the Unified AI Risk Engine, which aggregates signals from all active engines. The high ML normalized score, the rule‑based engine’s moderate anomaly flag, and the high scores from both the financial and statistical anomaly engines collectively contributed to the overall risk assessment. Each engine independently identified anomalies related to expenditure magnitude, payment volume, and vendor concentration, reinforcing the need for investigation.
+
+# INVESTIGATION PRIORITIES  
+
+### HIGH PRIORITY  
+- Perform detailed financial verification of expenditure and payment records.  
+- Compare this project with similar projects in the same category and region.  
+- Prioritize this project for immediate investigation.  
+- Initiate immediate financial and administrative investigation.  
+- Verify all payments, vendors, approvals, and expenditure records.  
+
+### MEDIUM PRIORITY  
+- Confirm the accuracy of the expenditure difference and expenditure ratio.  
+- Validate vendor details and payment schedules against sanction documents.  
+- Cross‑check sanction documentation for completeness and correctness.  
+
+### LOW PRIORITY  
+- Monitor future payment transactions for consistency with established patterns.  
+- Conduct contextual analysis of comparable community center projects in Punjab.  
+
+# RECOMMENDED NEXT STEPS  
+
+1. **Verify financial records** – Reconcile the total expenditure of ₹1,437,441.00 with supporting invoices and receipts.  
+2. **Review sanction documentation** – Ensure that the sanction amount of ₹2,000,000.00 was correctly applied and that all approvals were obtained.  
+3. **Audit payment records** – Examine the 12 payments made to the 3 vendors, confirming amounts, dates, and purposes.  
+4. **Compare with similar projects** – Benchmark expenditure and payment patterns against other “Normal/Others” category projects in Punjab for the 2024‑2025 fiscal year.  
+5. **Validate supporting documentation** – Check that all required permits, contracts, and approvals are on file and match the financial transactions.  
+
+# FINAL ASSESSMENT  
+
+The project exhibits multiple risk indicators—high AI risk score, high financial and statistical anomaly scores, and concentrated payment activity—that collectively warrant a focused investigation.  
+
+**The detected anomalies are risk indicators requiring verification and do not independently establish wrongdoing.**"
+WS/MP18309/2024-2025/155212,84.54,CRITICAL,VERY HIGH,4,Meghalaya,TURA,Normal/Others,Not available,10000000.0,Not available,10000000.0,3.0,1.0,3.0,"{
+  ""PROJECT_INFORMATION"": {
+    ""work_id"": ""WS/MP18309/2024-2025/155212"",
+    ""state"": ""Meghalaya"",
+    ""ida"": ""WEST GARO HILLS(DEPUTY COMMISSIONER WEST GARO HILLS_IDA)"",
+    ""member_of_parliament"": ""SALENG A SANGMA"",
+    ""constituency"": ""TURA"",
+    ""work_category"": ""Normal/Others"",
+    ""work_description"": ""For supply of water pipeline and water pump for 50 different villages within Dalu Block."",
+    ""work_status"": ""Not available"",
+    ""financial_year"": ""2024-2025""
+  },
+  ""FINANCIAL_INFORMATION"": {
+    ""recommended_amount"": ""₹10,000,000.00"",
+    ""sanction_amount"": ""Not available"",
+    ""total_expenditure"": ""₹10,000,000.00"",
+    ""completed_amount_disbursed"": ""Not available"",
+    ""sanction_difference"": ""Not available"",
+    ""expenditure_difference"": ""Not available"",
+    ""expenditure_ratio"": ""Not available"",
+    ""sanction_ratio"": ""Not available""
+  },
+  ""PAYMENT_INFORMATION"": {
+    ""payment_count"": 3.0,
+    ""unique_vendors"": 1.0,
+    ""payments_per_vendor"": 3.0
+  },
+  ""UNIFIED_AI_RISK_ENGINE"": {
+    ""final_ai_risk_score"": 84.54,
+    ""final_ai_risk_level"": ""CRITICAL"",
+    ""risk_detection_confidence"": ""VERY HIGH"",
+    ""active_risk_engines"": 4,
+    ""primary_risk_source"": ""Statistical Anomaly Engine"",
+    ""consensus_bonus"": 20,
+    ""final_ai_risk_factors"": []
+  },
+  ""MACHINE_LEARNING_ENGINE"": {
+    ""combined_anomaly_score"": ""Not available"",
+    ""ensemble_risk_level"": ""Not available"",
+    ""ml_normalized_score"": 90.9699
+  },
+  ""RULE_BASED_RISK_ENGINE"": {
+    ""rule_risk_score"": 10.0,
+    ""rule_risk_level"": ""Not available"",
+    ""risk_factors"": [
+      ""Moderately unusual anomaly pattern detected.""
+    ],
+    ""recommended_actions"": []
+  },
+  ""FINANCIAL_RISK_ENGINE"": {
+    ""financial_risk_score"": 20,
+    ""financial_risk_level"": ""MEDIUM"",
+    ""financial_risk_factors"": [
+      ""Project expenditure is among the highest 1%""
+    ]
+  },
+  ""STATISTICAL_ANOMALY_ENGINE"": {
+    ""statistical_anomaly_score"": 65,
+    ""statistical_anomaly_level"": ""CRITICAL"",
+    ""statistical_anomaly_factors"": [
+      ""Project expenditure is among the highest 0.5%"",
+      ""Extremely high number of payment transactions"",
+      ""Extremely high payment concentration per vendor"",
+      ""Multiple independent statistical anomalies detected""
+    ]
+  },
+  ""INVESTIGATION_ENGINE"": {
+    ""investigation_priority"": ""Not available"",
+    ""investigation_summary"": ""Not available"",
+    ""key_risk_indicators"": [],
+    ""recommended_actions"": [
+      ""Compare this project with similar projects in the same category and region."",
+      ""Prioritize this project for immediate investigation."",
+      ""Initiate immediate financial and administrative investigation."",
+      ""Verify all payments, vendors, approvals, and expenditure records.""
+    ],
+    ""risk_factors"": [
+      ""Moderately unusual anomaly pattern detected.""
+    ]
+  }
+}","# EXECUTIVE SUMMARY  
+The project **WS/MP18309/2024-2025/155212** has been classified as **CRITICAL** by the Unified AI Risk Engine with a score of **84.54** and a **VERY HIGH** detection confidence. The primary driver of this classification is the **Statistical Anomaly Engine**, which flagged multiple high‑severity anomalies (score 65, level CRITICAL). Additional engines—Machine Learning (normalized score 90.97), Rule‑Based (score 10.0), and Financial Risk (score 20, level MEDIUM)—contribute to a composite risk profile that warrants immediate investigative attention.
+
+# PROJECT OVERVIEW  
+
+- **Work ID:** WS/MP18309/2024-2025/155212  
+- **State:** Meghalaya  
+- **Constituency:** TURA  
+- **Work category:** Normal/Others  
+- **Work description:** Supply of water pipeline and water pump for 50 villages within Dalu Block.  
+- **Work status:** Not available in the provided evidence.  
+- **Financial year:** 2024‑2025  
+
+# RISK CLASSIFICATION  
+
+- **Final AI risk level:** CRITICAL  
+- **Final AI risk score:** 84.54  
+- **Detection confidence:** VERY HIGH  
+- **Number of active risk engines:** 4  
+- **Primary risk source:** Statistical Anomaly Engine  
+- **Consensus bonus:** 20 (no consensus level provided)  
+
+# KEY VERIFIED RISK INDICATORS  
+
+| Engine | Indicator | Value | Notes |
+|--------|-----------|-------|-------|
+| Unified AI Risk Engine | Final AI risk score | 84.54 | Highest overall score |
+| Unified AI Risk Engine | Final AI risk level | CRITICAL | |
+| Unified AI Risk Engine | Detection confidence | VERY HIGH | |
+| Machine Learning Engine | ML normalized score | 90.9699 | Indicates strong anomaly signal |
+| Rule‑Based Engine | Rule risk score | 10.0 | Low score but flagged anomaly pattern |
+| Rule‑Based Engine | Risk factor | Moderately unusual anomaly pattern detected. | |
+| Financial Risk Engine | Financial risk score | 20 | |
+| Financial Risk Engine | Financial risk level | MEDIUM | |
+| Financial Risk Engine | Risk factor | Project expenditure is among the highest 1% | |
+| Statistical Anomaly Engine | Statistical anomaly score | 65 | |
+| Statistical Anomaly Engine | Statistical anomaly level | CRITICAL | |
+| Statistical Anomaly Engine | Risk factors | Project expenditure is among the highest 0.5%; Extremely high number of payment transactions; Extremely high payment concentration per vendor; Multiple independent statistical anomalies detected | |
+
+# FINANCIAL OBSERVATIONS  
+
+- **Recommended amount:** ₹10,000,000.00  
+- **Sanction amount:** Not available in the provided evidence.  
+- **Total expenditure:** ₹10,000,000.00  
+- **Expenditure differences:** Not available in the provided evidence.  
+- **Relevant ratios:** Not available in the provided evidence.  
+
+The financial data show that the recommended amount equals the total expenditure, but no sanction or expenditure difference figures are available for comparison.
+
+# PAYMENT OBSERVATIONS  
+
+- **Payment count:** 3  
+- **Unique vendors:** 1  
+- **Payments per vendor:** 3  
+
+The Statistical Anomaly Engine flagged “Extremely high number of payment transactions” and “Extremely high payment concentration per vendor.” These factors corroborate the observed payment pattern, indicating an unusual concentration of payments to a single vendor.
+
+# STATISTICAL ANOMALY OBSERVATIONS  
+
+- **Statistical anomaly score:** 65  
+- **Statistical anomaly level:** CRITICAL  
+- **Verified statistical anomaly factors:**  
+  1. Project expenditure is among the highest 0.5%  
+  2. Extremely high number of payment transactions  
+  3. Extremely high payment concentration per vendor  
+  4. Multiple independent statistical anomalies detected  
+
+# MACHINE LEARNING OBSERVATIONS  
+
+- **Ensemble risk level:** Not available in the provided evidence.  
+- **Combined anomaly score:** Not available in the provided evidence.  
+- **ML normalized score:** 90.9699  
+
+The high normalized score suggests a strong anomaly signal, though ensemble and combined scores are not provided.
+
+# WHY THIS PROJECT WAS FLAGGED  
+
+The final risk classification is driven primarily by the **Statistical Anomaly Engine** (score 65, level CRITICAL) and reinforced by the"
+WS/MP18309/2024-2025/155216,84.54,CRITICAL,VERY HIGH,4,Meghalaya,TURA,Normal/Others,Not available,10000000.0,Not available,10000000.0,3.0,1.0,3.0,"{
+  ""PROJECT_INFORMATION"": {
+    ""work_id"": ""WS/MP18309/2024-2025/155216"",
+    ""state"": ""Meghalaya"",
+    ""ida"": ""WEST GARO HILLS(DEPUTY COMMISSIONER WEST GARO HILLS_IDA)"",
+    ""member_of_parliament"": ""SALENG A SANGMA"",
+    ""constituency"": ""TURA"",
+    ""work_category"": ""Normal/Others"",
+    ""work_description"": ""For supply of water pipeline and water pump in 50 different villages within Gambegre Block."",
+    ""work_status"": ""Not available"",
+    ""financial_year"": ""2024-2025""
+  },
+  ""FINANCIAL_INFORMATION"": {
+    ""recommended_amount"": ""₹10,000,000.00"",
+    ""sanction_amount"": ""Not available"",
+    ""total_expenditure"": ""₹10,000,000.00"",
+    ""completed_amount_disbursed"": ""Not available"",
+    ""sanction_difference"": ""Not available"",
+    ""expenditure_difference"": ""Not available"",
+    ""expenditure_ratio"": ""Not available"",
+    ""sanction_ratio"": ""Not available""
+  },
+  ""PAYMENT_INFORMATION"": {
+    ""payment_count"": 3.0,
+    ""unique_vendors"": 1.0,
+    ""payments_per_vendor"": 3.0
+  },
+  ""UNIFIED_AI_RISK_ENGINE"": {
+    ""final_ai_risk_score"": 84.54,
+    ""final_ai_risk_level"": ""CRITICAL"",
+    ""risk_detection_confidence"": ""VERY HIGH"",
+    ""active_risk_engines"": 4,
+    ""primary_risk_source"": ""Statistical Anomaly Engine"",
+    ""consensus_bonus"": 20,
+    ""final_ai_risk_factors"": []
+  },
+  ""MACHINE_LEARNING_ENGINE"": {
+    ""combined_anomaly_score"": ""Not available"",
+    ""ensemble_risk_level"": ""Not available"",
+    ""ml_normalized_score"": 90.9699
+  },
+  ""RULE_BASED_RISK_ENGINE"": {
+    ""rule_risk_score"": 10.0,
+    ""rule_risk_level"": ""Not available"",
+    ""risk_factors"": [
+      ""Moderately unusual anomaly pattern detected.""
+    ],
+    ""recommended_actions"": []
+  },
+  ""FINANCIAL_RISK_ENGINE"": {
+    ""financial_risk_score"": 20,
+    ""financial_risk_level"": ""MEDIUM"",
+    ""financial_risk_factors"": [
+      ""Project expenditure is among the highest 1%""
+    ]
+  },
+  ""STATISTICAL_ANOMALY_ENGINE"": {
+    ""statistical_anomaly_score"": 65,
+    ""statistical_anomaly_level"": ""CRITICAL"",
+    ""statistical_anomaly_factors"": [
+      ""Project expenditure is among the highest 0.5%"",
+      ""Extremely high number of payment transactions"",
+      ""Extremely high payment concentration per vendor"",
+      ""Multiple independent statistical anomalies detected""
+    ]
+  },
+  ""INVESTIGATION_ENGINE"": {
+    ""investigation_priority"": ""Not available"",
+    ""investigation_summary"": ""Not available"",
+    ""key_risk_indicators"": [],
+    ""recommended_actions"": [
+      ""Compare this project with similar projects in the same category and region."",
+      ""Prioritize this project for immediate investigation."",
+      ""Initiate immediate financial and administrative investigation."",
+      ""Verify all payments, vendors, approvals, and expenditure records.""
+    ],
+    ""risk_factors"": [
+      ""Moderately unusual anomaly pattern detected.""
+    ]
+  }
+}","# EXECUTIVE SUMMARY  
+The project **WS/MP18309/2024-2025/155216** has been classified as **CRITICAL** by the Unified AI Risk Engine, with a final risk score of **84.54** and a **VERY HIGH** detection confidence. The classification is driven primarily by statistical anomalies in expenditure and payment concentration, corroborated by high normalized scores from the Machine Learning engine and a medium‑level financial risk score. These indicators warrant immediate verification to ensure compliance and proper use of public funds.
+
+# PROJECT OVERVIEW  
+
+- **Work ID:** WS/MP18309/2024-2025/155216  
+- **State:** Meghalaya  
+- **Constituency:** TURA  
+- **Work category:** Normal/Others  
+- **Work description:** Supply of water pipeline and water pump in 50 villages within Gambegre Block.  
+- **Work status:** Not available in the provided evidence.  
+- **Financial year:** 2024‑2025  
+
+# RISK CLASSIFICATION  
+
+- **Final AI risk level:** CRITICAL  
+- **Final AI risk score:** 84.54  
+- **Detection confidence:** VERY HIGH  
+- **Number of active risk engines:** 4  
+- **Primary risk source:** Statistical Anomaly Engine  
+- **Consensus bonus:** 20 (no detailed risk factors listed)  
+
+# KEY VERIFIED RISK INDICATORS  
+
+| Engine | Key Indicator(s) |
+|--------|------------------|
+| **Unified AI Risk Engine** | Final AI risk score 84.54, level CRITICAL, detection confidence VERY HIGH, 4 active engines, primary source Statistical Anomaly Engine, consensus bonus 20 |
+| **Machine Learning Engine** | ML normalized score 90.9699 (combined anomaly score and ensemble risk level not available) |
+| **Rule‑Based Engine** | Rule risk score 10.0, risk factor: “Moderately unusual anomaly pattern detected.” |
+| **Financial Risk Engine** | Financial risk score 20, level MEDIUM, factor: “Project expenditure is among the highest 1 %.” |
+| **Statistical Anomaly Engine** | Statistical anomaly score 65, level CRITICAL, factors: <br>• Project expenditure is among the highest 0.5 % <br>• Extremely high number of payment transactions <br>• Extremely high payment concentration per vendor <br>• Multiple independent statistical anomalies detected |
+
+# FINANCIAL OBSERVATIONS  
+
+- **Recommended amount:** ₹10,000,000.00  
+- **Sanction amount:** Not available in the provided evidence.  
+- **Total expenditure:** ₹10,000,000.00  
+- **Expenditure differences:** Not available.  
+- **Relevant ratios:** Not available.  
+
+The recommended amount matches the total expenditure, but the absence of sanction details and expenditure ratios limits a full financial assessment.
+
+# PAYMENT OBSERVATIONS  
+
+- **Payment count:** 3  
+- **Unique vendors:** 1  
+- **Payments per vendor:** 3  
+
+The evidence from the Statistical Anomaly Engine indicates an “Extremely high number of payment transactions” and “Extremely high payment concentration per vendor.” These factors support the observation that the payment pattern is unusual for a project of this size.
+
+# STATISTICAL ANOMALY OBSERVATIONS  
+
+- **Statistical anomaly score:** 65  
+- **Statistical anomaly level:** CRITICAL  
+- **Verified statistical anomaly factors:**  
+  1. Project expenditure is among the highest 0.5 %  
+  2. Extremely high number of payment transactions  
+  3. Extremely high payment concentration per vendor  
+  4. Multiple independent statistical anomalies detected  
+
+# MACHINE LEARNING OBSERVATIONS  
+
+- **Ensemble risk level:** Not available  
+- **Combined anomaly score:** Not available  
+- **ML normalized score:** 90.9699  
+
+The high normalized score indicates that the project deviates significantly from typical patterns identified by the ML model.
+
+# WHY THIS PROJECT WAS FLAGGED  
+
+The final CRITICAL classification results from the aggregation of signals across multiple engines:  
+1. **Statistical Anomaly Engine** flagged extreme expenditure and payment concentration.  
+2. **Unified AI Risk Engine** synthesized these signals, assigning a high risk score and CRITICAL level.  
+3. **Machine Learning Engine** provided a high normalized score, reinforcing the anomaly detection.  
+4. **Rule‑Based Engine** and **Financial Risk"
+WS/MP391/2025-2026/146422,84.53,CRITICAL,VERY HIGH,4,Tamil Nadu,CHENNAI CENTRAL,Normal/Others,Work Completed,10000000.0,10000000.0,9749010.0,2.0,1.0,2.0,"{
+  ""PROJECT_INFORMATION"": {
+    ""work_id"": ""WS/MP391/2025-2026/146422"",
+    ""state"": ""Tamil Nadu"",
+    ""ida"": ""CHENNAI(COMMISSIONER MUNCIPAL CORPORATION CHENNAI_IDA)"",
+    ""member_of_parliament"": ""Thiru Dayanidhi Maran"",
+    ""constituency"": ""CHENNAI CENTRAL"",
+    ""work_category"": ""Normal/Others"",
+    ""work_description"": ""CONSTRUCTION OF BOXING ACADEMY BUILDING IN GOPALAPURAM WARD 111, PART 25, ZONE 9 OF CHENNAI CENTRAL CONSITUENCY"",
+    ""work_status"": ""Work Completed"",
+    ""financial_year"": ""2025-2026""
+  },
+  ""FINANCIAL_INFORMATION"": {
+    ""recommended_amount"": ""₹10,000,000.00"",
+    ""sanction_amount"": ""₹10,000,000.00"",
+    ""total_expenditure"": ""₹9,749,010.00"",
+    ""completed_amount_disbursed"": ""Not available"",
+    ""sanction_difference"": ""₹0.00"",
+    ""expenditure_difference"": ""₹-250,990.00"",
+    ""expenditure_ratio"": 0.9749,
+    ""sanction_ratio"": 1.0
+  },
+  ""PAYMENT_INFORMATION"": {
+    ""payment_count"": 2.0,
+    ""unique_vendors"": 1.0,
+    ""payments_per_vendor"": 2.0
+  },
+  ""UNIFIED_AI_RISK_ENGINE"": {
+    ""final_ai_risk_score"": 84.53,
+    ""final_ai_risk_level"": ""CRITICAL"",
+    ""risk_detection_confidence"": ""VERY HIGH"",
+    ""active_risk_engines"": 4,
+    ""primary_risk_source"": ""ML Anomaly Engine"",
+    ""consensus_bonus"": 20,
+    ""final_ai_risk_factors"": []
+  },
+  ""MACHINE_LEARNING_ENGINE"": {
+    ""combined_anomaly_score"": ""Not available"",
+    ""ensemble_risk_level"": ""Not available"",
+    ""ml_normalized_score"": 95.0711
+  },
+  ""RULE_BASED_RISK_ENGINE"": {
+    ""rule_risk_score"": 20.0,
+    ""rule_risk_level"": ""Not available"",
+    ""risk_factors"": [
+      ""Very high combined anomaly score detected.""
+    ],
+    ""recommended_actions"": []
+  },
+  ""FINANCIAL_RISK_ENGINE"": {
+    ""financial_risk_score"": 20,
+    ""financial_risk_level"": ""MEDIUM"",
+    ""financial_risk_factors"": [
+      ""Project expenditure is among the highest 1%""
+    ]
+  },
+  ""STATISTICAL_ANOMALY_ENGINE"": {
+    ""statistical_anomaly_score"": 40,
+    ""statistical_anomaly_level"": ""HIGH"",
+    ""statistical_anomaly_factors"": [
+      ""Project expenditure is among the highest 0.5%"",
+      ""Extremely high payment concentration per vendor""
+    ]
+  },
+  ""INVESTIGATION_ENGINE"": {
+    ""investigation_priority"": ""Not available"",
+    ""investigation_summary"": ""Not available"",
+    ""key_risk_indicators"": [],
+    ""recommended_actions"": [
+      ""Compare this project with similar projects in the same category and region."",
+      ""Prioritize this project for immediate investigation."",
+      ""Initiate immediate financial and administrative investigation."",
+      ""Verify all payments, vendors, approvals, and expenditure records.""
+    ],
+    ""risk_factors"": [
+      ""Very high combined anomaly score detected.""
+    ]
+  }
+}","# EXECUTIVE SUMMARY  
+The project **WS/MP391/2025-2026/146422** has been classified as **CRITICAL** by the Unified AI Risk Engine with a risk score of **84.53** and a **VERY HIGH** detection confidence. Multiple risk engines (ML, rule‑based, financial, statistical anomaly) have independently flagged high anomaly scores and unusual expenditure patterns. These converging signals warrant a focused investigative review to verify the integrity of the financial and administrative records.
+
+# PROJECT OVERVIEW  
+
+- **Work ID:** WS/MP391/2025-2026/146422  
+- **State:** Tamil Nadu  
+- **Constituency:** Chennai Central  
+- **Work category:** Normal/Others  
+- **Work description:** Construction of Boxing Academy Building in Gopalapuram Ward 111, Part 25, Zone 9 of Chennai Central Constituency  
+- **Work status:** Work Completed  
+- **Financial year:** 2025‑2026  
+
+# RISK CLASSIFICATION  
+
+- **Final AI risk level:** CRITICAL  
+- **Final AI risk score:** 84.53  
+- **Detection confidence:** VERY HIGH  
+- **Number of active risk engines:** 4  
+- **Primary risk source:** ML Anomaly Engine  
+- **Consensus information:** Consensus bonus of 20 (no additional consensus details provided)  
+
+# KEY VERIFIED RISK INDICATORS  
+
+| Engine | Indicator | Value |
+|--------|-----------|-------|
+| Unified AI Risk Engine | Final AI risk score | 84.53 |
+| Unified AI Risk Engine | Final AI risk level | CRITICAL |
+| Unified AI Risk Engine | Detection confidence | VERY HIGH |
+| Unified AI Risk Engine | Active risk engines | 4 |
+| Unified AI Risk Engine | Primary risk source | ML Anomaly Engine |
+| Unified AI Risk Engine | Consensus bonus | 20 |
+| Machine Learning Engine | ML normalized score | 95.0711 |
+| Rule‑Based Engine | Rule risk score | 20.0 |
+| Rule‑Based Engine | Risk factor | Very high combined anomaly score detected. |
+| Financial Risk Engine | Financial risk score | 20 |
+| Financial Risk Engine | Financial risk level | MEDIUM |
+| Financial Risk Engine | Risk factor | Project expenditure is among the highest 1% |
+| Statistical Anomaly Engine | Statistical anomaly score | 40 |
+| Statistical Anomaly Engine | Statistical anomaly level | HIGH |
+| Statistical Anomaly Engine | Risk factors | Project expenditure is among the highest 0.5%; Extremely high payment concentration per vendor |
+
+# FINANCIAL OBSERVATIONS  
+
+- **Recommended amount:** ₹10,000,000.00  
+- **Sanction amount:** ₹10,000,000.00  
+- **Total expenditure:** ₹9,749,010.00  
+- **Expenditure difference:** ₹-250,990.00 (under‑spending relative to sanction)  
+- **Expenditure ratio:** 0.9749 (≈ 97.5 % of sanctioned amount)  
+- **Sanction ratio:** 1.0 (100 % of recommended amount)  
+
+The expenditure is slightly below the sanctioned amount, which is reflected in the negative expenditure difference and the expenditure ratio. No inference of wrongdoing is made; the figures are simply reported.
+
+# PAYMENT OBSERVATIONS  
+
+- **Payment count:** 2  
+- **Unique vendors:** 1  
+- **Payments per vendor:** 2  
+
+The statistical anomaly engine identifies “Extremely high payment concentration per vendor” as a risk factor. The evidence shows that all payments were made to a single vendor, which aligns with this flagged anomaly.
+
+# STATISTICAL ANOMALY OBSERVATIONS  
+
+- **Statistical anomaly score:** 40  
+- **Statistical anomaly level:** HIGH  
+- **Verified statistical anomaly factors:**  
+  - Project expenditure is among the highest 0.5%  
+  - Extremely high payment concentration per vendor  
+
+# MACHINE LEARNING OBSERVATIONS  
+
+- **Ensemble risk level:** Not available  
+- **Combined anomaly score:** Not available  
+- **ML normalized score:** 95.0711  
+
+The high normalized score indicates that the ML engine detected significant deviations from typical project patterns.
+
+# WHY THIS PROJECT WAS FLAGGED  
+
+The Unified AI Risk Engine aggregated signals from four active engines. The ML engine’s high normalized score, the rule‑based engine’s anomaly flag, the financial engine’s high expenditure ranking, and the statistical engine’s high anomaly score and payment concentration collectively raised the overall risk score to 84.53, resulting in a CRITICAL classification. No additional connections between engines were inferred beyond the evidence provided.
+
+# INVESTIGATION PRIORITIES  
+
+### HIGH PRIORITY  
+- Compare this project with similar projects in the same category and region.  
+- Initiate immediate financial and administrative investigation.  
+- Verify all payments, vendors, approvals, and expenditure records.  
+
+### MEDIUM PRIORITY  
+- Verify the investigation priority and summary (currently not available).  
+- Confirm the accuracy of the expenditure difference and ratios.  
+
+### LOW PRIORITY  
+- Monitor for any additional anomalies in related projects.  
+- Contextual analysis of payment patterns across the region.
+
+# RECOMMENDED NEXT STEPS  
+
+1. **Verify financial records** – cross‑check the ₹9,749,010.00 expenditure against invoices and receipts.  
+2. **Review sanction documentation** – ensure the ₹10,000,000.00 sanction was properly authorized and documented.  
+3. **Audit payment records** – confirm that the two payments were made to the single vendor and that the amounts align with contractual obligations.  
+4. **Compare with similar projects** – benchmark expenditure, payment concentration, and risk scores against other boxing academy or similar construction projects in Tamil Nadu.  
+5. **Validate supporting documentation** – examine approvals, tender documents, and contractor agreements for completeness and compliance.
+
+# FINAL ASSESSMENT  
+
+The project exhibits several risk indicators—high AI risk score, significant expenditure concentration, and payment concentration—that collectively warrant a detailed audit. These anomalies are **risk indicators requiring verification** and do **not independently establish wrongdoing**. The investigative actions outlined above will provide the necessary evidence to confirm compliance or identify any deficiencies."
+WS/MP243/2025-2026/141110,83.83,CRITICAL,VERY HIGH,4,West Bengal,BARASAT,Normal/Others,Physical Inspection,9522744.0,9522744.0,9522744.0,2.0,1.0,2.0,"{
+  ""PROJECT_INFORMATION"": {
+    ""work_id"": ""WS/MP243/2025-2026/141110"",
+    ""state"": ""West Bengal"",
+    ""ida"": ""North 24 Parganas(DISTRICT MAGISTRATE NORTH TWENTY FOUR PARGANAS_IDA)"",
+    ""member_of_parliament"": ""Kakoli Ghosh Dastidar"",
+    ""constituency"": ""BARASAT"",
+    ""work_category"": ""Normal/Others"",
+    ""work_description"": ""2 storied building for skill development centre"",
+    ""work_status"": ""Physical Inspection"",
+    ""financial_year"": ""2025-2026""
+  },
+  ""FINANCIAL_INFORMATION"": {
+    ""recommended_amount"": ""₹9,522,744.00"",
+    ""sanction_amount"": ""₹9,522,744.00"",
+    ""total_expenditure"": ""₹9,522,744.00"",
+    ""completed_amount_disbursed"": ""Not available"",
+    ""sanction_difference"": ""₹0.00"",
+    ""expenditure_difference"": ""₹0.00"",
+    ""expenditure_ratio"": 1.0,
+    ""sanction_ratio"": 1.0
+  },
+  ""PAYMENT_INFORMATION"": {
+    ""payment_count"": 2.0,
+    ""unique_vendors"": 1.0,
+    ""payments_per_vendor"": 2.0
+  },
+  ""UNIFIED_AI_RISK_ENGINE"": {
+    ""final_ai_risk_score"": 83.83,
+    ""final_ai_risk_level"": ""CRITICAL"",
+    ""risk_detection_confidence"": ""VERY HIGH"",
+    ""active_risk_engines"": 4,
+    ""primary_risk_source"": ""ML Anomaly Engine"",
+    ""consensus_bonus"": 20,
+    ""final_ai_risk_factors"": []
+  },
+  ""MACHINE_LEARNING_ENGINE"": {
+    ""combined_anomaly_score"": ""Not available"",
+    ""ensemble_risk_level"": ""Not available"",
+    ""ml_normalized_score"": 93.0729
+  },
+  ""RULE_BASED_RISK_ENGINE"": {
+    ""rule_risk_score"": 20.0,
+    ""rule_risk_level"": ""Not available"",
+    ""risk_factors"": [
+      ""Very high combined anomaly score detected.""
+    ],
+    ""recommended_actions"": []
+  },
+  ""FINANCIAL_RISK_ENGINE"": {
+    ""financial_risk_score"": 20,
+    ""financial_risk_level"": ""MEDIUM"",
+    ""financial_risk_factors"": [
+      ""Project expenditure is among the highest 1%""
+    ]
+  },
+  ""STATISTICAL_ANOMALY_ENGINE"": {
+    ""statistical_anomaly_score"": 40,
+    ""statistical_anomaly_level"": ""HIGH"",
+    ""statistical_anomaly_factors"": [
+      ""Project expenditure is among the highest 0.5%"",
+      ""Extremely high payment concentration per vendor""
+    ]
+  },
+  ""INVESTIGATION_ENGINE"": {
+    ""investigation_priority"": ""Not available"",
+    ""investigation_summary"": ""Not available"",
+    ""key_risk_indicators"": [],
+    ""recommended_actions"": [
+      ""Compare this project with similar projects in the same category and region."",
+      ""Prioritize this project for immediate investigation."",
+      ""Initiate immediate financial and administrative investigation."",
+      ""Verify all payments, vendors, approvals, and expenditure records.""
+    ],
+    ""risk_factors"": [
+      ""Very high combined anomaly score detected.""
+    ]
+  }
+}","# EXECUTIVE SUMMARY  
+The project **WS/MP243/2025-2026/141110** has been classified as **CRITICAL** by the Unified AI Risk Engine, with a final risk score of **83.83** and a detection confidence of **VERY HIGH**. Multiple risk engines have identified high anomaly scores and concentration of expenditure, indicating that the project warrants immediate investigative attention.
+
+# PROJECT OVERVIEW  
+
+- **Work ID:** WS/MP243/2025-2026/141110  
+- **State:** West Bengal  
+- **Constituency:** BARASAT  
+- **Work category:** Normal/Others  
+- **Work description:** 2 storied building for skill development centre  
+- **Work status:** Physical Inspection  
+- **Financial year:** 2025-2026  
+
+# RISK CLASSIFICATION  
+
+- **Final AI risk level:** CRITICAL  
+- **Final AI risk score:** 83.83  
+- **Detection confidence:** VERY HIGH  
+- **Number of active risk engines:** 4  
+- **Primary risk source:** ML Anomaly Engine  
+- **Consensus information:** Consensus bonus 20 (no specific risk factors listed)  
+
+# KEY VERIFIED RISK INDICATORS  
+
+- **Unified AI Risk Engine:**  
+  - Final risk score 83.83, level CRITICAL, detection confidence VERY HIGH, 4 active engines, primary source ML Anomaly Engine, consensus bonus 20.  
+
+- **Machine Learning Engine:**  
+  - ML normalized score 93.0729.  
+
+- **Rule‑Based Engine:**  
+  - Rule risk score 20.0, risk factor: “Very high combined anomaly score detected.”  
+
+- **Financial Risk Engine:**  
+  - Financial risk score 20, level MEDIUM, risk factor: “Project expenditure is among the highest 1 %.”  
+
+- **Statistical Anomaly Engine:**  
+  - Statistical anomaly score 40, level HIGH, risk factors:  
+    - “Project expenditure is among the highest 0.5 %.”  
+    - “Extremely high payment concentration per vendor.”  
+
+# FINANCIAL OBSERVATIONS  
+
+- **Recommended amount:** ₹9,522,744.00  
+- **Sanction amount:** ₹9,522,744.00  
+- **Total expenditure:** ₹9,522,744.00  
+- **Completed amount disbursed:** Not available in the provided evidence.  
+- **Sanction difference:** ₹0.00  
+- **Expenditure difference:** ₹0.00  
+- **Expenditure ratio:** 1.0  
+- **Sanction ratio:** 1.0  
+
+No inference of wrongdoing is made; the figures are fully aligned with the sanction.
+
+# PAYMENT OBSERVATIONS  
+
+- **Payment count:** 2  
+- **Unique vendors:** 1  
+- **Payments per vendor:** 2  
+
+The evidence from the Statistical Anomaly Engine indicates an “Extremely high payment concentration per vendor,” which supports the observation that all payments were made to a single vendor. This pattern is flagged as a risk indicator by the engines.
+
+# STATISTICAL ANOMALY OBSERVATIONS  
+
+- **Statistical anomaly score:** 40  
+- **Statistical anomaly level:** HIGH  
+- **Verified statistical anomaly factors:**  
+  - Project expenditure is among the highest 0.5 %.  
+  - Extremely high payment concentration per vendor.  
+
+# MACHINE LEARNING OBSERVATIONS  
+
+- **Ensemble risk level:** Not available in the provided evidence.  
+- **Combined anomaly score:** Not available in the provided evidence.  
+- **ML normalized score:** 93.0729  
+
+# WHY THIS PROJECT WAS FLAGGED  
+
+The Unified AI Risk Engine aggregated signals from four active engines. The ML Anomaly Engine produced a high normalized score (93.0729) and contributed to the overall risk score of 83.83. The Rule‑Based Engine flagged a very high combined anomaly score. The Financial Risk Engine identified the project’s expenditure as among the top 1 % of projects, while the Statistical Anomaly Engine highlighted both the high expenditure percentile (0.5 %) and the concentration of payments to a single vendor. These independent indicators collectively elevated the project’s risk classification to CRITICAL.
+
+# INVESTIGATION PRIORITIES  
+
+### HIGH PRIORITY  
+- Compare this project with similar projects in the same category and region.  
+- Prioritize this project for immediate investigation.  
+- Initiate immediate financial and administrative investigation.  
+- Verify all payments, vendors, approvals, and expenditure records.  
+
+### MEDIUM PRIORITY  
+- Verify the investigation priority and summary (currently not available).  
+- Identify and document key risk indicators (currently not listed).  
+
+### LOW PRIORITY  
+- Additional monitoring of project progress and expenditure trends.  
+- Contextual analysis of regional project baselines.  
+
+# RECOMMENDED NEXT STEPS  
+
+1. **Verify financial records** – confirm that the recommended, sanctioned, and expended amounts match official documents.  
+2. **Review sanction documentation** – ensure that the sanction amount aligns with the approved budget.  
+3. **Audit payment records** – examine the two payments to the single vendor for compliance with procurement norms.  
+4. **Compare with similar projects** – benchmark expenditure, payment concentration, and risk scores against other skill‑development centre projects in West Bengal.  
+5. **Validate supporting documentation** – check approvals, contracts, and physical inspection reports for consistency.  
+
+# FINAL ASSESSMENT  
+
+The project exhibits a **CRITICAL** risk classification driven by high anomaly scores across multiple engines, notably a very high ML normalized score, significant expenditure concentration, and payment concentration to a single vendor. These anomalies are **risk indicators requiring verification** and do not, in themselves, establish wrongdoing. Further investigative work is essential to confirm compliance and financial integrity."
+WS/MP18009/2024-2025/154261,83.6,CRITICAL,VERY HIGH,4,Andhra Pradesh,HINDUPUR,Normal/Others,Not available,7963254.0,Not available,7963254.0,3.0,1.0,3.0,"{
+  ""PROJECT_INFORMATION"": {
+    ""work_id"": ""WS/MP18009/2024-2025/154261"",
+    ""state"": ""Andhra Pradesh"",
+    ""ida"": ""Sri Sathya Sai(DISTRICT COLLECTOR SRI SATHYA SAI_IDA)"",
+    ""member_of_parliament"": ""B K PARTHASARATHI"",
+    ""constituency"": ""HINDUPUR"",
+    ""work_category"": ""Normal/Others"",
+    ""work_description"": ""construction of community hall at survey no:782-2a & 782-2c of somandepalli village"",
+    ""work_status"": ""Not available"",
+    ""financial_year"": ""2024-2025""
+  },
+  ""FINANCIAL_INFORMATION"": {
+    ""recommended_amount"": ""₹7,963,254.00"",
+    ""sanction_amount"": ""Not available"",
+    ""total_expenditure"": ""₹7,963,254.00"",
+    ""completed_amount_disbursed"": ""₹7,963,254.00"",
+    ""sanction_difference"": ""Not available"",
+    ""expenditure_difference"": ""Not available"",
+    ""expenditure_ratio"": ""Not available"",
+    ""sanction_ratio"": ""Not available""
+  },
+  ""PAYMENT_INFORMATION"": {
+    ""payment_count"": 3.0,
+    ""unique_vendors"": 1.0,
+    ""payments_per_vendor"": 3.0
+  },
+  ""UNIFIED_AI_RISK_ENGINE"": {
+    ""final_ai_risk_score"": 83.6,
+    ""final_ai_risk_level"": ""CRITICAL"",
+    ""risk_detection_confidence"": ""VERY HIGH"",
+    ""active_risk_engines"": 4,
+    ""primary_risk_source"": ""Statistical Anomaly Engine"",
+    ""consensus_bonus"": 20,
+    ""final_ai_risk_factors"": []
+  },
+  ""MACHINE_LEARNING_ENGINE"": {
+    ""combined_anomaly_score"": ""Not available"",
+    ""ensemble_risk_level"": ""Not available"",
+    ""ml_normalized_score"": 88.2869
+  },
+  ""RULE_BASED_RISK_ENGINE"": {
+    ""rule_risk_score"": 10.0,
+    ""rule_risk_level"": ""Not available"",
+    ""risk_factors"": [
+      ""Moderately unusual anomaly pattern detected.""
+    ],
+    ""recommended_actions"": []
+  },
+  ""FINANCIAL_RISK_ENGINE"": {
+    ""financial_risk_score"": 20,
+    ""financial_risk_level"": ""MEDIUM"",
+    ""financial_risk_factors"": [
+      ""Project expenditure is among the highest 1%""
+    ]
+  },
+  ""STATISTICAL_ANOMALY_ENGINE"": {
+    ""statistical_anomaly_score"": 65,
+    ""statistical_anomaly_level"": ""CRITICAL"",
+    ""statistical_anomaly_factors"": [
+      ""Project expenditure is among the highest 0.5%"",
+      ""Extremely high number of payment transactions"",
+      ""Extremely high payment concentration per vendor"",
+      ""Multiple independent statistical anomalies detected""
+    ]
+  },
+  ""INVESTIGATION_ENGINE"": {
+    ""investigation_priority"": ""Not available"",
+    ""investigation_summary"": ""Not available"",
+    ""key_risk_indicators"": [],
+    ""recommended_actions"": [
+      ""Compare this project with similar projects in the same category and region."",
+      ""Prioritize this project for immediate investigation."",
+      ""Initiate immediate financial and administrative investigation."",
+      ""Verify all payments, vendors, approvals, and expenditure records.""
+    ],
+    ""risk_factors"": [
+      ""Moderately unusual anomaly pattern detected.""
+    ]
+  }
+}","# EXECUTIVE SUMMARY  
+The Unified AI Risk Engine classifies the project **WS/MP18009/2024-2025/154261** as **CRITICAL** (score 83.6) with **VERY HIGH** detection confidence. The primary driver is the Statistical Anomaly Engine, which flagged multiple high‑severity anomalies. Machine‑learning analysis corroborates this with a normalized score of **88.3**. Although the financial risk engine indicates a **MEDIUM** level (score 20) due to high expenditure, the convergence of signals across engines warrants immediate investigative attention.
+
+# PROJECT OVERVIEW  
+
+- **Work ID:** WS/MP18009/2024-2025/154261  
+- **State:** Andhra Pradesh  
+- **Constituency:** HINDUPUR  
+- **Work category:** Normal/Others  
+- **Work description:** construction of community hall at survey no:782‑2a & 782‑2c of Somandepalli village  
+- **Work status:** Not available  
+- **Financial year:** 2024‑2025  
+
+# RISK CLASSIFICATION  
+
+- **Final AI risk level:** CRITICAL  
+- **Final AI risk score:** 83.6  
+- **Detection confidence:** VERY HIGH  
+- **Number of active risk engines:** 4  
+- **Primary risk source:** Statistical Anomaly Engine  
+- **Consensus bonus:** 20  
+
+# KEY VERIFIED RISK INDICATORS  
+
+| Engine | Key Indicator(s) |
+|--------|------------------|
+| Unified AI Risk Engine | Score 83.6, CRITICAL level, VERY HIGH confidence, 4 active engines, primary source Statistical Anomaly Engine, consensus bonus 20 |
+| Machine‑Learning Engine | ML‑normalized score 88.2869 |
+| Rule‑Based Engine | Rule risk score 10.0, “Moderately unusual anomaly pattern detected.” |
+| Financial Risk Engine | Financial risk score 20, MEDIUM level, “Project expenditure is among the highest 1 %.” |
+| Statistical Anomaly Engine | Score 65, CRITICAL level, factors: “Project expenditure is among the highest 0.5 %,” “Extremely high number of payment transactions,” “Extremely high payment concentration per vendor,” “Multiple independent statistical anomalies detected.” |
+
+# FINANCIAL OBSERVATIONS  
+
+- **Recommended amount:** ₹7,963,254.00  
+- **Sanction amount:** Not available  
+- **Total expenditure:** ₹7,963,254.00  
+- **Completed amount disbursed:** ₹7,963,254.00  
+- **Expenditure differences:** Not available  
+- **Relevant ratios:** Not available  
+
+The recommended amount equals the total expenditure, indicating that the full recommended sum has been disbursed. No inference of wrongdoing is made.
+
+# PAYMENT OBSERVATIONS  
+
+- **Payment count:** 3  
+- **Unique vendors:** 1  
+- **Payments per vendor:** 3  
+
+The Statistical Anomaly Engine explicitly flagged “Extremely high number of payment transactions” and “Extremely high payment concentration per vendor.” These signals, combined with the limited vendor base, suggest an unusual payment pattern that aligns with the engine’s anomaly detection.
+
+# STATISTICAL ANOMALY OBSERVATIONS  
+
+- **Statistical anomaly score:** 65  
+- **Statistical anomaly level:** CRITICAL  
+- **Verified statistical anomaly factors:**  
+  1. Project expenditure is among the highest 0.5 %  
+  2. Extremely high number of payment transactions  
+  3. Extremely high payment concentration per vendor  
+  4. Multiple independent statistical anomalies detected  
+
+# MACHINE LEARNING OBSERVATIONS  
+
+- **Ensemble risk level:** Not available  
+- **Combined anomaly score:** Not available  
+- **ML normalized score:** 88.2869  
+
+# WHY THIS PROJECT WAS FLAGGED  
+
+The final CRITICAL classification results from the aggregation of signals across engines:
+
+1. **Statistical Anomaly Engine** identified high expenditure and concentrated payments.  
+2. **Rule‑Based Engine** noted a moderately unusual pattern.  
+3. **Financial Risk Engine** highlighted that the project’s expenditure ranks in the top 1 %.  
+4. **Machine‑Learning Engine** produced a high normalized anomaly score"
+WS/MP18355/2025-2026/158359,80.15,CRITICAL,VERY HIGH,4,Karnataka,BANGALORE NORTH,Normal/Others,Not available,3000000.0,Not available,2999973.0,4.0,1.0,4.0,"{
+  ""PROJECT_INFORMATION"": {
+    ""work_id"": ""WS/MP18355/2025-2026/158359"",
+    ""state"": ""Karnataka"",
+    ""ida"": ""BENGALURU URBAN(DEPUTY COMMISSIONER BANGALORE URBAN_IDA)"",
+    ""member_of_parliament"": ""SHOBHA KARANDLAJE"",
+    ""constituency"": ""BANGALORE NORTH"",
+    ""work_category"": ""Normal/Others"",
+    ""work_description"": ""Construction of Yoga Center at Pulakeshi Nagar Ward No-78 Stephens Road,Elephants Park"",
+    ""work_status"": ""Not available"",
+    ""financial_year"": ""2025-2026""
+  },
+  ""FINANCIAL_INFORMATION"": {
+    ""recommended_amount"": ""₹3,000,000.00"",
+    ""sanction_amount"": ""Not available"",
+    ""total_expenditure"": ""₹2,999,973.00"",
+    ""completed_amount_disbursed"": ""Not available"",
+    ""sanction_difference"": ""Not available"",
+    ""expenditure_difference"": ""Not available"",
+    ""expenditure_ratio"": ""Not available"",
+    ""sanction_ratio"": ""Not available""
+  },
+  ""PAYMENT_INFORMATION"": {
+    ""payment_count"": 4.0,
+    ""unique_vendors"": 1.0,
+    ""payments_per_vendor"": 4.0
+  },
+  ""UNIFIED_AI_RISK_ENGINE"": {
+    ""final_ai_risk_score"": 80.15,
+    ""final_ai_risk_level"": ""CRITICAL"",
+    ""risk_detection_confidence"": ""VERY HIGH"",
+    ""active_risk_engines"": 4,
+    ""primary_risk_source"": ""Statistical Anomaly Engine"",
+    ""consensus_bonus"": 20,
+    ""final_ai_risk_factors"": []
+  },
+  ""MACHINE_LEARNING_ENGINE"": {
+    ""combined_anomaly_score"": ""Not available"",
+    ""ensemble_risk_level"": ""Not available"",
+    ""ml_normalized_score"": 78.416
+  },
+  ""RULE_BASED_RISK_ENGINE"": {
+    ""rule_risk_score"": 10.0,
+    ""rule_risk_level"": ""Not available"",
+    ""risk_factors"": [
+      ""Moderately unusual anomaly pattern detected.""
+    ],
+    ""recommended_actions"": []
+  },
+  ""FINANCIAL_RISK_ENGINE"": {
+    ""financial_risk_score"": 20,
+    ""financial_risk_level"": ""MEDIUM"",
+    ""financial_risk_factors"": [
+      ""Project expenditure is among the highest 1%""
+    ]
+  },
+  ""STATISTICAL_ANOMALY_ENGINE"": {
+    ""statistical_anomaly_score"": 65,
+    ""statistical_anomaly_level"": ""CRITICAL"",
+    ""statistical_anomaly_factors"": [
+      ""Project expenditure is among the highest 0.5%"",
+      ""Extremely high number of payment transactions"",
+      ""Extremely high payment concentration per vendor"",
+      ""Multiple independent statistical anomalies detected""
+    ]
+  },
+  ""INVESTIGATION_ENGINE"": {
+    ""investigation_priority"": ""Not available"",
+    ""investigation_summary"": ""Not available"",
+    ""key_risk_indicators"": [],
+    ""recommended_actions"": [
+      ""Compare this project with similar projects in the same category and region."",
+      ""Prioritize this project for immediate investigation."",
+      ""Initiate immediate financial and administrative investigation."",
+      ""Verify all payments, vendors, approvals, and expenditure records.""
+    ],
+    ""risk_factors"": [
+      ""Moderately unusual anomaly pattern detected.""
+    ]
+  }
+}","# EXECUTIVE SUMMARY  
+The Unified AI Risk Engine classifies the project **WS/MP18355/2025-2026/158359** as **CRITICAL** with a risk score of **80.15** and a detection confidence of **VERY HIGH**. The high score is driven primarily by the Statistical Anomaly Engine, which flagged multiple critical anomalies, including extremely high expenditure relative to the recommended amount and a concentrated payment pattern to a single vendor. These indicators warrant immediate investigative attention to verify compliance and financial integrity.
+
+# PROJECT OVERVIEW  
+
+- **Work ID:** WS/MP18355/2025-2026/158359  
+- **State:** Karnataka  
+- **Constituency:** Bangalore North  
+- **Work Category:** Normal/Others  
+- **Work Description:** Construction of Yoga Center at Pulakeshi Nagar Ward No‑78 Stephens Road, Elephants Park  
+- **Work Status:** Not available in the provided evidence  
+- **Financial Year:** 2025‑2026  
+
+# RISK CLASSIFICATION  
+
+- **Final AI risk level:** CRITICAL  
+- **Final AI risk score:** 80.15  
+- **Detection confidence:** VERY HIGH  
+- **Number of active risk engines:** 4  
+- **Primary risk source:** Statistical Anomaly Engine  
+- **Consensus information:** Consensus bonus of 20 (no additional risk factors listed)  
+
+# KEY VERIFIED RISK INDICATORS  
+
+| Engine | Indicator | Value | Notes |
+|--------|-----------|-------|-------|
+| Unified AI Risk Engine | Final risk score | 80.15 | Highest overall score |
+| Unified AI Risk Engine | Risk level | CRITICAL | |
+| Unified AI Risk Engine | Detection confidence | VERY HIGH | |
+| Machine Learning Engine | ML normalized score | 78.416 | Indicates high anomaly likelihood |
+| Rule‑Based Risk Engine | Rule risk score | 10.0 | Moderate anomaly pattern noted |
+| Rule‑Based Risk Engine | Risk factors | Moderately unusual anomaly pattern detected. | |
+| Financial Risk Engine | Financial risk score | 20 | Medium risk |
+| Financial Risk Engine | Financial risk level | MEDIUM | |
+| Financial Risk Engine | Risk factors | Project expenditure is among the highest 1% | |
+| Statistical Anomaly Engine | Statistical anomaly score | 65 | |
+| Statistical Anomaly Engine | Statistical anomaly level | CRITICAL | |
+| Statistical Anomaly Engine | Statistical anomaly factors | • Project expenditure is among the highest 0.5%  <br>• Extremely high number of payment transactions  <br>• Extremely high payment concentration per vendor  <br>• Multiple independent statistical anomalies detected | |
+
+# FINANCIAL OBSERVATIONS  
+
+- **Recommended amount:** ₹3,000,000.00  
+- **Sanction amount:** Not available in the provided evidence  
+- **Total expenditure:** ₹2,999,973.00  
+- **Expenditure difference (recommended – actual):** ₹27.00  
+- **Expenditure ratio:** Not available in the provided evidence  
+- **Sanction ratio:** Not available in the provided evidence  
+
+The expenditure is within ₹27 of the recommended amount, indicating near‑completion of the financial outlay. No direct evidence of over‑expenditure or deviation from the sanctioned amount is available.
+
+# PAYMENT OBSERVATIONS  
+
+- **Payment count:** 4  
+- **Unique vendors:** 1  
+- **Payments per vendor:** 4  
+
+The Statistical Anomaly Engine explicitly flagged “Extremely high number of payment transactions” and “Extremely high payment concentration per vendor.” These observations are corroborated by the payment data, indicating a concentrated payment pattern to a single vendor.
+
+# STATISTICAL ANOMALY OBSERVATIONS  
+
+- **Statistical anomaly score:** 65  
+- **Statistical anomaly level:** CRITICAL  
+- **Verified statistical anomaly factors:**  
+  1. Project expenditure is among the highest 0.5%  
+  2. Extremely high number of payment transactions  
+  3. Extremely high payment concentration per vendor  
+  4. Multiple independent statistical anomalies detected  
+
+# MACHINE LEARNING OBSERVATIONS  
+
+- **Ensemble risk level:** Not available in the provided evidence  
+- **Combined anomaly score:** Not available in the provided evidence  
+- **ML normalized score:** 78.416  
+
+The high normalized score suggests a strong anomaly signal, though the ensemble level and combined score are not provided.
+
+# WHY THIS PROJECT WAS FLAGGED  
+
+The final risk classification is the result of an aggregation of signals from four active risk engines. The Statistical Anomaly Engine supplied the most critical indicators (high expenditure percentile, concentrated payments, multiple anomalies), which became the primary source for the Unified AI Risk Engine. The Machine Learning Engine’s high normalized score and the Rule‑Based Engine’s"
+WS/MP18248/2024-2025/150128,80.05,CRITICAL,VERY HIGH,4,West Bengal,BARDHAMAN PURBA(SC),Normal/Others,Work Completed,3000000.0,3000000.0,2444263.0,3.0,1.0,3.0,"{
+  ""PROJECT_INFORMATION"": {
+    ""work_id"": ""WS/MP18248/2024-2025/150128"",
+    ""state"": ""West Bengal"",
+    ""ida"": ""PURBA BARDHAMAN(DISTRICT MAGISTRATE PURBA BARDHAMAN_IDA)"",
+    ""member_of_parliament"": ""DR. SHARMILA SARKAR"",
+    ""constituency"": ""BARDHAMAN PURBA(SC)"",
+    ""work_category"": ""Normal/Others"",
+    ""work_description"": ""Construction of meeting hall cum training center at Katwa 2 Dev Block office under  Katwa 2 Dev Block , Purba Bardhaman"",
+    ""work_status"": ""Work Completed"",
+    ""financial_year"": ""2024-2025""
+  },
+  ""FINANCIAL_INFORMATION"": {
+    ""recommended_amount"": ""₹3,000,000.00"",
+    ""sanction_amount"": ""₹3,000,000.00"",
+    ""total_expenditure"": ""₹2,444,263.00"",
+    ""completed_amount_disbursed"": ""Not available"",
+    ""sanction_difference"": ""₹0.00"",
+    ""expenditure_difference"": ""₹-555,737.00"",
+    ""expenditure_ratio"": 0.8148,
+    ""sanction_ratio"": 1.0
+  },
+  ""PAYMENT_INFORMATION"": {
+    ""payment_count"": 3.0,
+    ""unique_vendors"": 1.0,
+    ""payments_per_vendor"": 3.0
+  },
+  ""UNIFIED_AI_RISK_ENGINE"": {
+    ""final_ai_risk_score"": 80.05,
+    ""final_ai_risk_level"": ""CRITICAL"",
+    ""risk_detection_confidence"": ""VERY HIGH"",
+    ""active_risk_engines"": 4,
+    ""primary_risk_source"": ""Statistical Anomaly Engine"",
+    ""consensus_bonus"": 20,
+    ""final_ai_risk_factors"": []
+  },
+  ""MACHINE_LEARNING_ENGINE"": {
+    ""combined_anomaly_score"": ""Not available"",
+    ""ensemble_risk_level"": ""Not available"",
+    ""ml_normalized_score"": 78.1352
+  },
+  ""RULE_BASED_RISK_ENGINE"": {
+    ""rule_risk_score"": 10.0,
+    ""rule_risk_level"": ""Not available"",
+    ""risk_factors"": [
+      ""Moderately unusual anomaly pattern detected.""
+    ],
+    ""recommended_actions"": []
+  },
+  ""FINANCIAL_RISK_ENGINE"": {
+    ""financial_risk_score"": 20,
+    ""financial_risk_level"": ""MEDIUM"",
+    ""financial_risk_factors"": [
+      ""Project expenditure is among the highest 1%""
+    ]
+  },
+  ""STATISTICAL_ANOMALY_ENGINE"": {
+    ""statistical_anomaly_score"": 65,
+    ""statistical_anomaly_level"": ""CRITICAL"",
+    ""statistical_anomaly_factors"": [
+      ""Project expenditure is among the highest 0.5%"",
+      ""Extremely high number of payment transactions"",
+      ""Extremely high payment concentration per vendor"",
+      ""Multiple independent statistical anomalies detected""
+    ]
+  },
+  ""INVESTIGATION_ENGINE"": {
+    ""investigation_priority"": ""Not available"",
+    ""investigation_summary"": ""Not available"",
+    ""key_risk_indicators"": [],
+    ""recommended_actions"": [
+      ""Compare this project with similar projects in the same category and region."",
+      ""Prioritize this project for immediate investigation."",
+      ""Initiate immediate financial and administrative investigation."",
+      ""Verify all payments, vendors, approvals, and expenditure records.""
+    ],
+    ""risk_factors"": [
+      ""Moderately unusual anomaly pattern detected.""
+    ]
+  }
+}","# EXECUTIVE SUMMARY  
+The project **WS/MP18248/2024-2025/150128** has been classified as **CRITICAL** by the Unified AI Risk Engine with a score of **80.05** and a **VERY HIGH** detection confidence. The classification is driven primarily by statistical anomalies in expenditure and payment concentration, corroborated by moderate signals from rule‑based and financial risk engines. The evidence indicates that the project warrants immediate investigative attention to verify compliance and financial integrity.
+
+# PROJECT OVERVIEW  
+
+- **Work ID:** WS/MP18248/2024-2025/150128  
+- **State:** West Bengal  
+- **Constituency:** BARDHAMAN PURBA(SC)  
+- **Work Category:** Normal/Others  
+- **Work Description:** Construction of meeting hall cum training center at Katwa 2 Dev Block office under Katwa 2 Dev Block, Purba Bardhaman  
+- **Work Status:** Work Completed  
+- **Financial Year:** 2024-2025  
+
+# RISK CLASSIFICATION  
+
+- **Final AI risk level:** CRITICAL  
+- **Final AI risk score:** 80.05  
+- **Detection confidence:** VERY HIGH  
+- **Number of active risk engines:** 4  
+- **Primary risk source:** Statistical Anomaly Engine  
+- **Consensus bonus:** 20  
+
+# KEY VERIFIED RISK INDICATORS  
+
+| Engine | Key Indicator | Value |
+|--------|---------------|-------|
+| Unified AI Risk Engine | Final AI risk score | 80.05 |
+| | Final AI risk level | CRITICAL |
+| | Detection confidence | VERY HIGH |
+| | Active risk engines | 4 |
+| | Primary risk source | Statistical Anomaly Engine |
+| | Consensus bonus | 20 |
+| Machine Learning Engine | ML normalized score | 78.1352 |
+| Rule‑Based Engine | Rule risk score | 10.0 |
+| | Risk factor | Moderately unusual anomaly pattern detected. |
+| Financial Risk Engine | Financial risk score | 20 |
+| | Financial risk level | MEDIUM |
+| | Risk factor | Project expenditure is among the highest 1% |
+| Statistical Anomaly Engine | Statistical anomaly score | 65 |
+| | Statistical anomaly level | CRITICAL |
+| | Risk factors | • Project expenditure is among the highest 0.5%  <br>• Extremely high number of payment transactions  <br>• Extremely high payment concentration per vendor  <br>• Multiple independent statistical anomalies detected |
+
+# FINANCIAL OBSERVATIONS  
+
+- **Recommended amount:** ₹3,000,000.00  
+- **Sanction amount:** ₹3,000,000.00  
+- **Total expenditure:** ₹2,444,263.00  
+- **Expenditure difference:** ₹-555,737.00 (expenditure below sanction)  
+- **Expenditure ratio:** 0.8148 (81.48 % of sanctioned amount)  
+- **Sanction ratio:** 1.0  
+
+The expenditure is lower than the sanctioned amount, with a ratio of 81.48 %. No inference of wrongdoing can be made from these figures alone.
+
+# PAYMENT OBSERVATIONS  
+
+- **Payment count:** 3  
+- **Unique vendors:** 1  
+- **Payments per vendor:** 3  
+
+The Statistical Anomaly Engine flagged “Extremely high number of payment transactions” and “Extremely high payment concentration per vendor.” While the absolute count of three payments is modest, the engine’s assessment indicates that, relative to typical projects in this category and region, the concentration and frequency are atypical and warrant verification.
+
+# STATISTICAL ANOMALY OBSERVATIONS  
+
+- **Statistical anomaly score:** 65  
+- **Statistical anomaly level:** CRITICAL  
+- **Verified statistical anomaly factors:**  
+  1. Project expenditure is among the highest 0.5%  
+  2. Extremely high number of payment transactions  
+  3. Extremely high payment concentration per vendor  
+  4. Multiple independent statistical anomalies detected  
+
+# MACHINE LEARNING OBSERVATIONS  
+
+"
+WS/MP18277/2025-2026/149810,78.95,CRITICAL,VERY HIGH,4,West Bengal,BARDHAMAN-DURGAPUR,Normal/Others,Vendor Identification,10000000.0,10000000.0,5758516.0,1.0,1.0,1.0,"{
+  ""PROJECT_INFORMATION"": {
+    ""work_id"": ""WS/MP18277/2025-2026/149810"",
+    ""state"": ""West Bengal"",
+    ""ida"": ""PURBA BARDHAMAN(DISTRICT MAGISTRATE PURBA BARDHAMAN_IDA)"",
+    ""member_of_parliament"": ""AZAD KIRTI JHA"",
+    ""constituency"": ""BARDHAMAN-DURGAPUR"",
+    ""work_category"": ""Normal/Others"",
+    ""work_description"": ""Construction of community hall at Bhatar bazar Plot No:2816/2817/2806, JL No:-63, Mouza:-Palar"",
+    ""work_status"": ""Vendor Identification"",
+    ""financial_year"": ""2025-2026""
+  },
+  ""FINANCIAL_INFORMATION"": {
+    ""recommended_amount"": ""₹10,000,000.00"",
+    ""sanction_amount"": ""₹10,000,000.00"",
+    ""total_expenditure"": ""₹5,758,516.00"",
+    ""completed_amount_disbursed"": ""Not available"",
+    ""sanction_difference"": ""₹0.00"",
+    ""expenditure_difference"": ""₹-4,241,484.00"",
+    ""expenditure_ratio"": 0.5759,
+    ""sanction_ratio"": 1.0
+  },
+  ""PAYMENT_INFORMATION"": {
+    ""payment_count"": 1.0,
+    ""unique_vendors"": 1.0,
+    ""payments_per_vendor"": 1.0
+  },
+  ""UNIFIED_AI_RISK_ENGINE"": {
+    ""final_ai_risk_score"": 78.95,
+    ""final_ai_risk_level"": ""CRITICAL"",
+    ""risk_detection_confidence"": ""VERY HIGH"",
+    ""active_risk_engines"": 4,
+    ""primary_risk_source"": ""ML Anomaly Engine"",
+    ""consensus_bonus"": 20,
+    ""final_ai_risk_factors"": []
+  },
+  ""MACHINE_LEARNING_ENGINE"": {
+    ""combined_anomaly_score"": ""Not available"",
+    ""ensemble_risk_level"": ""Not available"",
+    ""ml_normalized_score"": 92.3165
+  },
+  ""RULE_BASED_RISK_ENGINE"": {
+    ""rule_risk_score"": 20.0,
+    ""rule_risk_level"": ""Not available"",
+    ""risk_factors"": [
+      ""Very high combined anomaly score detected.""
+    ],
+    ""recommended_actions"": []
+  },
+  ""FINANCIAL_RISK_ENGINE"": {
+    ""financial_risk_score"": 20,
+    ""financial_risk_level"": ""MEDIUM"",
+    ""financial_risk_factors"": [
+      ""Project expenditure is among the highest 1%""
+    ]
+  },
+  ""STATISTICAL_ANOMALY_ENGINE"": {
+    ""statistical_anomaly_score"": 25,
+    ""statistical_anomaly_level"": ""MEDIUM"",
+    ""statistical_anomaly_factors"": [
+      ""Project expenditure is among the highest 0.5%""
+    ]
+  },
+  ""INVESTIGATION_ENGINE"": {
+    ""investigation_priority"": ""Not available"",
+    ""investigation_summary"": ""Not available"",
+    ""key_risk_indicators"": [],
+    ""recommended_actions"": [
+      ""Compare this project with similar projects in the same category and region."",
+      ""Prioritize this project for immediate investigation."",
+      ""Initiate immediate financial and administrative investigation."",
+      ""Verify all payments, vendors, approvals, and expenditure records.""
+    ],
+    ""risk_factors"": [
+      ""Very high combined anomaly score detected.""
+    ]
+  }
+}","# EXECUTIVE SUMMARY  
+The project **WS/MP18277/2025-2026/149810** has been classified as **CRITICAL** by the Unified AI Risk Engine with a risk score of **78.95** and a **VERY HIGH** detection confidence. The high score is driven primarily by a very high machine‑learning anomaly signal, corroborated by rule‑based, financial, and statistical anomaly engines. These indicators collectively suggest that the project warrants immediate scrutiny, though they do not, on their own, prove any wrongdoing.
+
+# PROJECT OVERVIEW  
+
+- **Work ID:** WS/MP18277/2025-2026/149810  
+- **State:** West Bengal  
+- **Constituency:** BARDHAMAN-DURGAPUR  
+- **Work category:** Normal/Others  
+- **Work description:** Construction of community hall at Bhatar bazar Plot No:2816/2817/2806, JL No:-63, Mouza:-Palar  
+- **Work status:** Vendor Identification  
+- **Financial year:** 2025-2026  
+
+# RISK CLASSIFICATION  
+
+- **Final AI risk level:** CRITICAL  
+- **Final AI risk score:** 78.95  
+- **Detection confidence:** VERY HIGH  
+- **Number of active risk engines:** 4  
+- **Primary risk source:** ML Anomaly Engine  
+- **Consensus information:** Consensus bonus 20  
+
+# KEY VERIFIED RISK INDICATORS  
+
+- **Unified AI risk engine**  
+  - Final AI risk level: CRITICAL  
+  - Final AI risk score: 78.95  
+  - Detection confidence: VERY HIGH  
+  - Active risk engines: 4  
+  - Primary risk source: ML Anomaly Engine  
+  - Consensus bonus: 20  
+
+- **Machine‑learning engine**  
+  - ML normalized score: 92.3165  
+  - Combined anomaly score: Not available in the provided evidence.  
+  - Ensemble risk level: Not available in the provided evidence.  
+
+- **Rule‑based engine**  
+  - Rule risk score: 20.0  
+  - Risk factors: “Very high combined anomaly score detected.”  
+
+- **Financial risk engine**  
+  - Financial risk score: 20  
+  - Financial risk level: MEDIUM  
+  - Financial risk factors: “Project expenditure is among the highest 1%.”  
+
+- **Statistical anomaly engine**  
+  - Statistical anomaly score: 25  
+  - Statistical anomaly level: MEDIUM  
+  - Statistical anomaly factors: “Project expenditure is among the highest 0.5%.”  
+
+# FINANCIAL OBSERVATIONS  
+
+- **Recommended amount:** ₹10,000,000.00  
+- **Sanction amount:** ₹10,000,000.00  
+- **Total expenditure:** ₹5,758,516.00  
+- **Expenditure difference:** ₹-4,241,484.00 (i.e., expenditure is ₹4,241,484.00 below the recommended amount)  
+- **Expenditure ratio:** 0.5759 (57.59 % of the recommended amount)  
+- **Sanction ratio:** 1.0 (100 % of the recommended amount)  
+
+The expenditure is substantially lower than the recommended and sanctioned amounts, yet the financial risk engine flagged the project because its expenditure is among the highest 1 % relative to comparable projects in the same category and region.
+
+# PAYMENT OBSERVATIONS  
+
+- **Payment count:** 1  
+- **Unique vendors:** 1  
+- **Payments per vendor:** 1  
+
+The evidence shows a single payment to a single vendor. The risk engines do not specifically flag this pattern as anomalous; the high risk score is attributed to other factors (e.g., expenditure level and ML anomaly). Therefore, no unusual payment pattern is confirmed by the available evidence.
+
+# STATISTICAL ANOMALY OBSERVATIONS  
+
+- **Statistical anomaly score:** 25  
+- **Statistical anomaly level:** MEDIUM  
+- **Verified statistical anomaly factors:** “Project expenditure is among the highest 0.5%.”  
+
+# MACHINE LEARNING OBSERVATIONS  
+
+- **Ensemble risk level:** Not available in the provided evidence.  
+- **Combined anomaly score:** Not available in the provided evidence.  
+- **ML normalized score:** 92.3165  
+
+# WHY THIS PROJECT WAS FLAGGED  
+
+The Unified AI Risk Engine identified a"
+WS/MP484/2024-2025/150090,78.78,CRITICAL,VERY HIGH,4,West Bengal,KOLKATA DAKSHIN,Normal/Others,Vendor Identification,10000000.0,10000000.0,10000000.0,1.0,1.0,1.0,"{
+  ""PROJECT_INFORMATION"": {
+    ""work_id"": ""WS/MP484/2024-2025/150090"",
+    ""state"": ""West Bengal"",
+    ""ida"": ""KOLKATA(COMMISSIONER KOLKATA MUNICIPAL CORPORATION_IDA)"",
+    ""member_of_parliament"": ""Mala Roy"",
+    ""constituency"": ""KOLKATA DAKSHIN"",
+    ""work_category"": ""Normal/Others"",
+    ""work_description"": ""CONSTRUCTION OF PROPOSED G+V STORIED EDUCATIONAL BUILDING FOR USE OF ENGLISH MEDIUM SCHOOL, 17 DEBI CHOWDHURY ROAD, KOLKATA - 700024 UNDER WARD NO. 79"",
+    ""work_status"": ""Vendor Identification"",
+    ""financial_year"": ""2024-2025""
+  },
+  ""FINANCIAL_INFORMATION"": {
+    ""recommended_amount"": ""₹10,000,000.00"",
+    ""sanction_amount"": ""₹10,000,000.00"",
+    ""total_expenditure"": ""₹10,000,000.00"",
+    ""completed_amount_disbursed"": ""Not available"",
+    ""sanction_difference"": ""₹0.00"",
+    ""expenditure_difference"": ""₹0.00"",
+    ""expenditure_ratio"": 1.0,
+    ""sanction_ratio"": 1.0
+  },
+  ""PAYMENT_INFORMATION"": {
+    ""payment_count"": 1.0,
+    ""unique_vendors"": 1.0,
+    ""payments_per_vendor"": 1.0
+  },
+  ""UNIFIED_AI_RISK_ENGINE"": {
+    ""final_ai_risk_score"": 78.78,
+    ""final_ai_risk_level"": ""CRITICAL"",
+    ""risk_detection_confidence"": ""VERY HIGH"",
+    ""active_risk_engines"": 4,
+    ""primary_risk_source"": ""ML Anomaly Engine"",
+    ""consensus_bonus"": 20,
+    ""final_ai_risk_factors"": []
+  },
+  ""MACHINE_LEARNING_ENGINE"": {
+    ""combined_anomaly_score"": ""Not available"",
+    ""ensemble_risk_level"": ""Not available"",
+    ""ml_normalized_score"": 91.8057
+  },
+  ""RULE_BASED_RISK_ENGINE"": {
+    ""rule_risk_score"": 20.0,
+    ""rule_risk_level"": ""Not available"",
+    ""risk_factors"": [
+      ""Very high combined anomaly score detected.""
+    ],
+    ""recommended_actions"": []
+  },
+  ""FINANCIAL_RISK_ENGINE"": {
+    ""financial_risk_score"": 20,
+    ""financial_risk_level"": ""MEDIUM"",
+    ""financial_risk_factors"": [
+      ""Project expenditure is among the highest 1%""
+    ]
+  },
+  ""STATISTICAL_ANOMALY_ENGINE"": {
+    ""statistical_anomaly_score"": 25,
+    ""statistical_anomaly_level"": ""MEDIUM"",
+    ""statistical_anomaly_factors"": [
+      ""Project expenditure is among the highest 0.5%""
+    ]
+  },
+  ""INVESTIGATION_ENGINE"": {
+    ""investigation_priority"": ""Not available"",
+    ""investigation_summary"": ""Not available"",
+    ""key_risk_indicators"": [],
+    ""recommended_actions"": [
+      ""Compare this project with similar projects in the same category and region."",
+      ""Prioritize this project for immediate investigation."",
+      ""Initiate immediate financial and administrative investigation."",
+      ""Verify all payments, vendors, approvals, and expenditure records.""
+    ],
+    ""risk_factors"": [
+      ""Very high combined anomaly score detected.""
+    ]
+  }
+}","# EXECUTIVE SUMMARY  
+The project **WS/MP484/2024-2025/150090** has been classified as **CRITICAL** by the Unified AI Risk Engine, with a final risk score of **78.78** and a very high detection confidence. Multiple risk engines (ML, rule‑based, financial, and statistical anomaly) have identified high anomaly scores and high expenditure relative to peers. These indicators warrant a focused investigation to verify compliance and financial integrity.
+
+# PROJECT OVERVIEW  
+- **Work ID:** WS/MP484/2024-2025/150090  
+- **State:** West Bengal  
+- **Constituency:** KOLKATA DAKSHIN  
+- **Work category:** Normal/Others  
+- **Work description:** CONSTRUCTION OF PROPOSED G+V STORIED EDUCATIONAL BUILDING FOR USE OF ENGLISH MEDIUM SCHOOL, 17 DEBI CHOWDHURY ROAD, KOLKATA - 700024 UNDER WARD NO. 79  
+- **Work status:** Vendor Identification  
+- **Financial year:** 2024-2025  
+
+# RISK CLASSIFICATION  
+- **Final AI risk level:** CRITICAL  
+- **Final AI risk score:** 78.78  
+- **Detection confidence:** VERY HIGH  
+- **Number of active risk engines:** 4  
+- **Primary risk source:** ML Anomaly Engine  
+- **Consensus information:** Consensus bonus of 20 points (from Unified AI Risk Engine)  
+
+# KEY VERIFIED RISK INDICATORS  
+- **Unified AI risk engine:**  
+  - Final AI risk score 78.78  
+  - Final AI risk level CRITICAL  
+  - Detection confidence VERY HIGH  
+  - Active risk engines 4  
+  - Primary risk source ML Anomaly Engine  
+  - Consensus bonus 20  
+- **Machine Learning engine:**  
+  - ML normalized score 91.8057  
+- **Rule‑based engine:**  
+  - Rule risk score 20.0  
+  - Risk factor: “Very high combined anomaly score detected.”  
+- **Financial risk engine:**  
+  - Financial risk score 20  
+  - Financial risk factor: “Project expenditure is among the highest 1%.”  
+- **Statistical anomaly engine:**  
+  - Statistical anomaly score 25  
+  - Statistical anomaly factor: “Project expenditure is among the highest 0.5%.”  
+
+# FINANCIAL OBSERVATIONS  
+- **Recommended amount:** ₹10,000,000.00  
+- **Sanction amount:** ₹10,000,000.00  
+- **Total expenditure:** ₹10,000,000.00  
+- **Completed amount disbursed:** Not available in the provided evidence.  
+- **Sanction difference:** ₹0.00  
+- **Expenditure difference:** ₹0.00  
+- **Expenditure ratio:** 1.0 (expenditure equals sanction)  
+- **Sanction ratio:** 1.0 (sanction equals recommended amount)  
+
+# PAYMENT OBSERVATIONS  
+- **Payment count:** 1.0  
+- **Unique vendors:** 1.0  
+- **Payments per vendor:** 1.0  
+
+The evidence does not indicate an unusual payment pattern; the single payment to a single vendor is consistent with the project’s current vendor identification status.
+
+# STATISTICAL ANOMALY OBSERVATIONS  
+- **Statistical anomaly score:** 25  
+- **Statistical anomaly level:** MEDIUM  
+- **Verified statistical anomaly factors:**  
+  - “Project expenditure is among the highest 0.5%.”  
+
+# MACHINE LEARNING OBSERVATIONS  
+- **Ensemble risk level:** Not available in the provided evidence.  
+- **Combined anomaly score:** Not available in the provided evidence.  
+- **ML normalized score:** 91.8057  
+
+# WHY THIS PROJECT WAS FLAGGED  
+The Unified AI Risk Engine’s high score (78.78) and very high confidence, combined with a high ML normalized score (91.8057), a rule‑based risk score of 20, and high financial and statistical anomaly scores, collectively elevated the overall risk classification to CRITICAL. Each engine independently identified anomalies related to expenditure magnitude and risk factors, which the Unified engine aggregated into the final risk assessment.
+
+# INVESTIGATION PRIORITIES  
+
+### HIGH PRIORITY  
+- Compare this project with similar projects in the same category and region.  
+- Prioritize this project for immediate investigation.  
+- Initiate immediate financial and administrative investigation.  
+- Verify all payments, vendors, approvals, and expenditure records.  
+
+### MEDIUM PRIORITY  
+- Verify the completeness of sanction and expenditure documentation.  
+- Cross‑check vendor details against procurement records.  
+
+### LOW PRIORITY  
+- Monitor future payments and expenditure trends for any emerging anomalies.  
+- Contextual analysis of regional construction projects for benchmarking.  
+
+# RECOMMENDED NEXT STEPS  
+1. **Verify financial records** – confirm that the ₹10,000,000.00 expenditure aligns with sanctioned amounts and approved budgets.  
+2. **Review sanction documentation** – ensure that the sanction was issued following proper procedures.  
+3. **Audit payment records** – confirm that the single payment was processed correctly and that no additional undisclosed payments exist.  
+4. **Compare with similar projects** – benchmark expenditure, timelines, and vendor structures against other educational building projects in West Bengal.  
+5. **Validate supporting documentation** – check approvals, design plans, and contractor agreements for consistency.  
+
+# FINAL ASSESSMENT  
+The project exhibits several risk indicators—high AI risk score, elevated ML normalized score, rule‑based risk score, and significant financial and statistical anomalies. These anomalies are **risk indicators requiring verification** and do not, by themselves, establish wrongdoing. A focused investigative effort is recommended to confirm compliance and financial integrity."
+WS/MP18249/2025-2026/153603,74.78,HIGH,VERY HIGH,4,West Bengal,BARRACKPUR,Normal/Others,Not available,20000000.0,Not available,15004801.0,2.0,1.0,2.0,"{
+  ""PROJECT_INFORMATION"": {
+    ""work_id"": ""WS/MP18249/2025-2026/153603"",
+    ""state"": ""West Bengal"",
+    ""ida"": ""North 24 Parganas(DISTRICT MAGISTRATE NORTH TWENTY FOUR PARGANAS_IDA)"",
+    ""member_of_parliament"": ""PARTHA BHOWMICK"",
+    ""constituency"": ""BARRACKPUR"",
+    ""work_category"": ""Normal/Others"",
+    ""work_description"": ""Development of Bhatpara State General Hospital."",
+    ""work_status"": ""Not available"",
+    ""financial_year"": ""2025-2026""
+  },
+  ""FINANCIAL_INFORMATION"": {
+    ""recommended_amount"": ""₹20,000,000.00"",
+    ""sanction_amount"": ""Not available"",
+    ""total_expenditure"": ""₹15,004,801.00"",
+    ""completed_amount_disbursed"": ""Not available"",
+    ""sanction_difference"": ""Not available"",
+    ""expenditure_difference"": ""Not available"",
+    ""expenditure_ratio"": ""Not available"",
+    ""sanction_ratio"": ""Not available""
+  },
+  ""PAYMENT_INFORMATION"": {
+    ""payment_count"": 2.0,
+    ""unique_vendors"": 1.0,
+    ""payments_per_vendor"": 2.0
+  },
+  ""UNIFIED_AI_RISK_ENGINE"": {
+    ""final_ai_risk_score"": 74.78,
+    ""final_ai_risk_level"": ""HIGH"",
+    ""risk_detection_confidence"": ""VERY HIGH"",
+    ""active_risk_engines"": 4,
+    ""primary_risk_source"": ""ML Anomaly Engine"",
+    ""consensus_bonus"": 20,
+    ""final_ai_risk_factors"": []
+  },
+  ""MACHINE_LEARNING_ENGINE"": {
+    ""combined_anomaly_score"": ""Not available"",
+    ""ensemble_risk_level"": ""Not available"",
+    ""ml_normalized_score"": 85.051
+  },
+  ""RULE_BASED_RISK_ENGINE"": {
+    ""rule_risk_score"": 10.0,
+    ""rule_risk_level"": ""Not available"",
+    ""risk_factors"": [
+      ""Moderately unusual anomaly pattern detected.""
+    ],
+    ""recommended_actions"": []
+  },
+  ""FINANCIAL_RISK_ENGINE"": {
+    ""financial_risk_score"": 20,
+    ""financial_risk_level"": ""MEDIUM"",
+    ""financial_risk_factors"": [
+      ""Project expenditure is among the highest 1%""
+    ]
+  },
+  ""STATISTICAL_ANOMALY_ENGINE"": {
+    ""statistical_anomaly_score"": 40,
+    ""statistical_anomaly_level"": ""HIGH"",
+    ""statistical_anomaly_factors"": [
+      ""Project expenditure is among the highest 0.5%"",
+      ""Extremely high payment concentration per vendor""
+    ]
+  },
+  ""INVESTIGATION_ENGINE"": {
+    ""investigation_priority"": ""Not available"",
+    ""investigation_summary"": ""Not available"",
+    ""key_risk_indicators"": [],
+    ""recommended_actions"": [
+      ""Compare this project with similar projects in the same category and region."",
+      ""Prioritize this project for immediate investigation."",
+      ""Prioritize this project for detailed audit.""
+    ],
+    ""risk_factors"": [
+      ""Moderately unusual anomaly pattern detected.""
+    ]
+  }
+}","# EXECUTIVE SUMMARY  
+The project “Development of Bhatpara State General Hospital” has been classified as **HIGH** risk by the Unified AI Risk Engine, with a final AI risk score of **74.78** and a **VERY HIGH** detection confidence. The high score is driven primarily by the ML Anomaly Engine and corroborated by a high statistical anomaly score (40) and a medium financial risk score (20). These indicators collectively signal that the project warrants immediate and detailed audit attention.
+
+# PROJECT OVERVIEW  
+
+- **Work ID:** WS/MP18249/2025-2026/153603  
+- **State:** West Bengal  
+- **Constituency:** Barrackpur  
+- **Work category:** Normal/Others  
+- **Work description:** Development of Bhatpara State General Hospital  
+- **Work status:** Not available  
+- **Financial year:** 2025‑2026  
+
+# RISK CLASSIFICATION  
+
+- **Final AI risk level:** HIGH  
+- **Final AI risk score:** 74.78  
+- **Detection confidence:** VERY HIGH  
+- **Number of active risk engines:** 4  
+- **Primary risk source:** ML Anomaly Engine  
+- **Consensus bonus:** 20  
+
+# KEY VERIFIED RISK INDICATORS  
+
+| Engine | Key Indicator(s) |
+|--------|------------------|
+| **Unified AI Risk Engine** | Final AI risk score 74.78, level HIGH, detection confidence VERY HIGH, 4 active engines, primary source ML Anomaly Engine, consensus bonus 20 |
+| **Machine Learning Engine** | ML normalized score 85.051 |
+| **Rule‑Based Engine** | Rule risk score 10.0; risk factor: “Moderately unusual anomaly pattern detected.” |
+| **Financial Risk Engine** | Financial risk score 20, level MEDIUM; factor: “Project expenditure is among the highest 1 %.” |
+| **Statistical Anomaly Engine** | Statistical anomaly score 40, level HIGH; factors: “Project expenditure is among the highest 0.5 %” and “Extremely high payment concentration per vendor.” |
+
+# FINANCIAL OBSERVATIONS  
+
+- **Recommended amount:** ₹20,000,000.00  
+- **Sanction amount:** Not available in the provided evidence.  
+- **Total expenditure:** ₹15,004,801.00  
+- **Expenditure differences:** Not available.  
+- **Relevant ratios:** Not available.  
+
+The evidence shows that the project has spent approximately 75 % of the recommended amount, but no sanction or expenditure ratio data are provided for further analysis.
+
+# PAYMENT OBSERVATIONS  
+
+- **Payment count:** 2  
+- **Unique vendors:** 1  
+- **Payments per vendor:** 2  
+
+The Statistical Anomaly Engine identifies “Extremely high payment concentration per vendor,” which aligns with the payment pattern observed (all payments to a single vendor). This concentration is a verified signal of potential risk.
+
+# STATISTICAL ANOMALY OBSERVATIONS  
+
+- **Statistical anomaly score:** 40  
+- **Statistical anomaly level:** HIGH  
+- **Verified statistical anomaly factors:**  
+  - Project expenditure is among the highest 0.5 %  
+  - Extremely high payment concentration per vendor  
+
+# MACHINE LEARNING OBSERVATIONS  
+
+- **Ensemble risk level:** Not available  
+- **Combined anomaly score:** Not available  
+- **ML normalized score:** 85.051  
+
+# WHY THIS PROJECT WAS FLAGGED  
+
+The Unified AI Risk Engine aggregated signals from all active engines. The high ML normalized score (85.051) and the high statistical anomaly score (40) contributed most heavily to the overall risk score of 74.78. The financial risk engine’s medium score (20) and the rule‑based engine’s moderate anomaly pattern further reinforced the classification. No single engine alone produced a high score; the combination of these indicators led to the final HIGH risk classification.
+
+# INVESTIGATION PRIORITIES  
+
+### HIGH PRIORITY  
+- Compare this project with similar projects in the same category and region.  
+- Prioritize this project for immediate investigation.  
+- Prioritize this project for detailed audit.  
+
+### MEDIUM PRIORITY  
+- Verify sanction amount and completed amount disbursed.  
+- Verify expenditure differences and relevant ratios.  
+- Verify vendor details and payment records.  
+
+###"
+WS/MP18272/2024-2025/136068,74.41,HIGH,VERY HIGH,4,West Bengal,JHARGRAM(ST),Normal/Others,Physical Inspection,4947386.0,4947386.0,4947386.0,2.0,1.0,2.0,"{
+  ""PROJECT_INFORMATION"": {
+    ""work_id"": ""WS/MP18272/2024-2025/136068"",
+    ""state"": ""West Bengal"",
+    ""ida"": ""Jhargram(DISTRICT MAGISTRATE JHARGRAM_IDA)"",
+    ""member_of_parliament"": ""KALIPADA SAREN"",
+    ""constituency"": ""JHARGRAM(ST)"",
+    ""work_category"": ""Normal/Others"",
+    ""work_description"": ""Construction of 45 Beded New Hostel Building of Belpahari S.C. High School (H.S.)."",
+    ""work_status"": ""Physical Inspection"",
+    ""financial_year"": ""2024-2025""
+  },
+  ""FINANCIAL_INFORMATION"": {
+    ""recommended_amount"": ""₹4,947,386.00"",
+    ""sanction_amount"": ""₹4,947,386.00"",
+    ""total_expenditure"": ""₹4,947,386.00"",
+    ""completed_amount_disbursed"": ""Not available"",
+    ""sanction_difference"": ""₹0.00"",
+    ""expenditure_difference"": ""₹0.00"",
+    ""expenditure_ratio"": 1.0,
+    ""sanction_ratio"": 1.0
+  },
+  ""PAYMENT_INFORMATION"": {
+    ""payment_count"": 2.0,
+    ""unique_vendors"": 1.0,
+    ""payments_per_vendor"": 2.0
+  },
+  ""UNIFIED_AI_RISK_ENGINE"": {
+    ""final_ai_risk_score"": 74.41,
+    ""final_ai_risk_level"": ""HIGH"",
+    ""risk_detection_confidence"": ""VERY HIGH"",
+    ""active_risk_engines"": 4,
+    ""primary_risk_source"": ""ML Anomaly Engine"",
+    ""consensus_bonus"": 20,
+    ""final_ai_risk_factors"": []
+  },
+  ""MACHINE_LEARNING_ENGINE"": {
+    ""combined_anomaly_score"": ""Not available"",
+    ""ensemble_risk_level"": ""Not available"",
+    ""ml_normalized_score"": 83.9908
+  },
+  ""RULE_BASED_RISK_ENGINE"": {
+    ""rule_risk_score"": 10.0,
+    ""rule_risk_level"": ""Not available"",
+    ""risk_factors"": [
+      ""Moderately unusual anomaly pattern detected.""
+    ],
+    ""recommended_actions"": []
+  },
+  ""FINANCIAL_RISK_ENGINE"": {
+    ""financial_risk_score"": 20,
+    ""financial_risk_level"": ""MEDIUM"",
+    ""financial_risk_factors"": [
+      ""Project expenditure is among the highest 1%""
+    ]
+  },
+  ""STATISTICAL_ANOMALY_ENGINE"": {
+    ""statistical_anomaly_score"": 40,
+    ""statistical_anomaly_level"": ""HIGH"",
+    ""statistical_anomaly_factors"": [
+      ""Project expenditure is among the highest 0.5%"",
+      ""Extremely high payment concentration per vendor""
+    ]
+  },
+  ""INVESTIGATION_ENGINE"": {
+    ""investigation_priority"": ""Not available"",
+    ""investigation_summary"": ""Not available"",
+    ""key_risk_indicators"": [],
+    ""recommended_actions"": [
+      ""Compare this project with similar projects in the same category and region."",
+      ""Prioritize this project for immediate investigation."",
+      ""Prioritize this project for detailed audit.""
+    ],
+    ""risk_factors"": [
+      ""Moderately unusual anomaly pattern detected.""
+    ]
+  }
+}","# EXECUTIVE SUMMARY  
+The project **WS/MP18272/2024-2025/136068** has been classified as **HIGH** risk by the Unified AI Risk Engine, with a final risk score of **74.41** and a detection confidence of **VERY HIGH**. The high score is driven by a combination of signals: a strong ML‑anomaly indication, a high statistical anomaly score, and a moderate financial‑risk signal that the project’s expenditure ranks in the top 1 % of comparable projects. These converging indicators warrant focused audit and verification activities.
+
+# PROJECT OVERVIEW  
+
+- **Work ID:** WS/MP18272/2024-2025/136068  
+- **State:** West Bengal  
+- **Constituency:** JHARGRAM(ST)  
+- **Work category:** Normal/Others  
+- **Work description:** Construction of 45 Beded New Hostel Building of Belpahari S.C. High School (H.S.).  
+- **Work status:** Physical Inspection  
+- **Financial year:** 2024‑2025  
+
+# RISK CLASSIFICATION  
+
+- **Final AI risk level:** HIGH  
+- **Final AI risk score:** 74.41  
+- **Detection confidence:** VERY HIGH  
+- **Number of active risk engines:** 4  
+- **Primary risk source:** ML Anomaly Engine  
+- **Consensus bonus:** 20 (no specific risk factors listed)  
+
+# KEY VERIFIED RISK INDICATORS  
+
+| Engine | Key Signal(s) |
+|--------|---------------|
+| **Unified AI Risk Engine** | Final AI risk score 74.41, level HIGH, detection confidence VERY HIGH, 4 active engines, primary source ML Anomaly Engine, consensus bonus 20 |
+| **Machine Learning Engine** | ML‑normalized score 83.9908 |
+| **Rule‑Based Engine** | Rule risk score 10.0; risk factor: “Moderately unusual anomaly pattern detected.” |
+| **Financial Risk Engine** | Financial risk score 20, level MEDIUM; factor: “Project expenditure is among the highest 1 %.” |
+| **Statistical Anomaly Engine** | Statistical anomaly score 40, level HIGH; factors: “Project expenditure is among the highest 0.5 %” and “Extremely high payment concentration per vendor.” |
+
+# FINANCIAL OBSERVATIONS  
+
+- **Recommended amount:** ₹4,947,386.00  
+- **Sanction amount:** ₹4,947,386.00  
+- **Total expenditure:** ₹4,947,386.00  
+- **Expenditure difference:** ₹0.00 (recommended vs. sanctioned)  
+- **Sanction difference:** ₹0.00  
+- **Expenditure ratio:** 1.0 (100 %)  
+- **Sanction ratio:** 1.0 (100 %)  
+
+All financial figures are identical, indicating full utilization of the sanctioned amount. No inference of wrongdoing is made.
+
+# PAYMENT OBSERVATIONS  
+
+- **Payment count:** 2  
+- **Unique vendors:** 1  
+- **Payments per vendor:** 2  
+
+The evidence from the Statistical Anomaly Engine identifies “Extremely high payment concentration per vendor,” which is consistent with the payment pattern observed here. No other unusual payment patterns are reported.
+
+# STATISTICAL ANOMALY OBSERVATIONS  
+
+- **Statistical anomaly score:** 40  
+- **Statistical anomaly level:** HIGH  
+- **Verified factors:**  
+  1. Project expenditure is among the highest 0.5 % of comparable projects.  
+  2. Extremely high payment concentration per vendor.  
+
+# MACHINE LEARNING OBSERVATIONS  
+
+- **Ensemble risk level:** Not available  
+- **Combined anomaly score:** Not available  
+- **ML‑normalized score:** 83.9908  
+
+# WHY THIS PROJECT WAS FLAGGED  
+
+The Unified AI Risk Engine aggregated signals from all active engines. The high ML‑normalized score and the ML Anomaly Engine as the primary source contributed significantly to the overall risk score. The Statistical Anomaly Engine’s high score, driven by top‑tier expenditure and payment concentration, reinforced the risk assessment. The Rule‑Based Engine’s moderate anomaly pattern and the Financial Risk Engine’s medium‑level signal of high expenditure added additional weight, culminating in a final HIGH risk classification.
+
+# INVESTIGATION PRIORITIES  
+
+### HIGH PRIORITY  
+- **Immediate investigation** of the project as recommended by the Investigation Engine.  
+- **Detailed audit** of the project’s financial and procurement records.  
+- **Comparison** with similar projects in the same category and region"
+WS/MP743/2025-2026/142092,72.17,HIGH,VERY HIGH,4,Tamil Nadu,KANCHEEPURAM(SC),Normal/Others,Physical Inspection,3993140.0,3993140.0,3993140.0,2.0,1.0,2.0,"{
+  ""PROJECT_INFORMATION"": {
+    ""work_id"": ""WS/MP743/2025-2026/142092"",
+    ""state"": ""Tamil Nadu"",
+    ""ida"": ""Kancheepuram(DISTRICT COLLECTOR KANCHEEPURAM_IDA)"",
+    ""member_of_parliament"": ""Ganesan Selvam"",
+    ""constituency"": ""KANCHEEPURAM(SC)"",
+    ""work_category"": ""Normal/Others"",
+    ""work_description"": ""Construction of Community Hall at Naickenkuppam Panchayat, Walajabad Panchayat Union."",
+    ""work_status"": ""Physical Inspection"",
+    ""financial_year"": ""2025-2026""
+  },
+  ""FINANCIAL_INFORMATION"": {
+    ""recommended_amount"": ""₹3,993,140.00"",
+    ""sanction_amount"": ""₹3,993,140.00"",
+    ""total_expenditure"": ""₹3,993,140.00"",
+    ""completed_amount_disbursed"": ""Not available"",
+    ""sanction_difference"": ""₹0.00"",
+    ""expenditure_difference"": ""₹0.00"",
+    ""expenditure_ratio"": 1.0,
+    ""sanction_ratio"": 1.0
+  },
+  ""PAYMENT_INFORMATION"": {
+    ""payment_count"": 2.0,
+    ""unique_vendors"": 1.0,
+    ""payments_per_vendor"": 2.0
+  },
+  ""UNIFIED_AI_RISK_ENGINE"": {
+    ""final_ai_risk_score"": 72.17,
+    ""final_ai_risk_level"": ""HIGH"",
+    ""risk_detection_confidence"": ""VERY HIGH"",
+    ""active_risk_engines"": 4,
+    ""primary_risk_source"": ""ML Anomaly Engine"",
+    ""consensus_bonus"": 20,
+    ""final_ai_risk_factors"": []
+  },
+  ""MACHINE_LEARNING_ENGINE"": {
+    ""combined_anomaly_score"": ""Not available"",
+    ""ensemble_risk_level"": ""Not available"",
+    ""ml_normalized_score"": 77.5955
+  },
+  ""RULE_BASED_RISK_ENGINE"": {
+    ""rule_risk_score"": 10.0,
+    ""rule_risk_level"": ""Not available"",
+    ""risk_factors"": [
+      ""Moderately unusual anomaly pattern detected.""
+    ],
+    ""recommended_actions"": []
+  },
+  ""FINANCIAL_RISK_ENGINE"": {
+    ""financial_risk_score"": 20,
+    ""financial_risk_level"": ""MEDIUM"",
+    ""financial_risk_factors"": [
+      ""Project expenditure is among the highest 1%""
+    ]
+  },
+  ""STATISTICAL_ANOMALY_ENGINE"": {
+    ""statistical_anomaly_score"": 40,
+    ""statistical_anomaly_level"": ""HIGH"",
+    ""statistical_anomaly_factors"": [
+      ""Project expenditure is among the highest 0.5%"",
+      ""Extremely high payment concentration per vendor""
+    ]
+  },
+  ""INVESTIGATION_ENGINE"": {
+    ""investigation_priority"": ""Not available"",
+    ""investigation_summary"": ""Not available"",
+    ""key_risk_indicators"": [],
+    ""recommended_actions"": [
+      ""Compare this project with similar projects in the same category and region."",
+      ""Prioritize this project for immediate investigation."",
+      ""Prioritize this project for detailed audit.""
+    ],
+    ""risk_factors"": [
+      ""Moderately unusual anomaly pattern detected.""
+    ]
+  }
+}","# EXECUTIVE SUMMARY  
+The Unified AI Risk Engine classifies the project as **HIGH** risk with a score of **72.17** and a **VERY HIGH** detection confidence. Multiple risk engines flag anomalies related to high expenditure, concentrated vendor payments, and moderate unusual patterns. The evidence indicates that the project warrants immediate audit and detailed investigation to verify the identified risk indicators.
+
+# PROJECT OVERVIEW  
+
+- **Work ID:** WS/MP743/2025-2026/142092  
+- **State:** Tamil Nadu  
+- **Constituency:** KANCHEEPURAM(SC)  
+- **Work category:** Normal/Others  
+- **Work description:** Construction of Community Hall at Naickenkuppam Panchayat, Walajabad Panchayat Union.  
+- **Work status:** Physical Inspection  
+- **Financial year:** 2025-2026  
+
+# RISK CLASSIFICATION  
+
+- **Final AI risk level:** HIGH  
+- **Final AI risk score:** 72.17  
+- **Detection confidence:** VERY HIGH  
+- **Number of active risk engines:** 4  
+- **Primary risk source:** ML Anomaly Engine  
+- **Consensus bonus:** 20  
+
+# KEY VERIFIED RISK INDICATORS  
+
+- **Unified AI risk engine:**  
+  - Final risk level: HIGH  
+  - Final risk score: 72.17  
+  - Detection confidence: VERY HIGH  
+  - Active risk engines: 4  
+  - Primary risk source: ML Anomaly Engine  
+  - Consensus bonus: 20  
+
+- **Machine Learning engine:**  
+  - ML normalized score: 77.5955  
+
+- **Rule‑based engine:**  
+  - Rule risk score: 10.0  
+  - Risk factor: “Moderately unusual anomaly pattern detected.”  
+
+- **Financial risk engine:**  
+  - Financial risk score: 20  
+  - Financial risk level: MEDIUM  
+  - Risk factor: “Project expenditure is among the highest 1 %.”  
+
+- **Statistical anomaly engine:**  
+  - Statistical anomaly score: 40  
+  - Statistical anomaly level: HIGH  
+  - Risk factors:  
+    - “Project expenditure is among the highest 0.5 %.”  
+    - “Extremely high payment concentration per vendor.”  
+
+# FINANCIAL OBSERVATIONS  
+
+- **Recommended amount:** ₹3,993,140.00  
+- **Sanction amount:** ₹3,993,140.00  
+- **Total expenditure:** ₹3,993,140.00  
+- **Expenditure difference:** ₹0.00 (no variance)  
+- **Expenditure ratio:** 1.0 (expenditure equals sanction)  
+- **Sanction ratio:** 1.0 (sanction equals recommended)  
+
+The financial figures are fully aligned with the sanctioned amount, indicating no apparent over‑expenditure.
+
+# PAYMENT OBSERVATIONS  
+
+- **Payment count:** 2  
+- **Unique vendors:** 1  
+- **Payments per vendor:** 2  
+
+The statistical anomaly engine flags “Extremely high payment concentration per vendor,” which is corroborated by the payment data showing all disbursements to a single vendor. This concentration is a verified risk indicator.
+
+# STATISTICAL ANOMALY OBSERVATIONS  
+
+- **Statistical anomaly score:** 40  
+- **Statistical anomaly level:** HIGH  
+- **Verified statistical"
+WS/MP352/2025-2026/135862,71.43,HIGH,VERY HIGH,4,Kerala,ERNAKULAM,Normal/Others,Physical Inspection,2362903.0,2362903.0,2362903.0,5.0,4.0,1.25,"{
+  ""PROJECT_INFORMATION"": {
+    ""work_id"": ""WS/MP352/2025-2026/135862"",
+    ""state"": ""Kerala"",
+    ""ida"": ""ERNAKULAM(DISTRICT COLLECTOR ERNAKULAM_IDA)"",
+    ""member_of_parliament"": ""Shri Hibi Eden"",
+    ""constituency"": ""ERNAKULAM"",
+    ""work_category"": ""Normal/Others"",
+    ""work_description"": ""Construction of Smart Anganwadi at Ward 21, Chellanam Grama Panchayath"",
+    ""work_status"": ""Physical Inspection"",
+    ""financial_year"": ""2025-2026""
+  },
+  ""FINANCIAL_INFORMATION"": {
+    ""recommended_amount"": ""₹2,362,903.00"",
+    ""sanction_amount"": ""₹2,362,903.00"",
+    ""total_expenditure"": ""₹2,362,903.00"",
+    ""completed_amount_disbursed"": ""Not available"",
+    ""sanction_difference"": ""₹0.00"",
+    ""expenditure_difference"": ""₹0.00"",
+    ""expenditure_ratio"": 1.0,
+    ""sanction_ratio"": 1.0
+  },
+  ""PAYMENT_INFORMATION"": {
+    ""payment_count"": 5.0,
+    ""unique_vendors"": 4.0,
+    ""payments_per_vendor"": 1.25
+  },
+  ""UNIFIED_AI_RISK_ENGINE"": {
+    ""final_ai_risk_score"": 71.43,
+    ""final_ai_risk_level"": ""HIGH"",
+    ""risk_detection_confidence"": ""VERY HIGH"",
+    ""active_risk_engines"": 4,
+    ""primary_risk_source"": ""ML Anomaly Engine"",
+    ""consensus_bonus"": 20,
+    ""final_ai_risk_factors"": []
+  },
+  ""MACHINE_LEARNING_ENGINE"": {
+    ""combined_anomaly_score"": ""Not available"",
+    ""ensemble_risk_level"": ""Not available"",
+    ""ml_normalized_score"": 76.1022
+  },
+  ""RULE_BASED_RISK_ENGINE"": {
+    ""rule_risk_score"": 10.0,
+    ""rule_risk_level"": ""Not available"",
+    ""risk_factors"": [
+      ""Moderately unusual anomaly pattern detected.""
+    ],
+    ""recommended_actions"": []
+  },
+  ""FINANCIAL_RISK_ENGINE"": {
+    ""financial_risk_score"": 26,
+    ""financial_risk_level"": ""MEDIUM"",
+    ""financial_risk_factors"": [
+      ""Project expenditure is among the highest 1%"",
+      ""Unusually high number of payment transactions""
+    ]
+  },
+  ""STATISTICAL_ANOMALY_ENGINE"": {
+    ""statistical_anomaly_score"": 33,
+    ""statistical_anomaly_level"": ""MEDIUM"",
+    ""statistical_anomaly_factors"": [
+      ""Project expenditure is among the highest 1%"",
+      ""Extremely high number of payment transactions""
+    ]
+  },
+  ""INVESTIGATION_ENGINE"": {
+    ""investigation_priority"": ""Not available"",
+    ""investigation_summary"": ""Not available"",
+    ""key_risk_indicators"": [],
+    ""recommended_actions"": [
+      ""Perform detailed financial verification of expenditure and payment records."",
+      ""Compare this project with similar projects in the same category and region."",
+      ""Prioritize this project for immediate investigation."",
+      ""Prioritize this project for detailed audit.""
+    ],
+    ""risk_factors"": [
+      ""Moderately unusual anomaly pattern detected.""
+    ]
+  }
+}","# EXECUTIVE SUMMARY  
+The Unified AI Risk Engine classified the project as **HIGH** risk with a score of **71.43** and a **VERY HIGH** detection confidence. The high score is driven primarily by signals from the ML Anomaly"
+WS/MP18019/2026-2027/139500,71.35,HIGH,VERY HIGH,4,Assam,Diphu (ST),Normal/Others,Physical Inspection,5000000.0,5000000.0,4998740.0,2.0,2.0,1.0,"{
+  ""PROJECT_INFORMATION"": {
+    ""work_id"": ""WS/MP18019/2026-2027/139500"",
+    ""state"": ""Assam"",
+    ""ida"": ""DIMA HASAO(DEPUTY COMMISSIONER Dima Hasao_IDA)"",
+    ""member_of_parliament"": ""AMARSING TISSO"",
+    ""constituency"": ""Diphu (ST)"",
+    ""work_category"": ""Normal/Others"",
+    ""work_description"": ""Construction of Community Building with Library, Guest Room, Conference Room at Haflong, Dima Hasao District (Total Estd. Cost:- Rs. 1.00 Cr.) 1st Installment Rs. 50.00 Lakhs"",
+    ""work_status"": ""Physical Inspection"",
+    ""financial_year"": ""2026-2027""
+  },
+  ""FINANCIAL_INFORMATION"": {
+    ""recommended_amount"": ""₹5,000,000.00"",
+    ""sanction_amount"": ""₹5,000,000.00"",
+    ""total_expenditure"": ""₹4,998,740.00"",
+    ""completed_amount_disbursed"": ""Not available"",
+    ""sanction_difference"": ""₹0.00"",
+    ""expenditure_difference"": ""₹-1,260.00"",
+    ""expenditure_ratio"": 0.9997,
+    ""sanction_ratio"": 1.0
+  },
+  ""PAYMENT_INFORMATION"": {
+    ""payment_count"": 2.0,
+    ""unique_vendors"": 2.0,
+    ""payments_per_vendor"": 1.0
+  },
+  ""UNIFIED_AI_RISK_ENGINE"": {
+    ""final_ai_risk_score"": 71.35,
+    ""final_ai_risk_level"": ""HIGH"",
+    ""risk_detection_confidence"": ""VERY HIGH"",
+    ""active_risk_engines"": 4,
+    ""primary_risk_source"": ""ML Anomaly Engine"",
+    ""consensus_bonus"": 20,
+    ""final_ai_risk_factors"": []
+  },
+  ""MACHINE_LEARNING_ENGINE"": {
+    ""combined_anomaly_score"": ""Not available"",
+    ""ensemble_risk_level"": ""Not available"",
+    ""ml_normalized_score"": 88.4495
+  },
+  ""RULE_BASED_RISK_ENGINE"": {
+    ""rule_risk_score"": 10.0,
+    ""rule_risk_level"": ""Not available"",
+    ""risk_factors"": [
+      ""Moderately unusual anomaly pattern detected.""
+    ],
+    ""recommended_actions"": []
+  },
+  ""FINANCIAL_RISK_ENGINE"": {
+    ""financial_risk_score"": 20,
+    ""financial_risk_level"": ""MEDIUM"",
+    ""financial_risk_factors"": [
+      ""Project expenditure is among the highest 1%""
+    ]
+  },
+  ""STATISTICAL_ANOMALY_ENGINE"": {
+    ""statistical_anomaly_score"": 25,
+    ""statistical_anomaly_level"": ""MEDIUM"",
+    ""statistical_anomaly_factors"": [
+      ""Project expenditure is among the highest 0.5%""
+    ]
+  },
+  ""INVESTIGATION_ENGINE"": {
+    ""investigation_priority"": ""Not available"",
+    ""investigation_summary"": ""Not available"",
+    ""key_risk_indicators"": [],
+    ""recommended_actions"": [
+      ""Compare this project with similar projects in the same category and region."",
+      ""Prioritize this project for immediate investigation."",
+      ""Prioritize this project for detailed audit.""
+    ],
+    ""risk_factors"": [
+      ""Moderately unusual anomaly pattern detected.""
+    ]
+  }
+}","# EXECUTIVE SUMMARY  
+The Unified AI Risk Engine classifies this project as **HIGH** risk with a score of **71.35** and a **VERY HIGH** detection confidence. Multiple engines (ML, rule‑based, financial, and statistical anomaly) have identified anomalies, particularly related to the project’s expenditure relative to peers. The evidence indicates that the project warrants focused scrutiny, but no wrongdoing has been established.
+
+# PROJECT OVERVIEW  
+- **Work ID:** WS/MP18019/2026-2027/139500  
+- **State:** Assam  
+- **Constituency:** Diphu (ST)  
+- **Work category:** Normal/Others  
+- **Work description:** Construction of Community Building with Library, Guest Room, Conference Room at Haflong, Dima Hasao District (Total Estd. Cost: Rs. 1.00 Cr.; 1st Installment Rs. 50.00 Lakhs)  
+- **Work status:** Physical Inspection  
+- **Financial year:** 2026-2027  
+
+# RISK CLASSIFICATION  
+- **Final AI risk level:** HIGH  
+- **Final AI risk score:** 71.35  
+- **Detection confidence:** VERY HIGH  
+- **Number of active risk engines:** 4  
+- **Primary risk source:** ML Anomaly Engine  
+- **Consensus information:** Consensus bonus of 20  
+
+# KEY VERIFIED RISK INDICATORS  
+
+**Unified AI Risk Engine**  
+- Final AI risk level: HIGH  
+- Final AI risk score: 71.35  
+- Detection confidence: VERY HIGH  
+- Active risk engines: 4  
+- Primary risk source: ML Anomaly Engine  
+- Consensus bonus: 20  
+
+**Machine Learning Engine**  
+- ML normalized score: 88.4495  
+
+**Rule‑Based Engine**  
+- Rule risk score: 10.0  
+- Risk factor: “Moderately unusual anomaly pattern detected.”  
+
+**Financial Risk Engine**  
+- Financial risk score: 20  
+- Financial risk level: MEDIUM  
+- Risk factor: “Project expenditure is among the highest 1%.”  
+
+**Statistical Anomaly Engine**  
+- Statistical anomaly score: 25  
+- Statistical anomaly level: MEDIUM  
+- Risk factor: “Project expenditure is among the highest 0.5%.”  
+
+# FINANCIAL OBSERVATIONS  
+- **Recommended amount:** ₹5,000,000.00  
+- **Sanction amount:** ₹5,000,000.00  
+- **Total expenditure:** ₹4,998,740.00  
+- **Expenditure difference:** ₹-1,260.00 (slightly below sanction)  
+- **Expenditure ratio:** 0.9997 (99.97% of sanctioned amount)  
+- **Sanction difference:** ₹0.00  
+- **Sanction ratio:** 1.0 (100% of sanctioned amount)  
+
+The financial figures show near‑complete utilization of the sanctioned amount with no over‑expenditure.
+
+# PAYMENT OBSERVATIONS  
+- **Payment count:** 2  
+- **Unique vendors:** 2  
+- **Payments per vendor:** 1  
+
+The payment pattern is typical for a project of this size and does not, by itself, indicate an anomaly. The risk engines did not flag any payment‑related irregularities.
+
+# STATISTICAL ANOMALY OBSERVATIONS  
+- **Statistical anomaly score:** 25  
+- **Statistical anomaly level:** MEDIUM  
+- **Verified statistical anomaly factors:**  
+  - “Project expenditure is among the highest 0.5%.”  
+
+# MACHINE LEARNING OBSERVATIONS  
+- **Ensemble risk level:** Not available in the provided evidence.  
+- **Combined anomaly score:** Not available in the provided evidence.  
+- **ML normalized score:** 88.4495  
+
+# WHY THIS PROJECT WAS FLAGGED  
+The project received a high AI risk classification because:  
+1. The Unified AI Risk Engine assigned a high score (71.35) with very high confidence, citing the ML Anomaly Engine as the primary source.  
+2. The ML engine’s normalized score (88.4495) indicates significant deviation from expected patterns.  
+3. Rule‑based, financial, and statistical engines all identified moderate to medium‑level anomalies, primarily related to the project’s expenditure ranking among peers.  
+These combined signals led to the overall high risk assessment.
+
+# INVESTIGATION PRIORITIES  
+
+### HIGH PRIORITY  
+- Compare this project with similar projects in the same category and region.  
+- Prioritize this project for immediate investigation.  
+- Prioritize this project for detailed audit.  
+
+### MEDIUM PRIORITY  
+- Verify financial records against sanction documentation.  
+- Review payment records for compliance with procurement norms.  
+- Audit vendor contracts and invoices.  
+
+### LOW PRIORITY  
+- Monitor ongoing project progress for any emerging anomalies.  
+- Contextual analysis of regional construction cost trends.  
+
+# RECOMMENDED NEXT STEPS  
+- **Verify financial records**: Cross‑check expenditure figures with accounting ledgers.  
+- **Review sanction documentation**: Ensure the sanctioned amount aligns with the approved budget.  
+- **Audit payment records**: Confirm that payments were made to the correct vendors and for the correct amounts.  
+- **Compare with similar projects**: Benchmark expenditure and payment patterns against other community building projects in Assam.  
+- **Validate supporting documentation**: Inspect construction permits, progress reports, and inspection certificates.  
+
+# FINAL ASSESSMENT  
+The project exhibits several risk indicators—particularly high expenditure relative to peers and a high AI risk score—requiring verification. These anomalies are risk indicators and do not independently establish wrongdoing. Further investigation is warranted to confirm compliance with financial and procurement procedures."
+WS/MP643/2025-2026/146319,71.17,HIGH,VERY HIGH,4,Madhya Pradesh,KHANDWA,Normal/Others,Physical Inspection,700000.0,700000.0,604900.0,18.0,5.0,3.6,"{
+  ""PROJECT_INFORMATION"": {
+    ""work_id"": ""WS/MP643/2025-2026/146319"",
+    ""state"": ""Madhya Pradesh"",
+    ""ida"": ""Khandwa (East Nimar)(DISTRICT COLLECTOR EAST NIMAR_IDA)"",
+    ""member_of_parliament"": ""Gyaneshwar Patil"",
+    ""constituency"": ""KHANDWA"",
+    ""work_category"": ""Normal/Others"",
+    ""work_description"": ""tin shed nirman near rajput dharmshala"",
+    ""work_status"": ""Physical Inspection"",
+    ""financial_year"": ""2025-2026""
+  },
+  ""FINANCIAL_INFORMATION"": {
+    ""recommended_amount"": ""₹700,000.00"",
+    ""sanction_amount"": ""₹700,000.00"",
+    ""total_expenditure"": ""₹604,900.00"",
+    ""completed_amount_disbursed"": ""₹700,000.00"",
+    ""sanction_difference"": ""₹0.00"",
+    ""expenditure_difference"": ""₹-95,100.00"",
+    ""expenditure_ratio"": 0.8641,
+    ""sanction_ratio"": 1.0
+  },
+  ""PAYMENT_INFORMATION"": {
+    ""payment_count"": 18.0,
+    ""unique_vendors"": 5.0,
+    ""payments_per_vendor"": 3.6
+  },
+  ""UNIFIED_AI_RISK_ENGINE"": {
+    ""final_ai_risk_score"": 71.17,
+    ""final_ai_risk_level"": ""HIGH"",
+    ""risk_detection_confidence"": ""VERY HIGH"",
+    ""active_risk_engines"": 4,
+    ""primary_risk_source"": ""ML Anomaly Engine"",
+    ""consensus_bonus"": 20,
+    ""final_ai_risk_factors"": []
+  },
+  ""MACHINE_LEARNING_ENGINE"": {
+    ""combined_anomaly_score"": ""Not available"",
+    ""ensemble_risk_level"": ""Not available"",
+    ""ml_normalized_score"": 83.5403
+  },
+  ""RULE_BASED_RISK_ENGINE"": {
+    ""rule_risk_score"": 10.0,
+    ""rule_risk_level"": ""Not available"",
+    ""risk_factors"": [
+      ""Moderately unusual anomaly pattern detected.""
+    ],
+    ""recommended_actions"": []
+  },
+  ""FINANCIAL_RISK_ENGINE"": {
+    ""financial_risk_score"": 20,
+    ""financial_risk_level"": ""MEDIUM"",
+    ""financial_risk_factors"": [
+      ""Extremely high number of payment transactions"",
+      ""High payment concentration among vendors""
+    ]
+  },
+  ""STATISTICAL_ANOMALY_ENGINE"": {
+    ""statistical_anomaly_score"": 30,
+    ""statistical_anomaly_level"": ""MEDIUM"",
+    ""statistical_anomaly_factors"": [
+      ""Extremely high number of payment transactions"",
+      ""Extremely high payment concentration per vendor""
+    ]
+  },
+  ""INVESTIGATION_ENGINE"": {
+    ""investigation_priority"": ""Not available"",
+    ""investigation_summary"": ""Not available"",
+    ""key_risk_indicators"": [],
+    ""recommended_actions"": [
+      ""Compare this project with similar projects in the same category and region."",
+      ""Prioritize this project for immediate investigation."",
+      ""Prioritize this project for detailed audit.""
+    ],
+    ""risk_factors"": [
+      ""Moderately unusual anomaly pattern detected.""
+    ]
+  }
+}","# EXECUTIVE SUMMARY  
+The Unified AI Risk Engine classifies the project as **HIGH** risk with a score of **71.17** and a **VERY HIGH** detection confidence. Multiple risk engines (ML Anomaly, Rule‑Based, Financial, Statistical Anomaly) contribute to this assessment, indicating several risk indicators that warrant further verification. The project requires attention to ensure compliance and financial integrity.
+
+# PROJECT OVERVIEW  
+- **Work ID:** WS/MP643/2025-2026/146319  
+- **State:** Madhya Pradesh  
+- **Constituency:** KHANDWA  
+- **Work category:** Normal/Others  
+- **Work description:** tin shed nirman near rajput dharmshala  
+- **Work status:** Physical Inspection  
+- **Financial year:** 2025-2026  
+
+# RISK CLASSIFICATION  
+- **Final AI risk level:** HIGH  
+- **Final AI risk score:** 71.17  
+- **Detection confidence:** VERY HIGH  
+- **Number of active risk engines:** 4  
+- **Primary risk source:** ML Anomaly Engine  
+- **Consensus information:** Not available in the provided evidence.  
+
+# KEY VERIFIED RISK INDICATORS  
+
+| Engine | Key Indicator | Value |
+|--------|---------------|-------|
+| Unified AI Risk Engine | Final AI risk score | 71.17 |
+| Unified AI Risk Engine | Final AI risk level | HIGH |
+| Unified AI Risk Engine | Detection confidence | VERY HIGH |
+| Unified AI Risk Engine | Active risk engines | 4 |
+| Unified AI Risk Engine | Primary risk source | ML Anomaly Engine |
+| Unified AI Risk Engine | Consensus bonus | 20 |
+| Machine Learning Engine | ML normalized score | 83.5403 |
+| Rule‑Based Risk Engine | Rule risk score | 10.0 |
+| Rule‑Based Risk Engine | Risk factors | Moderately unusual anomaly pattern detected. |
+| Financial Risk Engine | Financial risk score | 20 |
+| Financial Risk Engine | Financial risk level | MEDIUM |
+| Financial Risk Engine | Risk factors | Extremely high number of payment transactions, High payment concentration among vendors |
+| Statistical Anomaly Engine | Statistical anomaly score | 30 |
+| Statistical Anomaly Engine | Statistical anomaly level | MEDIUM |
+| Statistical Anomaly Engine | Statistical anomaly factors | Extremely high number of payment transactions, Extremely high payment concentration per vendor |
+
+# FINANCIAL OBSERVATIONS  
+- **Recommended amount:** ₹700,000.00  
+- **Sanction amount:** ₹700,000.00  
+- **Total expenditure:** ₹604,900.00  
+- **Expenditure difference:** ₹-95,100.00 (expenditure is lower than recommended)  
+- **Expenditure ratio:** 0.8641 (expenditure is 86.41 % of the recommended amount)  
+- **Sanction ratio:** 1.0 (expenditure matches the sanctioned amount)  
+
+The expenditure is below the recommended amount but aligns with the sanctioned amount, indicating a lower spending level rather than over‑expenditure.
+
+# PAYMENT OBSERVATIONS  
+- **Payment count:** 18  
+- **Unique vendors:** 5  
+- **Payments per vendor:** 3.6  
+
+Risk‑engine evidence (Financial Risk Engine and Statistical Anomaly Engine) flags an **extremely high number of payment transactions** and **high payment concentration per vendor**. The payment pattern is therefore considered unusual relative to typical project payment structures, as corroborated by the risk engines.
+
+# STATISTICAL ANOMALY OBSERVATIONS  
+- **Statistical anomaly score:** 30  
+- **Statistical anomaly level:** MEDIUM  
+- **Verified statistical anomaly factors:**  
+  - Extremely high number of payment transactions  
+  - Extremely high payment concentration per vendor  
+
+# MACHINE LEARNING OBSERVATIONS  
+- **Ensemble risk level:** Not available in the provided evidence.  
+- **Combined anomaly score:** Not available in the provided evidence.  
+- **ML normalized score:** 83.5403  
+
+# WHY THIS PROJECT WAS FLAGGED  
+The final AI risk classification is driven by:  
+1. **Unified AI Risk Engine** – high score, high confidence, and identification of the ML Anomaly Engine as the primary source.  
+2. **ML Engine** – a high normalized score (83.5403) indicating significant deviation from expected patterns.  
+3. **Rule‑Based Engine** – flagged a moderately unusual anomaly pattern.  
+4. **Financial Risk Engine** – identified high payment volume and concentration.  
+5. **Statistical Anomaly Engine** – confirmed high payment volume and concentration.  
+
+These engines collectively highlight payment irregularities and anomalous financial activity, leading to the overall HIGH risk classification.
+
+# INVESTIGATION PRIORITIES  
+
+### HIGH PRIORITY  
+- Compare this project with similar projects in the same category and region.  
+- Prioritize this project for immediate investigation.  
+- Prioritize this project for detailed audit.  
+
+### MEDIUM PRIORITY  
+- Verify financial records against the recommended and sanctioned amounts.  
+- Review sanction documentation for completeness and accuracy.  
+- Audit payment records to confirm vendor counts and transaction amounts.  
+
+### LOW PRIORITY  
+- Monitor ongoing project activities for any further anomalies.  
+- Contextual analysis of regional project norms to refine risk assessment.  
+
+# RECOMMENDED NEXT STEPS  
+- **Verify financial records** to confirm the accuracy of expenditure figures.  
+- **Review sanction documentation** to ensure alignment with the recommended amount.  
+- **Audit payment records** to validate vendor counts, payment amounts, and transaction dates.  
+- **Compare with similar projects** in the same category and region to benchmark payment patterns.  
+- **Validate supporting documentation** (e.g., invoices, receipts, vendor contracts) for authenticity and compliance.  
+
+# FINAL ASSESSMENT  
+The project exhibits several risk indicators—high AI risk score, high detection confidence, and multiple engine alerts—primarily related to payment volume and concentration. These anomalies are **risk indicators requiring verification** and do not independently establish wrongdoing. Further investigation is recommended to confirm compliance and financial integrity."
